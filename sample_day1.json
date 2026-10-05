@@ -1,0 +1,1252 @@
+{
+ "bay-area": {
+  "dogs": [
+   {
+    "meta": {
+     "count": 13,
+     "pages": 3,
+     "pageReturned": 1
+    },
+    "data": [
+     {
+      "type": "animals",
+      "id": "d0",
+      "attributes": {
+       "name": "Biscuit",
+       "ageGroup": "Young",
+       "sex": "Female",
+       "sizeGroup": "Large",
+       "breedString": "Labrador Retriever Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Biscuit",
+       "url": "https://example.org/animals/d0",
+       "distance": 4.0
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "103"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd0"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d1",
+      "attributes": {
+       "name": "Luna",
+       "ageGroup": "Adult",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Pit Bull Terrier",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Luna",
+       "url": "https://example.org/animals/d1",
+       "distance": 2.3
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "101"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd1"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d2",
+      "attributes": {
+       "name": "Max",
+       "ageGroup": "Senior",
+       "sex": "Male",
+       "sizeGroup": "Small",
+       "breedString": "Labrador Retriever Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Max",
+       "url": "https://example.org/animals/d2",
+       "distance": 27.5
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd2"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d3",
+      "attributes": {
+       "name": "Pepper",
+       "ageGroup": "Baby",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Husky",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Pepper",
+       "url": "https://example.org/animals/d3",
+       "distance": 29.1
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "101"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd3"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d4",
+      "attributes": {
+       "name": "Rocky",
+       "ageGroup": "Senior",
+       "sex": "Male",
+       "sizeGroup": "Small",
+       "breedString": "Labrador Retriever Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Rocky",
+       "url": "https://example.org/animals/d4",
+       "distance": 27.8
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "101"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd4"
+         }
+        ]
+       }
+      }
+     }
+    ],
+    "included": [
+     {
+      "type": "orgs",
+      "id": "103",
+      "attributes": {
+       "name": "Sample County Animal Services",
+       "type": "Shelter",
+       "city": "San Rafael",
+       "state": "CA",
+       "url": "https://example.org/org/103"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd0",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Biscuit"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Biscuit"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "101",
+      "attributes": {
+       "name": "Sample City Animal Shelter",
+       "type": "Shelter",
+       "city": "San Francisco",
+       "state": "CA",
+       "url": "https://example.org/org/101"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd1",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Luna"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Luna"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "201",
+      "attributes": {
+       "name": "Sample Rescue Group",
+       "type": "Rescue",
+       "city": "Berkeley",
+       "state": "CA",
+       "url": "https://example.org/org/201"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd2",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Max"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Max"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd3",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Pepper"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Pepper"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd4",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Rocky"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Rocky"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "meta": {
+     "count": 13,
+     "pages": 3,
+     "pageReturned": 2
+    },
+    "data": [
+     {
+      "type": "animals",
+      "id": "d5",
+      "attributes": {
+       "name": "Daisy",
+       "ageGroup": "Adult",
+       "sex": "Female",
+       "sizeGroup": "Small",
+       "breedString": "Australian Cattle Dog Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Daisy",
+       "url": "https://example.org/animals/d5",
+       "distance": 6.3
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "102"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd5"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d6",
+      "attributes": {
+       "name": "Bear",
+       "ageGroup": "Young",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Australian Cattle Dog Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Bear",
+       "url": "https://example.org/animals/d6",
+       "distance": 31.8
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "103"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd6"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d7",
+      "attributes": {
+       "name": "Olive",
+       "ageGroup": "Baby",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Labrador Retriever Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Olive",
+       "url": "https://example.org/animals/d7",
+       "distance": 30.8
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "103"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd7"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d8",
+      "attributes": {
+       "name": "Tank",
+       "ageGroup": "Senior",
+       "sex": "Female",
+       "sizeGroup": "Medium",
+       "breedString": "Australian Cattle Dog Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Tank",
+       "url": "https://example.org/animals/d8",
+       "distance": 45.7
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd8"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d9",
+      "attributes": {
+       "name": "Hazel",
+       "ageGroup": "Adult",
+       "sex": "Male",
+       "sizeGroup": "Small",
+       "breedString": "Husky",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Hazel",
+       "url": "https://example.org/animals/d9",
+       "distance": 38.7
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "103"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd9"
+         }
+        ]
+       }
+      }
+     }
+    ],
+    "included": [
+     {
+      "type": "orgs",
+      "id": "102",
+      "attributes": {
+       "name": "Sample Humane Society",
+       "type": "Shelter",
+       "city": "Oakland",
+       "state": "CA",
+       "url": "https://example.org/org/102"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd5",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Daisy"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Daisy"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "103",
+      "attributes": {
+       "name": "Sample County Animal Services",
+       "type": "Shelter",
+       "city": "San Rafael",
+       "state": "CA",
+       "url": "https://example.org/org/103"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd6",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Bear"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Bear"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd7",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Olive"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Olive"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "201",
+      "attributes": {
+       "name": "Sample Rescue Group",
+       "type": "Rescue",
+       "city": "Berkeley",
+       "state": "CA",
+       "url": "https://example.org/org/201"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd8",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Tank"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Tank"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd9",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Hazel"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Hazel"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "meta": {
+     "count": 13,
+     "pages": 3,
+     "pageReturned": 3
+    },
+    "data": [
+     {
+      "type": "animals",
+      "id": "d10",
+      "attributes": {
+       "name": "Ziggy",
+       "ageGroup": "Adult",
+       "sex": "Female",
+       "sizeGroup": "Medium",
+       "breedString": "Husky",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Ziggy",
+       "url": "https://example.org/animals/d10",
+       "distance": 22.5
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "101"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd10"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d11",
+      "attributes": {
+       "name": "Maple",
+       "ageGroup": "Baby",
+       "sex": "Female",
+       "sizeGroup": "Small",
+       "breedString": "Chihuahua",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Maple",
+       "url": "https://example.org/animals/d11",
+       "distance": 7.9
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "101"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd11"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "d12",
+      "attributes": {
+       "name": "Copper",
+       "ageGroup": "Senior",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Labrador Retriever Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Copper",
+       "url": "https://example.org/animals/d12",
+       "distance": 38.0
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pd12"
+         }
+        ]
+       }
+      }
+     }
+    ],
+    "included": [
+     {
+      "type": "orgs",
+      "id": "101",
+      "attributes": {
+       "name": "Sample City Animal Shelter",
+       "type": "Shelter",
+       "city": "San Francisco",
+       "state": "CA",
+       "url": "https://example.org/org/101"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd10",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Ziggy"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Ziggy"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd11",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Maple"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Maple"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "201",
+      "attributes": {
+       "name": "Sample Rescue Group",
+       "type": "Rescue",
+       "city": "Berkeley",
+       "state": "CA",
+       "url": "https://example.org/org/201"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pd12",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Copper"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Copper"
+       }
+      }
+     }
+    ]
+   }
+  ],
+  "cats": [
+   {
+    "meta": {
+     "count": 10,
+     "pages": 2,
+     "pageReturned": 1
+    },
+    "data": [
+     {
+      "type": "animals",
+      "id": "c0",
+      "attributes": {
+       "name": "Mochi",
+       "ageGroup": "Adult",
+       "sex": "Female",
+       "sizeGroup": "Large",
+       "breedString": "Siamese Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Mochi",
+       "url": "https://example.org/animals/c0",
+       "distance": 1.6
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc0"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c1",
+      "attributes": {
+       "name": "Whiskers",
+       "ageGroup": "Adult",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Domestic Short Hair",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Whiskers",
+       "url": "https://example.org/animals/c1",
+       "distance": 24.7
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc1"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c2",
+      "attributes": {
+       "name": "Cleo",
+       "ageGroup": "Adult",
+       "sex": "Male",
+       "sizeGroup": "Large",
+       "breedString": "Domestic Medium Hair",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Cleo",
+       "url": "https://example.org/animals/c2",
+       "distance": 20.0
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "102"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc2"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c3",
+      "attributes": {
+       "name": "Tofu",
+       "ageGroup": "Baby",
+       "sex": "Male",
+       "sizeGroup": "Medium",
+       "breedString": "Tabby",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Tofu",
+       "url": "https://example.org/animals/c3",
+       "distance": 27.4
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc3"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c4",
+      "attributes": {
+       "name": "Salem",
+       "ageGroup": "Senior",
+       "sex": "Female",
+       "sizeGroup": "Large",
+       "breedString": "Tabby",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Salem",
+       "url": "https://example.org/animals/c4",
+       "distance": 48.8
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "102"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc4"
+         }
+        ]
+       }
+      }
+     }
+    ],
+    "included": [
+     {
+      "type": "orgs",
+      "id": "201",
+      "attributes": {
+       "name": "Sample Rescue Group",
+       "type": "Rescue",
+       "city": "Berkeley",
+       "state": "CA",
+       "url": "https://example.org/org/201"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc0",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Mochi"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Mochi"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc1",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Whiskers"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Whiskers"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "102",
+      "attributes": {
+       "name": "Sample Humane Society",
+       "type": "Shelter",
+       "city": "Oakland",
+       "state": "CA",
+       "url": "https://example.org/org/102"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc2",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Cleo"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Cleo"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc3",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Tofu"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Tofu"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc4",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Salem"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Salem"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "meta": {
+     "count": 10,
+     "pages": 2,
+     "pageReturned": 2
+    },
+    "data": [
+     {
+      "type": "animals",
+      "id": "c5",
+      "attributes": {
+       "name": "Pumpkin",
+       "ageGroup": "Young",
+       "sex": "Male",
+       "sizeGroup": "Small",
+       "breedString": "Domestic Medium Hair",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Pumpkin",
+       "url": "https://example.org/animals/c5",
+       "distance": 7.9
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc5"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c6",
+      "attributes": {
+       "name": "Ash",
+       "ageGroup": "Baby",
+       "sex": "Female",
+       "sizeGroup": "Large",
+       "breedString": "Domestic Medium Hair",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Ash",
+       "url": "https://example.org/animals/c6",
+       "distance": 13.4
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "102"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc6"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c7",
+      "attributes": {
+       "name": "Kiwi",
+       "ageGroup": "Young",
+       "sex": "Female",
+       "sizeGroup": "Large",
+       "breedString": "Siamese Mix",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Kiwi",
+       "url": "https://example.org/animals/c7",
+       "distance": 30.4
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "101"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc7"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c8",
+      "attributes": {
+       "name": "Miso",
+       "ageGroup": "Young",
+       "sex": "Male",
+       "sizeGroup": "Medium",
+       "breedString": "Tabby",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Miso",
+       "url": "https://example.org/animals/c8",
+       "distance": 20.0
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "103"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc8"
+         }
+        ]
+       }
+      }
+     },
+     {
+      "type": "animals",
+      "id": "c9",
+      "attributes": {
+       "name": "Shadow",
+       "ageGroup": "Baby",
+       "sex": "Female",
+       "sizeGroup": "Large",
+       "breedString": "Tabby",
+       "pictureThumbnailUrl": "https://placehold.co/100x100?text=Shadow",
+       "url": "https://example.org/animals/c9",
+       "distance": 3.6
+      },
+      "relationships": {
+       "orgs": {
+        "data": [
+         {
+          "type": "orgs",
+          "id": "201"
+         }
+        ]
+       },
+       "pictures": {
+        "data": [
+         {
+          "type": "pictures",
+          "id": "pc9"
+         }
+        ]
+       }
+      }
+     }
+    ],
+    "included": [
+     {
+      "type": "orgs",
+      "id": "201",
+      "attributes": {
+       "name": "Sample Rescue Group",
+       "type": "Rescue",
+       "city": "Berkeley",
+       "state": "CA",
+       "url": "https://example.org/org/201"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc5",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Pumpkin"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Pumpkin"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "102",
+      "attributes": {
+       "name": "Sample Humane Society",
+       "type": "Shelter",
+       "city": "Oakland",
+       "state": "CA",
+       "url": "https://example.org/org/102"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc6",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Ash"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Ash"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "101",
+      "attributes": {
+       "name": "Sample City Animal Shelter",
+       "type": "Shelter",
+       "city": "San Francisco",
+       "state": "CA",
+       "url": "https://example.org/org/101"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc7",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Kiwi"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Kiwi"
+       }
+      }
+     },
+     {
+      "type": "orgs",
+      "id": "103",
+      "attributes": {
+       "name": "Sample County Animal Services",
+       "type": "Shelter",
+       "city": "San Rafael",
+       "state": "CA",
+       "url": "https://example.org/org/103"
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc8",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Miso"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Miso"
+       }
+      }
+     },
+     {
+      "type": "pictures",
+      "id": "pc9",
+      "attributes": {
+       "order": 1,
+       "large": {
+        "url": "https://placehold.co/500x500?text=Shadow"
+       },
+       "small": {
+        "url": "https://placehold.co/100x100?text=Shadow"
+       }
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "site_title": "Adoptable Dogs & Cats",
+  "areas": [
+    {
+      "id": "bay-area",
+      "name": "San Francisco Bay Area",
+      "postal_code": "94103",
+      "miles": 50
+    }
+  ],
+  "species": ["dogs", "cats"],
+  "include_rescues": false,
+  "keep_adopted_days": 14
+}

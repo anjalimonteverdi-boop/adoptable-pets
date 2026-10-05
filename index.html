@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adoptable Dogs &amp; Cats</title>
+<meta name="description" content="Adoptable dogs and cats from local shelters, updated every morning.">
+<style>
+  :root {
+    --bg: #faf8f5; --card: #ffffff; --text: #1f1d1a; --muted: #6b6560;
+    --line: #e6e1da; --accent: #b4532a; --accent-text: #ffffff;
+    --new: #1f7a4d; --chip: #f1ece5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161514; --card: #201f1d; --text: #f1eee9; --muted: #a59f97;
+      --line: #34312d; --accent: #e07b4c; --accent-text: #161514;
+      --new: #4cc38a; --chip: #2a2825;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 28px 16px 8px; max-width: 1200px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 1.8rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0; }
+  .sub strong { color: var(--text); }
+  .controls { position: sticky; top: 0; z-index: 5; background: var(--bg);
+              border-bottom: 1px solid var(--line); }
+  .controls-inner { max-width: 1200px; margin: 0 auto; padding: 12px 16px;
+                    display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  select, input[type=search], button {
+    font: inherit; font-size: 0.95rem; color: var(--text); background: var(--card);
+    border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+  input[type=search] { flex: 1 1 180px; min-width: 0; }
+  select { max-width: 100%; }
+  button { cursor: pointer; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button { border: 0; border-radius: 0; background: var(--card); }
+  .seg button[aria-pressed=true] { background: var(--accent); color: var(--accent-text); }
+  .share { margin-left: auto; }
+  main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  .count { color: var(--muted); margin: 0 0 12px; font-size: 0.95rem; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          overflow: hidden; display: flex; flex-direction: column; color: inherit;
+          text-decoration: none; transition: transform .12s ease; }
+  .card:hover { transform: translateY(-2px); }
+  .photo { position: relative; aspect-ratio: 1 / 1; background: var(--chip); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo .none { position: absolute; inset: 0; display: grid; place-items: center;
+                 color: var(--muted); font-size: 0.9rem; }
+  .badge { position: absolute; top: 8px; left: 8px; background: var(--new); color: #fff;
+           font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 999px; }
+  .body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 2px; }
+  .name { font-weight: 650; font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  .org { font-size: 0.85rem; margin-top: 4px; }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+  details.left { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 16px; }
+  details.left summary { cursor: pointer; font-weight: 600; }
+  .left-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; }
+  .left-list li { color: var(--muted); font-size: 0.92rem; }
+  footer { max-width: 1200px; margin: 0 auto; padding: 24px 16px 40px; color: var(--muted);
+           font-size: 0.85rem; }
+  footer a { color: inherit; }
+  .toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+           background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px;
+           font-size: 0.9rem; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  @media (max-width: 560px) {
+    .controls { position: static; }
+    h1 { font-size: 1.45rem; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .controls-inner select { flex: 1 1 45%; }
+    .share { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">Adoptable Dogs &amp; Cats</h1>
+  <p class="sub" id="sub">Loading today's animals…</p>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <select id="area" aria-label="Area" hidden></select>
+    <div class="seg" role="group" aria-label="Species">
+      <button data-species="" aria-pressed="true">All</button>
+      <button data-species="Dog" aria-pressed="false">Dogs</button>
+      <button data-species="Cat" aria-pressed="false">Cats</button>
+    </div>
+    <select id="age" aria-label="Age"><option value="">Any age</option></select>
+    <select id="sex" aria-label="Sex"><option value="">Any sex</option></select>
+    <select id="size" aria-label="Size"><option value="">Any size</option></select>
+    <select id="org" aria-label="Shelter"><option value="">All shelters</option></select>
+    <input type="search" id="q" placeholder="Search name or breed" aria-label="Search">
+    <select id="sort" aria-label="Sort">
+      <option value="new">Newest first</option>
+      <option value="near">Closest first</option>
+    </select>
+    <label class="meta"><input type="checkbox" id="newonly"> New today</label>
+    <button class="share" id="share">Copy link</button>
+  </div>
+</div>
+
+<main>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+  <details class="left" id="left" hidden>
+    <summary id="left-title">Recently left (likely adopted)</summary>
+    <ul class="left-list" id="left-list"></ul>
+  </details>
+</main>
+
+<footer>
+  Listings come from <a href="https://rescuegroups.org">RescueGroups.org</a> and refresh every morning.
+  Animals can be adopted at any time, so the shelter's own page is the official status.
+  Photos belong to each shelter.
+</footer>
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const AGE_ORDER = ["Baby", "Young", "Adult", "Senior"];
+const SIZE_ORDER = ["Small", "Medium", "Large", "X-Large"];
+let data = null, areas = [];
+const state = { area: "", species: "", age: "", sex: "", size: "", org: "", q: "", sort: "new", newonly: false };
+
+function readHash() {
+  const p = new URLSearchParams(location.hash.slice(1));
+  for (const k of Object.keys(state)) {
+    if (p.has(k)) state[k] = k === "newonly" ? p.get(k) === "1" : p.get(k);
+  }
+}
+function writeHash() {
+  const p = new URLSearchParams();
+  for (const [k, v] of Object.entries(state)) {
+    if (k === "sort" && v === "new") continue;
+    if (k === "area" && areas.length < 2) continue;
+    if (v === true) p.set(k, "1"); else if (v) p.set(k, v);
+  }
+  const h = p.toString();
+  history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
+}
+
+function fillSelect(el, values, order) {
+  const label = el.options[0].text;
+  const sorted = [...values].sort((a, b) => {
+    const ia = order ? order.indexOf(a) : -1, ib = order ? order.indexOf(b) : -1;
+    if (ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    return a.localeCompare(b);
+  });
+  el.innerHTML = "";
+  el.append(new Option(label, ""));
+  for (const v of sorted) el.append(new Option(v, v));
+}
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  let list = data.animals.filter(a =>
+    (!state.species || a.species === state.species) &&
+    (!state.age || a.age === state.age) &&
+    (!state.sex || a.sex === state.sex) &&
+    (!state.size || a.size === state.size) &&
+    (!state.org || a.org.name === state.org) &&
+    (!state.newonly || a.new) &&
+    (!q || (a.name + " " + a.breed).toLowerCase().includes(q)));
+  if (state.sort === "near") {
+    list.sort((a, b) => (a.distance ?? 1e9) - (b.distance ?? 1e9));
+  } else {
+    list.sort((a, b) => b.first_seen.localeCompare(a.first_seen) || a.name.localeCompare(b.name));
+  }
+
+  $("count").textContent = `${list.length.toLocaleString()} of ${data.animals.length.toLocaleString()} animals`;
+  $("grid").innerHTML = list.length ? list.map(a => `
+    <a class="card" href="${esc(a.url)}" target="_blank" rel="noopener">
+      <div class="photo">
+        ${a.photo ? `<img src="${esc(a.photo)}" alt="${esc(a.name)}" loading="lazy" referrerpolicy="no-referrer">`
+                  : `<div class="none">No photo yet</div>`}
+        ${a.new ? `<span class="badge">New today</span>` : ""}
+      </div>
+      <div class="body">
+        <div class="name">${esc(a.name)}</div>
+        <div class="meta">${esc([a.age, a.sex, a.size].filter(Boolean).join(" · "))}</div>
+        <div class="meta">${esc(a.breed)}</div>
+        <div class="org">${esc(a.org.name)}${a.org.city ? `, ${esc(a.org.city)}` : ""}${
+          a.distance != null ? ` <span class="meta">· ${Math.round(a.distance)} mi</span>` : ""}</div>
+      </div>
+    </a>`).join("") : `<div class="empty">No animals match these filters.</div>`;
+  writeHash();
+}
+
+function setupFilters() {
+  fillSelect($("age"), new Set(data.animals.map(a => a.age).filter(Boolean)), AGE_ORDER);
+  fillSelect($("sex"), new Set(data.animals.map(a => a.sex).filter(Boolean)));
+  fillSelect($("size"), new Set(data.animals.map(a => a.size).filter(Boolean)), SIZE_ORDER);
+  fillSelect($("org"), new Set(data.animals.map(a => a.org.name)));
+  for (const k of ["age", "sex", "size", "org"]) {
+    if (![...$(k).options].some(o => o.value === state[k])) state[k] = "";
+    $(k).value = state[k];
+  }
+  $("q").value = state.q; $("sort").value = state.sort; $("newonly").checked = state.newonly;
+  document.querySelectorAll("[data-species]").forEach(b =>
+    b.setAttribute("aria-pressed", String(b.dataset.species === state.species)));
+
+  const s = data.summary || {};
+  const updated = new Date(data.updated + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+  const bits = [`<strong>${data.animals.length.toLocaleString()}</strong> dogs and cats in shelters around the ${esc(data.area.name)} (within ${data.area.miles} miles)`];
+  if (!s.first_run) bits.push(`${s.new_today} new today, ${s.left_since_last_run} left since yesterday`);
+  $("sub").innerHTML = bits.join(". ") + `. Updated ${esc(updated)}.`;
+
+  const left = data.recently_left || [];
+  $("left").hidden = !left.length;
+  $("left-title").textContent = `Recently left, likely adopted (${left.length})`;
+  $("left-list").innerHTML = left.map(g =>
+    `<li>${esc(g.name)} · ${esc(g.species)} · ${esc(g.org)} · left ${esc(g.left_on)}</li>`).join("");
+}
+
+async function loadArea(id) {
+  const res = await fetch(`data/${encodeURIComponent(id)}.json`, { cache: "no-cache" });
+  if (!res.ok) throw new Error("missing data");
+  data = await res.json();
+  state.area = id;
+  setupFilters();
+  render();
+}
+
+async function init() {
+  readHash();
+  try {
+    const idx = await (await fetch("data/areas.json", { cache: "no-cache" })).json();
+    areas = idx.areas;
+    if (idx.site_title) { $("title").textContent = idx.site_title; document.title = idx.site_title; }
+    if (areas.length > 1) {
+      $("area").hidden = false;
+      for (const a of areas) $("area").append(new Option(a.name, a.id));
+    }
+    const pick = areas.find(a => a.id === state.area) || areas[0];
+    $("area").value = pick.id;
+    await loadArea(pick.id);
+  } catch (e) {
+    $("sub").textContent = "No listings yet. They appear after the first daily update runs.";
+  }
+}
+
+for (const k of ["age", "sex", "size", "org", "sort"]) $(k).addEventListener("change", e => { state[k] = e.target.value; render(); });
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("newonly").addEventListener("change", e => { state.newonly = e.target.checked; render(); });
+$("area").addEventListener("change", e => { state.org = ""; loadArea(e.target.value); });
+document.querySelectorAll("[data-species]").forEach(b => b.addEventListener("click", () => {
+  state.species = b.dataset.species;
+  document.querySelectorAll("[data-species]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  render();
+}));
+$("share").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(location.href); } catch (e) { prompt("Copy this link:", location.href); return; }
+  $("toast").classList.add("show"); setTimeout(() => $("toast").classList.remove("show"), 1500);
+});
+init();
+</script>
+</body>
+</html>
