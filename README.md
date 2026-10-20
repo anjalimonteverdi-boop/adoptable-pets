@@ -3,8 +3,12 @@
 A free public web page of every adoptable dog and cat in shelters near you,
 updated automatically every morning.
 
-- Data comes from [RescueGroups.org](https://rescuegroups.org) (Petfinder shut
-  down its public API in December 2025).
+- Data comes from [RescueGroups.org](https://rescuegroups.org) once you have a
+  free API key (Petfinder shut down its public API in December 2025).
+- **No key yet? It still works.** Without a key it reads the adoptable dogs
+  and cats straight from the websites of three Bay Area shelters: Berkeley
+  Humane, Humane Society Silicon Valley and Pets In Need. See
+  "Without a RescueGroups key" below.
 - A small script runs daily on GitHub Actions at about 6am Pacific.
 - The page is hosted free on GitHub Pages. Share the link with anyone.
 
@@ -48,10 +52,14 @@ few days. Keep the key private.
    contents of `.github/workflows/daily.yml` from this project, and click
    **Commit changes**.
 
-### 4. Add your API key
+### 4. Add your API key (skip this until the key arrives)
 
 **Settings > Secrets and variables > Actions > New repository secret.**
 Name: `RESCUEGROUPS_API_KEY`. Secret: paste your key. Click **Add secret**.
+
+Without a key, the page uses the shelter websites instead, so you can do
+steps 5 and 6 now and add the key whenever it comes. The next run after you
+add it switches to RescueGroups by itself.
 
 ### 5. Turn on the website
 
@@ -95,9 +103,40 @@ picker appears on the page once there's more than one:
 The `id` must be lowercase letters, numbers and dashes. Keep each radius
 reasonable (under about 100 miles) so each update stays quick.
 
+## Without a RescueGroups key
+
+Some shelters publish their adoptable animals as a public data feed on their
+own website. Without a key, the daily update reads these:
+
+| Shelter | Where |
+|---|---|
+| Berkeley Humane | Berkeley |
+| Humane Society Silicon Valley | Milpitas |
+| Pets In Need | Palo Alto |
+
+These were picked because their feeds are public and their `robots.txt`
+files allow it. The update reads each one once a day and waits between
+requests. Other big shelters (SF SPCA, SF Animal Care & Control, Oakland
+Animal Services, Marin Humane, Peninsula Humane, East Bay SPCA) don't publish
+a feed like this, or block automated access, so they only appear with a
+RescueGroups key.
+
+What's different in this mode:
+- Only these three shelters appear, not every shelter in the area.
+- The websites don't share sex, size or breed, so those filters are hidden.
+  Age only says "Baby" for puppies and kittens.
+- If one shelter's website is down, its animals from the last good run stay
+  up, and the others update as usual.
+- When a shelter redesigns its website the feed can change or disappear. If
+  a shelter's animals stop updating, the Actions run log says which one
+  failed.
+
+The shelters are listed under `shelter_sites` in `config.json`. To stop
+using one, delete its entry.
+
 ## Good to know
 
-- **Only shelters that publish to RescueGroups appear.** After the first run,
+- **With a key, only shelters that publish to RescueGroups appear.** After the first run,
   open the shelter menu on the page and check that the shelters you care
   about are there. If one is missing, it may only list on its own site or on
   Petfinder, and you can ask it to start sharing to RescueGroups too.
@@ -120,6 +159,7 @@ reasonable (under about 100 miles) so each update stays quick.
 |---|---|
 | `config.json` | Area, radius, species and options. |
 | `scripts/update.py` | Downloads today's listings and writes `docs/data/`. Standard-library Python, nothing to install. |
+| `scripts/shelter_sites.py` | Reads shelter websites when there's no RescueGroups key. |
 | `docs/index.html` | The public page. |
 | `docs/data/` | Filled in by the daily run. `<area>.json` is what the page reads; `<area>.state.json` remembers first-seen dates. |
 | `.github/workflows/daily.yml` | The daily schedule. |
