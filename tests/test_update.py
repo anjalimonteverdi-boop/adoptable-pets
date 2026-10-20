@@ -55,6 +55,11 @@ def main():
         assert by["Ahi"]["photo"].startswith("https://placehold.co/")
         assert len(s1["animals"]) == 7
 
+        # A second run the same day doesn't mark everything as new.
+        run(proj, "--sample", "tests/sample_sites_day1.json", "--today", "2026-10-20")
+        again = json.loads(data.read_text())
+        assert not any(a["new"] for a in again["animals"]) and again["summary"]["first_run"]
+
         # Day 2: one adoption, one new animal, one website down (its animals kept).
         run(proj, "--sample", "tests/sample_sites_day2.json", "--today", "2026-10-21")
         s2 = json.loads(data.read_text())

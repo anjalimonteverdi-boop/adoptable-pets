@@ -170,6 +170,10 @@ def load_json(path, default):
         return default
 
 
+def previous_exists(state):
+    return bool(state.get("last_listing")) and bool(state.get("started"))
+
+
 def merge_with_history(area_id, animals, today, keep_days, source):
     """Add first_seen dates, and work out who left since the last run."""
     state_path = DATA_DIR / f"{area_id}.state.json"
@@ -180,13 +184,16 @@ def merge_with_history(area_id, animals, today, keep_days, source):
         # animal adopted.
         state = {"first_seen": {}, "last_listing": {}, "gone": []}
     first_seen = state.get("first_seen", {})
+    # The day history started: nothing counts as "new" that day, even if the
+    # update runs more than once.
+    started = state.get("started") if previous_exists(state) else today
     previous = state.get("last_listing", {})
 
     current_ids = set()
     for an in animals:
         current_ids.add(an["id"])
         an["first_seen"] = first_seen.setdefault(an["id"], today)
-        an["new"] = an["first_seen"] == today and bool(previous)
+        an["new"] = an["first_seen"] == today and today != started
 
     # Animals listed last run but not today: probably adopted.
     gone = [g for g in state.get("gone", []) if g["id"] not in current_ids]
@@ -205,6 +212,7 @@ def merge_with_history(area_id, animals, today, keep_days, source):
 
     new_state = {
         "source": source,
+        "started": started,
         "first_seen": first_seen,
         "last_listing": {
             an["id"]: {k: an[k] for k in ("name", "species", "breed", "photo", "url")}
@@ -216,7 +224,7 @@ def merge_with_history(area_id, animals, today, keep_days, source):
     summary = {
         "new_today": sum(1 for an in animals if an["new"]),
         "left_since_last_run": len(gone_today),
-        "first_run": not previous,
+        "first_run": today == started,
     }
     return animals, gone, new_state, summary
 
