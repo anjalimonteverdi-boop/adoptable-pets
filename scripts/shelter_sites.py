@@ -35,7 +35,7 @@ PER_PAGE = 100
 MAX_PAGES = 20
 USER_AGENT = ("AdoptablePetsPage/1.0 (free non-commercial page of adoptable "
               "shelter animals; runs once a day)")
-FIELDS = "id,date,link,title,class_list,yoast_head_json"
+FIELDS = "id,date,link,title,class_list,yoast_head_json,featured_media"
 
 
 def get_json(url, attempts=3):
@@ -66,7 +66,30 @@ def fetch_site(site):
             break
         page += 1
         time.sleep(site.get("delay_seconds", 2))
+    add_missing_photos(site, items)
     return items
+
+
+def add_missing_photos(site, items):
+    """Some posts have a photo but no social-preview image; look those up."""
+    need = {it["featured_media"]: it for it in items
+            if not photo_of(it) and it.get("featured_media")}
+    if not need:
+        return
+    media_url = site["feed"].split("/wp-json/")[0] + "/wp-json/wp/v2/media"
+    ids = list(need)
+    for i in range(0, len(ids), PER_PAGE):
+        time.sleep(site.get("delay_seconds", 2))
+        chunk = ids[i:i + PER_PAGE]
+        params = {"include": ",".join(map(str, chunk)), "per_page": PER_PAGE,
+                  "_fields": "id,source_url"}
+        try:
+            media, _ = get_json(media_url + "?" + urllib.parse.urlencode(params))
+        except Exception:
+            return  # photos are nice to have; never fail the run over them
+        for m in media:
+            if m.get("id") in need and m.get("source_url"):
+                need[m["id"]]["photo_url"] = m["source_url"]
 
 
 def miles_between(lat1, lon1, lat2, lon2):
@@ -78,6 +101,8 @@ def miles_between(lat1, lon1, lat2, lon2):
 
 
 def photo_of(item):
+    if item.get("photo_url"):
+        return item["photo_url"]
     images = (item.get("yoast_head_json") or {}).get("og_image") or []
     for img in images:
         if isinstance(img, dict) and img.get("url"):
