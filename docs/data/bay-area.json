@@ -8,12 +8,12 @@
   "lon": -122.4099
  },
  "updated": "2026-10-20",
- "generated_at": "2026-10-20T21:31:44+00:00",
+ "generated_at": "2026-10-20T21:32:51+00:00",
  "source": "shelter websites",
  "summary": {
-  "new_today": 0,
+  "new_today": 140,
   "left_since_last_run": 0,
-  "first_run": true
+  "first_run": false
  },
  "animals": [
   {
@@ -24,7 +24,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/761986899.jpg",
    "url": "https://www.hssv.org/animals/480305/zephyr",
    "distance": 36.5,
    "org": {
@@ -36,7 +36,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82790",
@@ -58,7 +58,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9406",
@@ -80,7 +80,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-7891",
@@ -102,7 +102,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-468756",
@@ -124,7 +124,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483293",
@@ -146,7 +146,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-477325",
@@ -168,7 +168,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10561",
@@ -190,7 +190,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483320",
@@ -212,7 +212,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-7900",
@@ -234,7 +234,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83187",
@@ -256,7 +256,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83069",
@@ -278,7 +278,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483291",
@@ -288,7 +288,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/3540733.jpg",
    "url": "https://www.hssv.org/animals/483291/taquito",
    "distance": 36.5,
    "org": {
@@ -300,7 +300,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-3669",
@@ -322,7 +322,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-1394",
@@ -344,7 +344,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483274",
@@ -354,7 +354,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1278477457.jpg",
    "url": "https://www.hssv.org/animals/483274/stevie",
    "distance": 36.5,
    "org": {
@@ -366,7 +366,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483270",
@@ -388,7 +388,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480303",
@@ -410,7 +410,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485116",
@@ -420,7 +420,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1001450528.jpg",
    "url": "https://www.hssv.org/animals/485116/spring-roll",
    "distance": 36.5,
    "org": {
@@ -432,7 +432,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483098",
@@ -454,7 +454,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10472",
@@ -476,7 +476,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9717",
@@ -498,7 +498,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482672",
@@ -520,7 +520,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9800",
@@ -542,7 +542,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-474946",
@@ -564,7 +564,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-474944",
@@ -586,7 +586,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480619",
@@ -608,7 +608,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480171",
@@ -630,7 +630,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480169",
@@ -652,7 +652,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-474964",
@@ -674,7 +674,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10095",
@@ -696,7 +696,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483798",
@@ -706,7 +706,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/26525753.jpg",
    "url": "https://www.hssv.org/animals/483798/sabina",
    "distance": 36.5,
    "org": {
@@ -718,7 +718,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9758",
@@ -740,7 +740,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9727",
@@ -762,7 +762,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483158",
@@ -784,7 +784,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-2902",
@@ -806,7 +806,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10593",
@@ -828,7 +828,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482980",
@@ -850,7 +850,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10031",
@@ -872,7 +872,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-8518",
@@ -894,7 +894,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-8676",
@@ -916,7 +916,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9801",
@@ -938,7 +938,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482916",
@@ -948,7 +948,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/601371281.jpg",
    "url": "https://www.hssv.org/animals/482916/potato-salad",
    "distance": 36.5,
    "org": {
@@ -960,7 +960,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9797",
@@ -982,7 +982,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480352",
@@ -1004,7 +1004,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482978",
@@ -1026,7 +1026,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485112",
@@ -1036,7 +1036,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/589090400.jpg",
    "url": "https://www.hssv.org/animals/485112/pierre",
    "distance": 36.5,
    "org": {
@@ -1048,7 +1048,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480645",
@@ -1070,7 +1070,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483984",
@@ -1092,7 +1092,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10709",
@@ -1114,7 +1114,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-7888",
@@ -1136,7 +1136,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483982",
@@ -1158,7 +1158,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483062",
@@ -1180,7 +1180,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10230",
@@ -1202,7 +1202,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-476089",
@@ -1224,7 +1224,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-478175",
@@ -1246,7 +1246,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-5876",
@@ -1268,7 +1268,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483403",
@@ -1290,7 +1290,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-7754",
@@ -1312,7 +1312,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9798",
@@ -1334,7 +1334,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480599",
@@ -1356,7 +1356,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9761",
@@ -1378,7 +1378,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-477564",
@@ -1400,7 +1400,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485053",
@@ -1410,7 +1410,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1129282897.jpg",
    "url": "https://www.hssv.org/animals/485053/monty",
    "distance": 36.5,
    "org": {
@@ -1422,7 +1422,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9576",
@@ -1444,7 +1444,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-477467",
@@ -1466,7 +1466,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10584",
@@ -1488,7 +1488,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483181",
@@ -1510,7 +1510,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483144",
@@ -1532,7 +1532,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483867",
@@ -1542,7 +1542,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1421014387.jpg",
    "url": "https://www.hssv.org/animals/483867/mildred",
    "distance": 36.5,
    "org": {
@@ -1554,7 +1554,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482936",
@@ -1576,7 +1576,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10280",
@@ -1598,7 +1598,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-477543",
@@ -1620,7 +1620,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82338",
@@ -1642,7 +1642,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483318",
@@ -1664,7 +1664,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-80079",
@@ -1686,7 +1686,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9541",
@@ -1708,7 +1708,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9009",
@@ -1730,7 +1730,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82450",
@@ -1752,7 +1752,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483315",
@@ -1774,7 +1774,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82798",
@@ -1796,7 +1796,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483968",
@@ -1806,7 +1806,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/961376712.jpg",
    "url": "https://www.hssv.org/animals/483968/kashmere",
    "distance": 36.5,
    "org": {
@@ -1818,7 +1818,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483312",
@@ -1840,7 +1840,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82828",
@@ -1862,7 +1862,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10574",
@@ -1884,7 +1884,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482906",
@@ -1906,7 +1906,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9734",
@@ -1928,7 +1928,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83037",
@@ -1950,7 +1950,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9525",
@@ -1972,7 +1972,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482849",
@@ -1994,7 +1994,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483057",
@@ -2016,7 +2016,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482459",
@@ -2038,7 +2038,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9515",
@@ -2060,7 +2060,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483863",
@@ -2070,7 +2070,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1332252560.jpg",
    "url": "https://www.hssv.org/animals/483863/glenn",
    "distance": 36.5,
    "org": {
@@ -2082,7 +2082,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10475",
@@ -2104,7 +2104,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483054",
@@ -2126,7 +2126,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485110",
@@ -2136,7 +2136,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/848866541.jpg",
    "url": "https://www.hssv.org/animals/485110/fried-rice",
    "distance": 36.5,
    "org": {
@@ -2148,7 +2148,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82362",
@@ -2170,7 +2170,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483287",
@@ -2192,7 +2192,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485107",
@@ -2202,7 +2202,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1408696535.jpg",
    "url": "https://www.hssv.org/animals/485107/fiona",
    "distance": 36.5,
    "org": {
@@ -2214,7 +2214,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10577",
@@ -2236,7 +2236,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483283",
@@ -2258,7 +2258,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-8941",
@@ -2280,7 +2280,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-8600",
@@ -2302,7 +2302,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82971",
@@ -2324,7 +2324,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-475117",
@@ -2346,7 +2346,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83061",
@@ -2368,7 +2368,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483341",
@@ -2378,7 +2378,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1519072820.jpg",
    "url": "https://www.hssv.org/animals/483341/eggs",
    "distance": 36.5,
    "org": {
@@ -2390,7 +2390,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9794",
@@ -2412,7 +2412,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483052",
@@ -2434,7 +2434,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-8757",
@@ -2456,7 +2456,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483964",
@@ -2466,7 +2466,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1075870762.jpg",
    "url": "https://www.hssv.org/animals/483964/cutie-pie",
    "distance": 36.5,
    "org": {
@@ -2478,7 +2478,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-7458",
@@ -2500,7 +2500,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480472",
@@ -2522,7 +2522,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-1319",
@@ -2544,7 +2544,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483043",
@@ -2566,7 +2566,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83115",
@@ -2588,7 +2588,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10705",
@@ -2610,7 +2610,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485105",
@@ -2620,7 +2620,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/665534191.jpg",
    "url": "https://www.hssv.org/animals/485105/chow-mein",
    "distance": 36.5,
    "org": {
@@ -2632,7 +2632,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-9952",
@@ -2654,7 +2654,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-485202",
@@ -2664,7 +2664,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1533212203.jpg",
    "url": "https://www.hssv.org/animals/485202/cherry",
    "distance": 36.5,
    "org": {
@@ -2676,7 +2676,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482900",
@@ -2698,7 +2698,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83014",
@@ -2720,7 +2720,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10254",
@@ -2742,7 +2742,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10712",
@@ -2764,7 +2764,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480409",
@@ -2786,7 +2786,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82465",
@@ -2808,7 +2808,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483339",
@@ -2818,7 +2818,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": null,
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/76447738.jpg",
    "url": "https://www.hssv.org/animals/483339/bacon",
    "distance": 36.5,
    "org": {
@@ -2830,7 +2830,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10469",
@@ -2852,7 +2852,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-482729",
@@ -2874,7 +2874,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483303",
@@ -2896,7 +2896,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-474962",
@@ -2918,7 +2918,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-79780",
@@ -2940,7 +2940,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-1445",
@@ -2962,7 +2962,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480611",
@@ -2984,7 +2984,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "pets-in-need-10370",
@@ -3006,7 +3006,7 @@
     "url": "https://www.petsinneed.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-480144",
@@ -3028,7 +3028,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "hssv-483978",
@@ -3050,7 +3050,7 @@
     "url": "https://www.hssv.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-82578",
@@ -3072,7 +3072,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   },
   {
    "id": "berkeley-humane-83195",
@@ -3094,7 +3094,7 @@
     "url": "https://berkeleyhumane.org"
    },
    "first_seen": "2026-10-20",
-   "new": false
+   "new": true
   }
  ],
  "recently_left": []
