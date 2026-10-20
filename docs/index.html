@@ -115,7 +115,7 @@
 </main>
 
 <footer>
-  Listings come from <a href="https://rescuegroups.org">RescueGroups.org</a> and refresh every morning.
+  <span id="source">Listings refresh every morning.</span>
   Animals can be adopted at any time, so the shelter's own page is the official status.
   Photos belong to each shelter.
 </footer>
@@ -201,6 +201,8 @@ function setupFilters() {
   fillSelect($("sex"), new Set(data.animals.map(a => a.sex).filter(Boolean)));
   fillSelect($("size"), new Set(data.animals.map(a => a.size).filter(Boolean)), SIZE_ORDER);
   fillSelect($("org"), new Set(data.animals.map(a => a.org.name)));
+  // Hide filters the data has nothing for (shelter websites don't give sex or size).
+  for (const k of ["age", "sex", "size", "org"]) $(k).hidden = $(k).options.length < 2;
   for (const k of ["age", "sex", "size", "org"]) {
     if (![...$(k).options].some(o => o.value === state[k])) state[k] = "";
     $(k).value = state[k];
@@ -211,7 +213,13 @@ function setupFilters() {
 
   const s = data.summary || {};
   const updated = new Date(data.updated + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
-  const bits = [`<strong>${data.animals.length.toLocaleString()}</strong> dogs and cats in shelters around the ${esc(data.area.name)} (within ${data.area.miles} miles)`];
+  const nOrgs = new Set(data.animals.map(a => a.org.name)).size;
+  const bits = [data.source === "shelter websites"
+    ? `<strong>${data.animals.length.toLocaleString()}</strong> dogs and cats from ${nOrgs} ${esc(data.area.name)} shelters`
+    : `<strong>${data.animals.length.toLocaleString()}</strong> dogs and cats in shelters around the ${esc(data.area.name)} (within ${data.area.miles} miles)`];
+  $("source").innerHTML = data.source === "shelter websites"
+    ? "Listings come from each shelter's own website and refresh every morning."
+    : 'Listings come from <a href="https://rescuegroups.org">RescueGroups.org</a> and refresh every morning.';
   if (!s.first_run) bits.push(`${s.new_today} new today, ${s.left_since_last_run} left since yesterday`);
   $("sub").innerHTML = bits.join(". ") + `. Updated ${esc(updated)}.`;
 

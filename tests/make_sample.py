@@ -85,3 +85,33 @@ day2 = {"bay-area": {"dogs": pages_for(dogs[2:], 5), "cats": pages_for(cats[1:],
 (HERE / "sample_day1.json").write_text(json.dumps(day1, indent=1))
 (HERE / "sample_day2.json").write_text(json.dumps(day2, indent=1))
 print("wrote sample_day1.json and sample_day2.json")
+
+
+# ---- Shelter-website samples (the no-key backup) --------------------------
+# Same shape as the real WordPress feeds checked on 2026-10-20.
+
+def wp_item(pid, name, classes, site):
+    return {"id": pid, "date": "2026-10-20T10:14:10",
+            "link": f"https://example.org/{site}/{pid}",
+            "title": {"rendered": name},
+            "class_list": [f"post-{pid}", "status-publish", "hentry", *classes],
+            "yoast_head_json": {"title": name,
+                                "og_image": [{"url": f"https://placehold.co/500x500?text={pid}"}]}}
+
+
+bh = [wp_item(1, "Ahi", ["pet_species-cat", "pet_status-available"], "bh"),
+      wp_item(2, "Cody &#038; Chloe", ["pet_species-dog", "pet_status-available"], "bh"),
+      wp_item(3, "Thimble", ["pet_species-cat", "pet_status-available"], "bh")]
+hssv = [wp_item(10, "Spring Roll", ["type-kitten", "breed-domestic-short-hair"], "hssv"),
+        wp_item(11, "Pierre", ["type-dog"], "hssv"),
+        wp_item(12, "Thumper", ["type-rabbit"], "hssv")]          # not a dog or cat
+pin = [wp_item(20, "Bonita", ["category-dogs", "dog-dogs", "dog-puppies", "cats-palo-alto"], "pin"),
+       wp_item(21, "Pancho", ["category-cats", "cats-palo-alto"], "pin")]
+
+sites1 = {"sites": {"berkeley-humane": bh, "hssv": hssv, "pets-in-need": pin}}
+# Day 2: Ahi adopted, new dog at HSSV, Pets In Need's website is down.
+sites2 = {"sites": {"berkeley-humane": bh[1:], "hssv": hssv + [wp_item(13, "Mango", ["type-puppy"], "hssv")],
+                    "pets-in-need": "error"}}
+(HERE / "sample_sites_day1.json").write_text(json.dumps(sites1, indent=1))
+(HERE / "sample_sites_day2.json").write_text(json.dumps(sites2, indent=1))
+print("wrote sample_sites_day1.json and sample_sites_day2.json")

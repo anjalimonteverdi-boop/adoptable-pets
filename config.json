@@ -5,10 +5,85 @@
       "id": "bay-area",
       "name": "San Francisco Bay Area",
       "postal_code": "94103",
-      "miles": 50
+      "miles": 50,
+      "lat": 37.7726,
+      "lon": -122.4099
     }
   ],
-  "species": ["dogs", "cats"],
+  "species": [
+    "dogs",
+    "cats"
+  ],
   "include_rescues": false,
-  "keep_adopted_days": 14
+  "keep_adopted_days": 14,
+  "shelter_sites": [
+    {
+      "id": "berkeley-humane",
+      "name": "Berkeley Humane",
+      "city": "Berkeley",
+      "lat": 37.858,
+      "lon": -122.292,
+      "feed": "https://berkeleyhumane.org/wp-json/wp/v2/adoptable_pets",
+      "params": {
+        "pet_status": "128"
+      },
+      "species_classes": {
+        "Dog": [
+          "pet_species-dog"
+        ],
+        "Cat": [
+          "pet_species-cat"
+        ]
+      },
+      "delay_seconds": 2
+    },
+    {
+      "id": "hssv",
+      "name": "Humane Society Silicon Valley",
+      "city": "Milpitas",
+      "lat": 37.4231,
+      "lon": -121.9095,
+      "feed": "https://www.hssv.org/wp-json/wp/v2/animal",
+      "params": {},
+      "species_classes": {
+        "Dog": [
+          "type-dog",
+          "type-puppy"
+        ],
+        "Cat": [
+          "type-cat",
+          "type-kitten"
+        ]
+      },
+      "baby_classes": [
+        "type-puppy",
+        "type-kitten"
+      ],
+      "delay_seconds": 10
+    },
+    {
+      "id": "pets-in-need",
+      "name": "Pets In Need",
+      "city": "Palo Alto",
+      "lat": 37.424,
+      "lon": -122.101,
+      "feed": "https://www.petsinneed.org/wp-json/wp/v2/pet",
+      "params": {},
+      "species_classes": {
+        "Dog": [
+          "category-dogs",
+          "category-dogs-uncategorized"
+        ],
+        "Cat": [
+          "category-cats",
+          "category-kittens"
+        ]
+      },
+      "baby_classes": [
+        "category-kittens",
+        "dog-puppies"
+      ],
+      "delay_seconds": 2
+    }
+  ]
 }

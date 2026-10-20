@@ -31,10 +31,47 @@ def main():
         (proj / "docs/data").mkdir()
         data = proj / "docs/data/bay-area.json"
 
-        # No key and no sample: clear error, nothing written.
+        # No key and no shelter sites: clear error, nothing written.
+        cfg = json.loads((proj / "config.json").read_text())
+        (proj / "config.json").write_text(json.dumps(dict(cfg, shelter_sites=[])))
         r = run(proj, ok=False)
         assert "RESCUEGROUPS_API_KEY" in r.stderr
         assert not data.exists()
+        (proj / "config.json").write_text(json.dumps(cfg))
+
+        # No key: shelter websites. Day 1.
+        run(proj, "--sample", "tests/sample_sites_day1.json", "--today", "2026-10-20")
+        s1 = json.loads(data.read_text())
+        assert s1["source"] == "shelter websites"
+        names = {a["name"] for a in s1["animals"]}
+        assert "Cody & Chloe" in names, "HTML entities should be decoded"
+        assert "Thumper" not in names, "rabbits should be left out"
+        by = {a["name"]: a for a in s1["animals"]}
+        assert by["Spring Roll"]["species"] == "Cat" and by["Spring Roll"]["age"] == "Baby"
+        assert by["Bonita"]["species"] == "Dog" and by["Bonita"]["age"] == "Baby"
+        assert by["Pancho"]["species"] == "Cat"
+        assert by["Pierre"]["org"]["name"] == "Humane Society Silicon Valley"
+        assert 30 < by["Pierre"]["distance"] < 50
+        assert by["Ahi"]["photo"].startswith("https://placehold.co/")
+        assert len(s1["animals"]) == 7
+
+        # Day 2: one adoption, one new animal, one website down (its animals kept).
+        run(proj, "--sample", "tests/sample_sites_day2.json", "--today", "2026-10-21")
+        s2 = json.loads(data.read_text())
+        names2 = {a["name"] for a in s2["animals"]}
+        assert {"Bonita", "Pancho"} <= names2, "a failed site keeps yesterday's animals"
+        assert [g["name"] for g in s2["recently_left"]] == ["Ahi"]
+        assert [a["name"] for a in s2["animals"] if a["new"]] == ["Mango"]
+
+        # Every website down: the run fails and the page is left alone.
+        before = data.read_text()
+        down = {"sites": {k: "error" for k in ("berkeley-humane", "hssv", "pets-in-need")}}
+        (proj / "tests/down.json").write_text(json.dumps(down))
+        run(proj, "--sample", "tests/down.json", "--today", "2026-10-22", ok=False)
+        assert data.read_text() == before
+
+        # When the key arrives, switching to RescueGroups starts a fresh history
+        # (no flood of "likely adopted" from the old source).
 
         # Day 1.
         run(proj, "--sample", "tests/sample_day1.json", "--today", "2026-10-06")
@@ -43,6 +80,7 @@ def main():
         assert "Sample Rescue Group" not in orgs, "rescues should be excluded by default"
         assert all(a["org"]["type"] == "Shelter" for a in d1["animals"])
         assert d1["summary"]["first_run"] is True
+        assert d1["recently_left"] == [] and d1["source"] == "RescueGroups.org"
         assert not any(a["new"] for a in d1["animals"]), "no new badges on the first run"
         assert all(a["photo"].startswith("https://placehold.co/500") for a in d1["animals"])
         ids1 = {a["id"] for a in d1["animals"]}
