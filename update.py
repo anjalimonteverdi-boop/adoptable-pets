@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""Daily update: fetch adoptable dogs and cats from RescueGroups.org and
-write the JSON files the public page reads.
+"""Daily update: fetch adoptable dogs and cats and write the JSON files the
+public page reads.
+
+Where the animals come from:
+  - With a RESCUEGROUPS_API_KEY: RescueGroups.org, every shelter in the area.
+  - Without one: the shelters listed under "shelter_sites" in config.json,
+    read from their own websites (see scripts/shelter_sites.py).
 
 Usage:
   RESCUEGROUPS_API_KEY=... python scripts/update.py
-  python scripts/update.py --sample tests/sample_api_response.json   # offline test
-  python scripts/update.py --today 2026-10-06                        # override the date (testing)
+  python scripts/update.py                                  # no key: shelter websites
+  python scripts/update.py --sample tests/sample_day1.json  # offline test
+  python scripts/update.py --today 2026-10-06               # override the date (testing)
 
 Only standard-library Python is used, so nothing needs installing.
 Nothing in docs/data is touched unless every area downloads successfully,
@@ -21,6 +27,8 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+
+import shelter_sites
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config.json"
@@ -162,10 +170,15 @@ def load_json(path, default):
         return default
 
 
-def merge_with_history(area_id, animals, today, keep_days):
+def merge_with_history(area_id, animals, today, keep_days, source):
     """Add first_seen dates, and work out who left since the last run."""
     state_path = DATA_DIR / f"{area_id}.state.json"
     state = load_json(state_path, {"first_seen": {}, "last_listing": {}, "gone": []})
+    if state.get("source", source) != source:
+        # Switched data source (e.g. the RescueGroups key arrived): the animal
+        # IDs all change, so start the history over instead of calling every
+        # animal adopted.
+        state = {"first_seen": {}, "last_listing": {}, "gone": []}
     first_seen = state.get("first_seen", {})
     previous = state.get("last_listing", {})
 
@@ -191,6 +204,7 @@ def merge_with_history(area_id, animals, today, keep_days):
     first_seen = {k: v for k, v in first_seen.items() if k in keep_ids}
 
     new_state = {
+        "source": source,
         "first_seen": first_seen,
         "last_listing": {
             an["id"]: {k: an[k] for k in ("name", "species", "breed", "photo", "url")}
@@ -211,6 +225,44 @@ def merge_with_history(area_id, animals, today, keep_days):
 # Main
 # --------------------------------------------------------------------------
 
+def fetch_from_sites(area, sites, config, sample=None):
+    """Read every configured shelter website for this area.
+
+    If one site fails, keep that shelter's animals from the last good run so a
+    hiccup on one website doesn't mark all its animals as adopted.
+    """
+    wanted = {SPECIES_LABEL[s] for s in config.get("species", ["dogs", "cats"])}
+    previous = load_json(DATA_DIR / f"{area['id']}.json", {}).get("animals", [])
+    animals, failed = [], []
+    for site in sites:
+        if site.get("area", area["id"]) != area["id"]:
+            continue
+        try:
+            if sample is not None:
+                items = sample["sites"].get(site["id"])
+                if items == "error":
+                    raise RuntimeError("simulated failure")
+            else:
+                items = shelter_sites.fetch_site(site)
+            found = shelter_sites.parse_site(site, items or [], area)
+            if not found:
+                raise RuntimeError("no dogs or cats found")
+            animals += found
+            print(f"  {site['name']}: {len(found)} dogs and cats")
+        except Exception as e:  # keep going with the other shelters
+            failed.append(site["name"])
+            kept = [an for an in previous if an["org"]["id"] == site["id"]]
+            for an in kept:
+                for k in ("first_seen", "new"):
+                    an.pop(k, None)
+            animals += kept
+            print(f"  {site['name']}: FAILED ({e}); kept {len(kept)} from last run",
+                  file=sys.stderr)
+    if failed and len(failed) == len(sites):
+        sys.exit("Every shelter website failed. Leaving yesterday's listings up.")
+    return [an for an in animals if an["species"] in wanted]
+
+
 def write_json(path, obj):
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(obj, indent=1, ensure_ascii=False))
@@ -228,42 +280,48 @@ def main():
         dt.timezone(dt.timedelta(hours=-8))).date().isoformat()
 
     api_key = os.environ.get("RESCUEGROUPS_API_KEY", "").strip()
-    sample = None
-    if args.sample:
-        sample = json.loads(Path(args.sample).read_text())
-    elif not api_key:
-        sys.exit("Missing RESCUEGROUPS_API_KEY. Add it under Settings > Secrets and "
-                 "variables > Actions in your GitHub repository.")
+    sample = json.loads(Path(args.sample).read_text()) if args.sample else None
+    use_rescuegroups = bool(api_key) if sample is None else "sites" not in sample
+    sites = config.get("shelter_sites", [])
+    if not use_rescuegroups and not sites:
+        sys.exit("No RESCUEGROUPS_API_KEY and no shelter_sites in config.json, so "
+                 "there is nowhere to get animals from.")
 
     # Download everything first; only write files once all of it succeeded.
     results = []
     for area in config["areas"]:
-        animals = []
-        for species in config.get("species", ["dogs", "cats"]):
-            if sample is not None:
-                pages = sample.get(area["id"], {}).get(species, [])
-            else:
-                pages = list(fetch_species(area, species, api_key))
-            animals += parse_pages(pages, species, config.get("include_rescues", False))
+        if use_rescuegroups:
+            source = "RescueGroups.org"
+            animals = []
+            for species in config.get("species", ["dogs", "cats"]):
+                if sample is not None:
+                    pages = sample.get(area["id"], {}).get(species, [])
+                else:
+                    pages = list(fetch_species(area, species, api_key))
+                animals += parse_pages(pages, species, config.get("include_rescues", False))
+        else:
+            source = "shelter websites"
+            animals = fetch_from_sites(area, sites, config, sample)
 
         # The same animal can come back twice across pages; keep one.
         animals = list({an["id"]: an for an in animals}.values())
         if not animals:
             sys.exit(f"No animals came back for {area['name']}. Leaving yesterday's "
-                     "listings up. Check the postal code and radius in config.json.")
-        results.append((area, animals))
+                     "listings up. Check config.json.")
+        results.append((area, animals, source))
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     generated_at = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     area_index = []
-    for area, animals in results:
+    for area, animals, source in results:
         animals, gone, state, summary = merge_with_history(
-            area["id"], animals, today, config.get("keep_adopted_days", 14))
+            area["id"], animals, today, config.get("keep_adopted_days", 14), source)
         animals.sort(key=lambda an: (an["first_seen"], an["name"]), reverse=True)
         write_json(DATA_DIR / f"{area['id']}.json", {
             "area": area,
             "updated": today,
             "generated_at": generated_at,
+            "source": source,
             "summary": summary,
             "animals": animals,
             "recently_left": gone,
