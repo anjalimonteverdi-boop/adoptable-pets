@@ -1,6 +1,6 @@
 {
-  "name": "Homeward",
-  "short_name": "Homeward",
+  "name": "Fetch Feed",
+  "short_name": "Fetch Feed",
   "description": "Adoptable dogs and cats at Bay Area shelters, updated every morning.",
   "start_url": "./",
   "scope": "./",
