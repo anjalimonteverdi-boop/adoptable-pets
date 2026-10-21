@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Adoptable Dogs &amp; Cats</title>
+<title>Homeward</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#4a3324">
+<meta name="apple-mobile-web-app-title" content="Homeward">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="description" content="Adoptable dogs and cats from local shelters, updated every morning.">
 <style>
   :root {
@@ -31,6 +37,8 @@
 
   /* Header */
   .hero { background: var(--hero); color: var(--hero-text); padding: 36px 0 30px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { width: 52px; height: 52px; flex: none; }
   .hero h1 { margin: 0; font-size: 2.1rem; line-height: 1.15; letter-spacing: -0.015em; }
   .hero p { margin: 8px 0 0; color: var(--hero-muted); max-width: 640px; font-size: 1.05rem; }
   .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; padding: 0; list-style: none; }
@@ -99,6 +107,7 @@
   details.left summary { cursor: pointer; font-weight: 600; }
   .left-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; }
   .left-list li { color: var(--muted); font-size: .92rem; }
+  .phone-tip { display: block; margin-top: 8px; }
   footer { color: var(--muted); font-size: .86rem; padding: 32px 0 44px; }
   .toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--hero);
            color: var(--hero-text); padding: 9px 16px; border-radius: 10px; font-size: .92rem;
@@ -110,6 +119,7 @@
   @media (max-width: 560px) {
     .hero { padding: 26px 0 22px; }
     .hero h1 { font-size: 1.6rem; }
+    .brand img { width: 40px; height: 40px; }
     .row-label { min-width: 100%; }
     .tabs { width: 100%; }
     .tabs button { flex: 1; padding: 8px 6px; }
@@ -123,8 +133,8 @@
 <body>
 <header class="hero">
   <div class="wrap">
-    <h1 id="title">Adoptable Dogs &amp; Cats</h1>
-    <p>Dogs and cats waiting for homes at local shelters. Tap any pet to see it on the shelter's website and start an adoption.</p>
+    <div class="brand"><img src="logo-light.svg" alt=""><h1 id="title">Homeward</h1></div>
+    <p>Adoptable dogs and cats waiting for homes at local shelters. Tap any pet to see it on the shelter's website and start an adoption.</p>
     <ul class="stats" id="stats"><li>Loading today's animals…</li></ul>
   </div>
 </header>
@@ -170,6 +180,7 @@
     <span id="source">Listings refresh every morning.</span>
     Pets can be adopted at any time, so the shelter's own page has the final word.
     Photos belong to each shelter.
+    <span class="phone-tip">On your phone? Tap Share, then <strong>Add to Home Screen</strong>, to keep Homeward like an app.</span>
   </footer>
 </main>
 <div class="toast" id="toast">Link copied. Paste it anywhere to share.</div>
