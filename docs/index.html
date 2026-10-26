@@ -16,313 +16,160 @@
 <meta name="description" content="Adoptable dogs and cats from local shelters, updated every morning.">
 <style>
   :root {
-    --bg: #f7f2ea; --card: #fffdf9; --text: #2f2219; --muted: #75614f;
-    --line: #e4d7c6; --chip: #efe5d8; --chip-text: #4a3628;
-    --hero: #4a3324; --hero-text: #fbf6ef; --hero-muted: #d9c6b2;
-    --accent: #1f5f99; --accent-hover: #174a78; --accent-soft: #e3edf7; --accent-text: #ffffff;
-    --shadow: 0 1px 2px rgba(74, 51, 36, .08), 0 4px 14px rgba(74, 51, 36, .06);
+    --bg: #faf7f2; --text: #2f2219; --muted: #85715f; --line: #e8ded1; --field: #f1ebe2;
+    --brown: #4a3324; --accent: #1f5f99; --accent-text: #fff;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #17120e; --card: #221a14; --text: #f3ece3; --muted: #b9a590;
-      --line: #3a2d23; --chip: #2c2219; --chip-text: #e6d6c4;
-      --hero: #2a1e16; --hero-text: #f6efe6; --hero-muted: #c4ad97;
-      --accent: #7db3e8; --accent-hover: #9cc6f0; --accent-soft: #1c2a38; --accent-text: #0f1720;
-      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .25);
-    }
+    :root { --bg: #17120e; --text: #f3ece3; --muted: #b09c88; --line: #33281f; --field: #241c16;
+            --brown: #f3ece3; --accent: #7db3e8; --accent-text: #0f1720; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text);
-         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+         font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   button, input, select { font: inherit; color: inherit; }
   a { color: var(--accent); }
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
-
-  /* Header */
-  .hero { background: var(--hero); color: var(--hero-text); padding: 36px 0 30px; }
-  .brand { display: flex; align-items: center; gap: 14px; }
-  .brand img { width: 52px; height: 52px; flex: none; border-radius: 12px; }
-  .brand h1 { font-family: Nunito, system-ui, sans-serif; font-weight: 900; letter-spacing: 0; }
-  .brand h1 span { color: #7db3e8; }
-  .hero h1 { margin: 0; font-size: 2.1rem; line-height: 1.15; letter-spacing: -0.015em; }
-  .hero p { margin: 8px 0 0; color: var(--hero-muted); max-width: 640px; font-size: 1.05rem; }
-  .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; padding: 0; list-style: none; }
-  .stats li { background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .16);
-              padding: 5px 12px; border-radius: 999px; font-size: .92rem; }
-  .stats strong { color: var(--hero-text); }
-
-  /* Filters */
-  .filters { background: var(--card); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); }
-  .filters .wrap { padding-top: 16px; padding-bottom: 14px; display: grid; gap: 12px; }
-  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .row-label { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
-               color: var(--muted); min-width: 64px; }
-  .tabs { display: inline-flex; background: var(--chip); border-radius: 12px; padding: 4px; gap: 2px; }
-  .tabs button { border: 0; background: transparent; padding: 8px 16px; border-radius: 9px;
-                 cursor: pointer; font-weight: 600; color: var(--chip-text); }
-  .tabs button[aria-pressed=true] { background: var(--accent); color: var(--accent-text); }
-  .tabs .n { font-weight: 500; opacity: .75; margin-left: 4px; }
-  .search { position: relative; flex: 1 1 240px; min-width: 0; }
-  .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
-  .search input { width: 100%; padding: 10px 12px 10px 38px; border: 1px solid var(--line);
-                  border-radius: 10px; background: var(--bg); }
-  .search input:focus, select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { border: 1px solid var(--line); background: var(--card); color: var(--chip-text);
-          padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: .92rem; }
-  .chip:hover { border-color: var(--accent); }
-  .chip[aria-pressed=true] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
-  .chip .n { opacity: .7; margin-left: 2px; }
-  select { padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
-
-  /* Results bar */
-  .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 18px 0 14px; }
-  .count { font-weight: 600; font-size: 1.05rem; margin: 0; }
-  .linkbtn { border: 0; background: none; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; }
-  .bar .spacer { flex: 1; }
-  .sortlab { color: var(--muted); font-size: .92rem; display: flex; align-items: center; gap: 6px; }
-  .share { border: 1px solid var(--accent); background: var(--card); color: var(--accent);
-           padding: 7px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; }
-  .share:hover { background: var(--accent-soft); }
-
-  /* Cards */
-  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
-          display: flex; flex-direction: column; color: inherit; text-decoration: none; box-shadow: var(--shadow);
-          transition: transform .12s ease, border-color .12s ease; }
-  .card:hover { transform: translateY(-3px); border-color: var(--accent); }
-  .photo { position: relative; aspect-ratio: 1 / 1; background: var(--chip); }
-  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .photo .none { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); }
-  .badge { position: absolute; top: 10px; left: 10px; background: var(--accent); color: var(--accent-text);
-           font-size: .75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
-  .kind { position: absolute; bottom: 10px; left: 10px; background: rgba(47, 34, 25, .78); color: #fbf6ef;
-          font-size: .78rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
-  .body { padding: 12px 14px 0; display: flex; flex-direction: column; gap: 2px; flex: 1; }
-  .name { font-weight: 700; font-size: 1.15rem; }
-  .meta { color: var(--muted); font-size: .9rem; }
-  .cta { margin: 12px 14px 14px; padding-top: 10px; border-top: 1px solid var(--line);
-         color: var(--accent); font-weight: 600; font-size: .92rem; }
-  .card:hover .cta { color: var(--accent-hover); }
-
-  .empty { grid-column: 1 / -1; text-align: center; padding: 56px 16px; color: var(--muted); }
-  .empty button { margin-top: 12px; }
-  .note { margin: 0 0 14px; padding: 10px 14px; background: var(--accent-soft); border-radius: 10px; font-size: .92rem; }
-  details.left { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 18px; }
-  details.left summary { cursor: pointer; font-weight: 600; }
-  .left-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; }
-  .left-list li { color: var(--muted); font-size: .92rem; }
-  .phone-tip { display: block; margin-top: 8px; }
-  footer { color: var(--muted); font-size: .86rem; padding: 32px 0 44px; }
-  .toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--hero);
-           color: var(--hero-text); padding: 9px 16px; border-radius: 10px; font-size: .92rem;
-           opacity: 0; transition: opacity .2s; pointer-events: none; }
-  .toast.show { opacity: 1; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
   [hidden] { display: none !important; }
 
-  @media (min-width: 900px) { .filters { position: sticky; top: 0; z-index: 5; } }
+  header { padding: 22px 0 6px; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand img { width: 36px; height: 36px; border-radius: 9px; }
+  h1 { margin: 0; font: 900 1.5rem/1 Nunito, system-ui, sans-serif; color: var(--brown); }
+  h1 span { color: var(--accent); }
+  .sub { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
+
+  .controls { background: var(--bg); padding: 12px 0; }
+  @media (min-width: 700px) { .controls { position: sticky; top: 0; z-index: 5; } }
+  .controls .wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tabs { display: inline-flex; background: var(--field); border-radius: 999px; padding: 3px; }
+  .tabs button { border: 0; background: none; padding: 7px 18px; border-radius: 999px; cursor: pointer; font-weight: 600; }
+  .tabs button[aria-pressed=true] { background: var(--accent); color: var(--accent-text); }
+  input, select { border: 0; background: var(--field); border-radius: 999px; padding: 9px 16px; }
+  input { flex: 1 1 200px; min-width: 0; }
+  select { cursor: pointer; }
+  input:focus, select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  .count { color: var(--muted); font-size: .9rem; margin: 4px 0 14px; }
+  .count button, .empty button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; }
+  .grid { display: grid; gap: 22px 16px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .card { color: inherit; text-decoration: none; min-width: 0; }
+  .photo { position: relative; aspect-ratio: 1; border-radius: 14px; overflow: hidden; background: var(--field); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .2s; }
+  .card:hover img { transform: scale(1.03); }
+  .new { position: absolute; top: 8px; left: 8px; background: var(--accent); color: var(--accent-text);
+         font-size: .72rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+  .name { font-weight: 700; margin-top: 8px; }
+  .meta { color: var(--muted); font-size: .88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .empty { grid-column: 1 / -1; text-align: center; padding: 48px 0; color: var(--muted); }
+
+  footer { color: var(--muted); font-size: .85rem; padding: 40px 0; }
+  footer button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; }
+
   @media (max-width: 560px) {
-    .hero { padding: 26px 0 22px; }
-    .hero h1 { font-size: 1.6rem; }
-    .brand img { width: 40px; height: 40px; }
-    .row-label { min-width: 100%; }
-    .tabs { width: 100%; }
-    .tabs button { flex: 1; padding: 8px 6px; }
-    .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .name { font-size: 1rem; }
-    .body { padding: 10px 10px 0; }
-    .cta { margin: 10px; font-size: .85rem; }
+    .tabs { flex: 1; } .tabs button { flex: 1; padding: 7px 0; }
+    input { flex-basis: 100%; order: 1; }
+    select { flex: 1 1 0; min-width: 0; order: 2; }
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 10px; }
   }
 </style>
 </head>
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="brand"><img src="logo.svg" alt=""><h1 id="title">Fetch <span>Feed</span></h1></div>
-    <p>Adoptable dogs and cats waiting for homes at local shelters. Tap any pet to see it on the shelter's website and start an adoption.</p>
-    <ul class="stats" id="stats"><li>Loading today's animals…</li></ul>
-  </div>
+<header class="wrap">
+  <div class="brand"><img src="logo.svg" alt=""><h1 id="title">Fetch <span>Feed</span></h1></div>
+  <p class="sub" id="sub">Adoptable dogs and cats at local shelters.</p>
 </header>
 
-<section class="filters" aria-label="Filters">
+<nav class="controls" aria-label="Filters">
   <div class="wrap">
-    <div class="row">
-      <select id="area" aria-label="Area" hidden></select>
-      <div class="tabs" role="group" aria-label="Dogs or cats" id="species"></div>
-      <label class="search">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input type="search" id="q" placeholder="Search by name or breed" aria-label="Search by name or breed">
-      </label>
+    <div class="tabs" role="group" aria-label="Dogs or cats" id="species">
+      <button data-v="">All</button><button data-v="Dog">Dogs</button><button data-v="Cat">Cats</button>
     </div>
-    <div class="row" id="row-org"><span class="row-label">Shelter</span><div class="chips" id="org"></div></div>
-    <div class="row" id="row-age"><span class="row-label">Age</span><div class="chips" id="age"></div></div>
-    <div class="row" id="row-sex"><span class="row-label">Sex</span><div class="chips" id="sex"></div></div>
-    <div class="row" id="row-size"><span class="row-label">Size</span><div class="chips" id="size"></div></div>
+    <input type="search" id="q" placeholder="Search by name" aria-label="Search by name">
+    <select id="area" aria-label="Area" hidden></select>
+    <select id="org" aria-label="Shelter"></select>
+    <select id="age" aria-label="Age"></select>
+    <select id="sex" aria-label="Sex"></select>
+    <select id="size" aria-label="Size"></select>
   </div>
-</section>
+</nav>
 
 <main class="wrap">
-  <div class="bar">
-    <p class="count" id="count" aria-live="polite"></p>
-    <button class="linkbtn" id="clear" hidden>Clear filters</button>
-    <span class="spacer"></span>
-    <label class="sortlab">Sort
-      <select id="sort">
-        <option value="new">Newest first</option>
-        <option value="near">Closest first</option>
-        <option value="name">Name A–Z</option>
-      </select>
-    </label>
-    <button class="share" id="share">Share this list</button>
-  </div>
-  <p class="note" id="newnote" hidden></p>
+  <p class="count"><span id="count" aria-live="polite"></span> <button id="clear" hidden>Clear</button></p>
   <div class="grid" id="grid"></div>
-  <details class="left" id="left" hidden>
-    <summary id="left-title">Recently adopted</summary>
-    <ul class="left-list" id="left-list"></ul>
-  </details>
   <footer>
-    <span id="source">Listings refresh every morning.</span>
-    Pets can be adopted at any time, so the shelter's own page has the final word.
-    Photos belong to each shelter.
-    <span class="phone-tip">On your phone? Tap Share, then <strong>Add to Home Screen</strong>, to keep Fetch Feed like an app.</span>
+    <span id="source">Updated every morning.</span> Tap a pet to adopt through its shelter.
+    <button id="share">Share this list</button>
   </footer>
 </main>
-<div class="toast" id="toast">Link copied. Paste it anywhere to share.</div>
 
 <script>
 const $ = (id) => document.getElementById(id);
 const AGE_ORDER = ["Baby", "Young", "Adult", "Senior"];
 const SIZE_ORDER = ["Small", "Medium", "Large", "X-Large"];
-const CHIP_FILTERS = ["org", "age", "sex", "size"];
+const FILTERS = ["org", "age", "sex", "size"];
+const ANY = { org: "All shelters", age: "Any age", sex: "Any sex", size: "Any size" };
 let data = null, areas = [];
-const state = { area: "", species: "", age: "", sex: "", size: "", org: "", q: "", sort: "new", newonly: false };
+const state = { area: "", species: "", org: "", age: "", sex: "", size: "", q: "" };
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
-  for (const k of Object.keys(state)) {
-    if (p.has(k)) state[k] = k === "newonly" ? p.get(k) === "1" : p.get(k);
-  }
+  for (const k of Object.keys(state)) if (p.has(k)) state[k] = p.get(k);
 }
 function writeHash() {
   const p = new URLSearchParams();
-  for (const [k, v] of Object.entries(state)) {
-    if (k === "sort" && v === "new") continue;
-    if (k === "area" && areas.length < 2) continue;
-    if (v === true) p.set(k, "1"); else if (v) p.set(k, v);
-  }
+  for (const [k, v] of Object.entries(state)) if (v && !(k === "area" && areas.length < 2)) p.set(k, v);
   const h = p.toString();
   history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
 }
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const valOf = (a, k) => k === "org" ? a.org.name : a[k];
+const kindOf = a => a.age === "Baby" ? (a.species === "Dog" ? "Puppy" : "Kitten") : a.species;
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function kindOf(a) {
-  if (a.age === "Baby") return a.species === "Dog" ? "Puppy" : "Kitten";
-  return a.species;
-}
-function ageLabel(v) { return v === "Baby" ? "Puppies & kittens" : v; }
-function plural(n, one, many) { return `${n.toLocaleString()} ${n === 1 ? one : many}`; }
-
-function matches(a, skip) {
+function matches(a) {
   const q = state.q.trim().toLowerCase();
-  return (skip === "species" || !state.species || a.species === state.species) &&
-    CHIP_FILTERS.every(k => k === skip || !state[k] || (k === "org" ? a.org.name : a[k]) === state[k]) &&
-    (!state.newonly || a.new) &&
+  return (!state.species || a.species === state.species) &&
+    FILTERS.every(k => !state[k] || valOf(a, k) === state[k]) &&
     (!q || (a.name + " " + a.breed).toLowerCase().includes(q));
 }
 
-function renderControls() {
-  // Species tabs, with counts that respect the other filters.
-  const pool = data.animals.filter(a => matches(a, "species"));
-  const tabs = [["", "All pets", pool.length],
-                ["Dog", "Dogs", pool.filter(a => a.species === "Dog").length],
-                ["Cat", "Cats", pool.filter(a => a.species === "Cat").length]];
-  $("species").innerHTML = tabs.map(([v, label, n]) =>
-    `<button data-v="${v}" aria-pressed="${state.species === v}">${label}<span class="n">${n}</span></button>`).join("");
-
-  for (const k of CHIP_FILTERS) {
-    const val = a => k === "org" ? a.org.name : a[k];
-    const values = [...new Set(data.animals.map(val).filter(Boolean))];
+function buildSelects() {
+  for (const k of FILTERS) {
+    const values = [...new Set(data.animals.map(a => valOf(a, k)).filter(Boolean))];
     const order = k === "age" ? AGE_ORDER : k === "size" ? SIZE_ORDER : null;
     values.sort((x, y) => order ? order.indexOf(x) - order.indexOf(y) : x.localeCompare(y));
-    // Hide a filter the data has nothing for (shelter websites don't give sex or size).
-    $("row-" + k).hidden = values.length < (k === "age" ? 1 : 2);
-    const counts = data.animals.filter(a => matches(a, k));
-    const anyLabel = { org: "All shelters", age: "Any age", sex: "Any", size: "Any size" }[k];
-    $(k).innerHTML = [`<button class="chip" data-v="" aria-pressed="${!state[k]}">${anyLabel}</button>`]
-      .concat(values.map(v => `<button class="chip" data-v="${esc(v)}" aria-pressed="${state[k] === v}">${
-        esc(k === "age" ? ageLabel(v) : v)}<span class="n"> ${counts.filter(a => val(a) === v).length}</span></button>`))
-      .join("");
+    if (!values.includes(state[k])) state[k] = "";
+    // Hide a filter with nothing to choose (shelter websites don't give sex or size).
+    $(k).hidden = values.length < (k === "age" ? 1 : 2);
+    $(k).replaceChildren(new Option(ANY[k], ""),
+      ...values.map(v => new Option(k === "age" && v === "Baby" ? "Puppies & kittens" : v, v)));
+    $(k).value = state[k];
   }
 }
 
 function render() {
-  renderControls();
-  let list = data.animals.filter(a => matches(a));
-  if (state.sort === "near") list.sort((a, b) => (a.distance ?? 1e9) - (b.distance ?? 1e9));
-  else if (state.sort === "name") list.sort((a, b) => a.name.localeCompare(b.name));
-  else list.sort((a, b) => b.first_seen.localeCompare(a.first_seen) || a.name.localeCompare(b.name));
-
-  const filtered = state.species || state.q || state.newonly || CHIP_FILTERS.some(k => state[k]);
-  const noun = state.species === "Dog" ? ["dog", "dogs"] : state.species === "Cat" ? ["cat", "cats"] : ["pet", "pets"];
-  $("count").textContent = `Showing ${plural(list.length, ...noun)}`;
+  for (const b of $("species").children) b.setAttribute("aria-pressed", b.dataset.v === state.species);
+  const list = data.animals.filter(matches)
+    .sort((a, b) => b.first_seen.localeCompare(a.first_seen) || a.name.localeCompare(b.name));
+  const filtered = Object.entries(state).some(([k, v]) => k !== "area" && v);
+  $("count").textContent = `${list.length.toLocaleString()} ${list.length === 1 ? "pet" : "pets"}`;
   $("clear").hidden = !filtered;
-
   $("grid").innerHTML = list.length ? list.map(a => `
-    <a class="card" href="${esc(a.url)}" target="_blank" rel="noopener" aria-label="${esc(a.name)}, ${esc(kindOf(a))} at ${esc(a.org.name)}. Opens the shelter's page.">
+    <a class="card" href="${esc(a.url)}" target="_blank" rel="noopener">
       <div class="photo">
-        ${a.photo ? `<img src="${esc(a.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
-                  : `<div class="none">Photo coming soon</div>`}
-        ${a.new ? `<span class="badge">New today</span>` : ""}
-        <span class="kind">${esc(kindOf(a))}</span>
+        ${a.photo ? `<img src="${esc(a.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}
+        ${a.new ? `<span class="new">New</span>` : ""}
       </div>
-      <div class="body">
-        <div class="name">${esc(a.name)}</div>
-        ${[a.sex, a.size, a.breed].some(Boolean) ? `<div class="meta">${esc([a.sex, a.size, a.breed].filter(Boolean).join(" · "))}</div>` : ""}
-        <div class="meta">${esc(a.org.name)}${a.org.city ? `, ${esc(a.org.city)}` : ""}${
-          a.distance != null ? ` · ${Math.round(a.distance)} mi` : ""}</div>
-      </div>
-      <div class="cta">Meet ${esc(a.name)} &rarr;</div>
-    </a>`).join("") : `<div class="empty"><p>No pets match these filters right now.</p>
-      <button class="share" onclick="clearFilters()">Show all pets</button></div>`;
+      <div class="name">${esc(a.name)}</div>
+      <div class="meta" title="${esc(a.org.name)}">${esc(kindOf(a))} · ${esc(a.org.city || a.org.name)}</div>
+    </a>`).join("") : `<p class="empty">No pets match. <button onclick="clearFilters()">Show all</button></p>`;
   writeHash();
 }
 
 function clearFilters() {
-  Object.assign(state, { species: "", age: "", sex: "", size: "", org: "", q: "", newonly: false });
+  Object.assign(state, { species: "", org: "", age: "", sex: "", size: "", q: "" });
   $("q").value = "";
+  for (const k of FILTERS) $(k).value = "";
   render();
-}
-
-function setupHeader() {
-  const s = data.summary || {};
-  const updated = new Date(data.updated + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
-  const nOrgs = new Set(data.animals.map(a => a.org.name)).size;
-  const stats = [`<strong>${data.animals.length.toLocaleString()}</strong> pets`,
-                 `<strong>${nOrgs}</strong> ${nOrgs === 1 ? "shelter" : "shelters"}`,
-                 esc(data.area.name), `Updated ${esc(updated)}`];
-  $("stats").innerHTML = stats.map(x => `<li>${x}</li>`).join("");
-  $("source").innerHTML = data.source === "shelter websites"
-    ? "Listings come from each shelter's own website and refresh every morning."
-    : 'Listings come from <a href="https://rescuegroups.org">RescueGroups.org</a> and refresh every morning.';
-
-  const newCount = data.animals.filter(a => a.new).length;
-  $("newnote").hidden = !newCount;
-  if (newCount) {
-    $("newnote").innerHTML = `${plural(newCount, "pet", "pets")} arrived since yesterday. <button class="linkbtn" id="shownew"></button>`;
-    const btn = $("shownew");
-    const sync = () => btn.textContent = state.newonly ? "Show everyone" : "Show only the new arrivals";
-    sync();
-    btn.onclick = () => { state.newonly = !state.newonly; sync(); render(); };
-  }
-
-  const left = data.recently_left || [];
-  $("left").hidden = !left.length;
-  $("left-title").textContent = `Recently adopted (${left.length})`;
-  $("left-list").innerHTML = left.map(g =>
-    `<li>${esc(g.name)} · ${esc(g.species)} · ${esc(g.org)} · left the listings ${esc(g.left_on)}</li>`).join("");
 }
 
 async function loadArea(id) {
@@ -330,12 +177,13 @@ async function loadArea(id) {
   if (!res.ok) throw new Error("missing data");
   data = await res.json();
   state.area = id;
-  for (const k of CHIP_FILTERS) {
-    const val = a => k === "org" ? a.org.name : a[k];
-    if (state[k] && !data.animals.some(a => val(a) === state[k])) state[k] = "";
-  }
-  $("q").value = state.q; $("sort").value = state.sort;
-  setupHeader();
+  const updated = new Date(data.updated + "T12:00:00").toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+  $("sub").textContent = `Dogs and cats ready to adopt in the ${data.area.name.replace(/^San Francisco /, "")}. Updated ${updated}.`;
+  $("source").textContent = data.source === "shelter websites"
+    ? "Listings come from each shelter's website and refresh every morning."
+    : "Listings come from RescueGroups.org and refresh every morning.";
+  $("q").value = state.q;
+  buildSelects();
   render();
 }
 
@@ -344,7 +192,6 @@ async function init() {
   try {
     const idx = await (await fetch("data/areas.json", { cache: "no-cache" })).json();
     areas = idx.areas;
-    if (idx.site_title && idx.site_title !== $("title").textContent) { $("title").textContent = idx.site_title; document.title = idx.site_title; }
     if (areas.length > 1) {
       $("area").hidden = false;
       for (const a of areas) $("area").append(new Option(a.name, a.id));
@@ -353,7 +200,7 @@ async function init() {
     $("area").value = pick.id;
     await loadArea(pick.id);
   } catch (e) {
-    $("stats").innerHTML = "<li>No listings yet. They appear after the first daily update runs.</li>";
+    $("sub").textContent = "No listings yet. They appear after the first daily update runs.";
   }
 }
 
@@ -361,17 +208,13 @@ $("species").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   state.species = b.dataset.v; render();
 });
-for (const k of CHIP_FILTERS) $(k).addEventListener("click", e => {
-  const b = e.target.closest("button"); if (!b) return;
-  state[k] = b.dataset.v; render();
-});
+for (const k of FILTERS) $(k).addEventListener("change", e => { state[k] = e.target.value; render(); });
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
-$("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
 $("clear").addEventListener("click", clearFilters);
 $("area").addEventListener("change", e => { state.org = ""; loadArea(e.target.value); });
 $("share").addEventListener("click", async () => {
-  try { await navigator.clipboard.writeText(location.href); } catch (e) { prompt("Copy this link:", location.href); return; }
-  $("toast").classList.add("show"); setTimeout(() => $("toast").classList.remove("show"), 2000);
+  try { await navigator.clipboard.writeText(location.href); $("share").textContent = "Link copied"; }
+  catch (e) { prompt("Copy this link:", location.href); }
 });
 init();
 </script>
