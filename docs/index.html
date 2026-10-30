@@ -31,8 +31,8 @@
   header { padding: 22px 0 6px; }
   body { border-top: 5px solid #c9955f; }
   .brand { display: flex; align-items: center; gap: 10px; }
-  .brand img { width: 38px; height: 38px; }
-  h1 { margin: 0; font: 700 1.6rem/1 Quicksand, system-ui, sans-serif; color: #a0703f; }
+  .brand img { width: 50px; height: 50px; }
+  h1 { margin: 0; font: 700 2rem/1 Quicksand, system-ui, sans-serif; color: #a0703f; }
   h1 span { color: var(--accent); }
   .sub { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
 
@@ -44,16 +44,18 @@
   .tabs button[aria-pressed=true] { background: var(--accent); color: var(--accent-text); }
   input, select { border: 1.5px solid var(--tan-soft); color: var(--brown); background: var(--field); border-radius: 999px; padding: 9px 16px; }
   input { flex: 1 1 200px; min-width: 0; }
-  select { cursor: pointer; }
+  select { cursor: pointer; flex: 0 0 190px; min-width: 0; padding-right: 10px; }
   input::placeholder { color: var(--tan); opacity: .8; }
   input:focus, select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 
-  .count { color: var(--tan); font-weight: 600; font-size: .9rem; margin: 4px 0 14px; }
+  .count { display: flex; align-items: center; gap: 10px; color: var(--tan); font-weight: 600; font-size: .9rem; margin: 4px 0 14px; }
+  .count .share { margin-left: auto; border: 1.5px solid var(--accent); border-radius: 999px; padding: 5px 14px; font-weight: 700; }
   .count button, .empty button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; }
   .grid { display: grid; gap: 22px 16px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
   .card { color: inherit; text-decoration: none; min-width: 0; }
   .photo { position: relative; aspect-ratio: 1; border-radius: 14px; overflow: hidden; background: var(--field); }
-  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .2s; }
+  .photo::before { content: ""; position: absolute; inset: 30%; background: url(logo-mark.svg) center / contain no-repeat; opacity: .35; }
+  .photo img { position: relative; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .2s; }
   .card:hover img { transform: scale(1.03); }
   .card:hover .photo { box-shadow: 0 0 0 3px var(--tan); }
   .new { position: absolute; top: 8px; left: 8px; background: var(--accent); color: var(--accent-text);
@@ -70,6 +72,8 @@
     .tabs { flex: 1; } .tabs button { flex: 1; padding: 7px 0; }
     input { flex-basis: 100%; order: 1; }
     select { flex: 1 1 0; min-width: 0; order: 2; }
+    #org { flex-basis: 100%; }
+    .brand img { width: 42px; height: 42px; } h1 { font-size: 1.7rem; }
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 10px; }
   }
 </style>
@@ -91,15 +95,15 @@
     <select id="age" aria-label="Age"></select>
     <select id="sex" aria-label="Sex"></select>
     <select id="size" aria-label="Size"></select>
+    <select id="sort" aria-label="Sort"><option value="">Newest first</option><option value="near">Closest to me</option></select>
   </div>
 </nav>
 
 <main class="wrap">
-  <p class="count"><span id="count" aria-live="polite"></span> <button id="clear" hidden>Clear</button></p>
+  <div class="count"><span id="count" aria-live="polite"></span> <button id="clear" hidden>Clear</button><button class="share" id="share">Share</button></div>
   <div class="grid" id="grid"></div>
   <footer>
     <span id="source">Updated every morning.</span> Tap a pet to adopt through its shelter.
-    <button id="share">Share this list</button>
   </footer>
 </main>
 
@@ -110,7 +114,8 @@ const SIZE_ORDER = ["Small", "Medium", "Large", "X-Large"];
 const FILTERS = ["org", "age", "sex", "size"];
 const ANY = { org: "All shelters", age: "Any age", sex: "Any sex", size: "Any size" };
 let data = null, areas = [];
-const state = { area: "", species: "", org: "", age: "", sex: "", size: "", q: "" };
+const state = { area: "", species: "", org: "", age: "", sex: "", size: "", q: "", sort: "" };
+let here = null;  // the visitor's location, once they allow it
 
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -151,19 +156,29 @@ function render() {
   for (const b of $("species").children) b.setAttribute("aria-pressed", b.dataset.v === state.species);
   const list = data.animals.filter(matches)
     .sort((a, b) => b.first_seen.localeCompare(a.first_seen) || a.name.localeCompare(b.name));
-  const filtered = Object.entries(state).some(([k, v]) => k !== "area" && v);
+  if (state.sort === "near") list.sort((a, b) => (milesTo(a) ?? 1e9) - (milesTo(b) ?? 1e9));
+  $("sort").value = state.sort;
+  const filtered = Object.entries(state).some(([k, v]) => !["area", "sort"].includes(k) && v);
   $("count").textContent = `${list.length.toLocaleString()} ${list.length === 1 ? "pet" : "pets"}`;
   $("clear").hidden = !filtered;
   $("grid").innerHTML = list.length ? list.map(a => `
     <a class="card" href="${esc(a.url)}" target="_blank" rel="noopener">
       <div class="photo">
-        ${a.photo ? `<img src="${esc(a.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}
+        ${a.photo ? `<img src="${esc(a.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         ${a.new ? `<span class="new">New</span>` : ""}
       </div>
       <div class="name">${esc(a.name)}</div>
-      <div class="meta" title="${esc(a.org.name)}"><span class="kind">${esc(kindOf(a))}</span> · ${esc(a.org.city || a.org.name)}</div>
+      <div class="meta" title="${esc(a.org.name)}"><span class="kind">${esc(kindOf(a))}</span> · ${esc(a.org.city || a.org.name)}${state.sort === "near" && milesTo(a) != null ? ` · ${Math.round(milesTo(a))} mi` : ""}</div>
     </a>`).join("") : `<p class="empty">No pets match. <button onclick="clearFilters()">Show all</button></p>`;
   writeHash();
+}
+
+// Miles from the visitor if they shared their location, otherwise from the area's center.
+function milesTo(a) {
+  if (!here || a.org.lat == null) return a.distance;
+  const r = Math.PI / 180, dLat = (a.org.lat - here.lat) * r, dLon = (a.org.lon - here.lon) * r;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(here.lat * r) * Math.cos(a.org.lat * r) * Math.sin(dLon / 2) ** 2;
+  return 7917.6 * Math.asin(Math.sqrt(h));
 }
 
 function clearFilters() {
@@ -210,12 +225,21 @@ $("species").addEventListener("click", e => {
   state.species = b.dataset.v; render();
 });
 for (const k of FILTERS) $(k).addEventListener("change", e => { state[k] = e.target.value; render(); });
+$("sort").addEventListener("change", e => {
+  state.sort = e.target.value; render();
+  if (state.sort === "near" && !here && navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(p => {
+      here = { lat: p.coords.latitude, lon: p.coords.longitude }; render();
+    }, () => {}, { maximumAge: 600000, timeout: 15000 });
+  }
+});
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("clear").addEventListener("click", clearFilters);
 $("area").addEventListener("change", e => { state.org = ""; loadArea(e.target.value); });
 $("share").addEventListener("click", async () => {
   try { await navigator.clipboard.writeText(location.href); $("share").textContent = "Link copied"; }
   catch (e) { prompt("Copy this link:", location.href); }
+  setTimeout(() => $("share").textContent = "Share", 2000);
 });
 init();
 </script>

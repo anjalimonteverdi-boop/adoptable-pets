@@ -143,6 +143,8 @@ def parse_site(site, items, area):
                 "city": site.get("city", ""),
                 "state": site.get("state", "CA"),
                 "url": site["feed"].split("/wp-json/")[0],
+                "lat": site.get("lat"),
+                "lon": site.get("lon"),
             },
         })
     return animals
