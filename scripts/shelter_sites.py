@@ -111,11 +111,12 @@ PAGE_IMAGE = re.compile(r"""https://[^"'\s>]+/wp-content/uploads/[^"'\s>]+?\.(?:
 NOT_A_PET = re.compile(r"logo|icon|tiktok|facebook|instagram|twitter|youtube|badge|sprite|round|banner", re.I)
 
 
-def photo_from_page(url, site, broken):
-    """Find a working photo of the animal on its own page.
+def page_photos(url, site):
+    """Photos shown on the animal's own page, in page order.
 
-    Only photos uploaded in the same month as the broken one count, so site
-    decorations (logos, social icons) are never picked.
+    Social-preview tags are skipped (some shelters leave them pointing at photos
+    they've since replaced), and so are logos and icons. If the site config has
+    "photo_name_pattern", only file names matching it count.
     """
     time.sleep(site.get("delay_seconds", 2))
     try:
@@ -123,47 +124,55 @@ def photo_from_page(url, site, broken):
         with urllib.request.urlopen(req, timeout=60) as resp:
             page = resp.read().decode("utf-8", "replace")
     except Exception:
-        return None
-    month = re.search(r"/uploads/(\d{4}/\d{2})/", broken or "")
-    base = broken.split("?")[0].rsplit("/", 1)[-1] if broken else None
-    tried = set()
-    for m in PAGE_IMAGE.finditer(html.unescape(page)):
+        return []
+    page = re.sub(r"<meta[^>]*>", "", html.unescape(page))
+    pattern = site.get("photo_name_pattern")
+    found, names = [], set()
+    for m in PAGE_IMAGE.finditer(page):
         cand = m.group(0)
         name = cand.split("?")[0].rsplit("/", 1)[-1]
-        if (name == base or name in tried or NOT_A_PET.search(name)
-                or (month and f"/uploads/{month.group(1)}/" not in cand)):
+        if name in names or NOT_A_PET.search(name) or (pattern and not re.fullmatch(pattern, name)):
             continue
-        tried.add(name)
-        if url_works(cand, site):
-            return cand
-        if len(tried) >= 3:
-            break
-    return None
+        names.add(name)
+        found.append(cand)
+    return found
 
 
-PHOTO_CHECK = 2  # bump to re-check every photo on the next run
+PHOTO_CHECK = 3  # bump to re-check every photo on the next run
 
 
 def check_photos(site, animals, previous):
-    """Make sure each new photo loads; if not, take one from the animal's page.
+    """Make sure each animal's photo is one that still loads.
 
-    Photos already checked on an earlier run are trusted, so this only costs a
-    request or two for each newly listed animal.
+    For shelters marked "photo_from_page", the first photo on the animal's own
+    page is used every day (their listing photos go stale when they swap
+    pictures). Otherwise each new photo is checked once, and replaced from the
+    animal's page only if it doesn't load.
     """
     seen = {an["id"]: an for an in previous if an.get("photo_checked") == PHOTO_CHECK}
     fixed = 0
     for an in animals:
-        before = seen.get(an["id"])
-        if before and before.get("photo_source") == an["photo"]:
-            an["photo"] = before["photo"]
-            an["photo_source"], an["photo_checked"] = before["photo_source"], PHOTO_CHECK
-            continue
         source = an["photo"]
+        if site.get("photo_from_page") and an.get("url"):
+            photos = page_photos(an["url"], site)
+            if photos:
+                if photos[0] != source:
+                    fixed += 1
+                an["photo"] = photos[0]
+            an["photo_source"], an["photo_checked"] = source, PHOTO_CHECK
+            continue
+        before = seen.get(an["id"])
+        if before and before.get("photo_source") == source:
+            an["photo"] = before["photo"]
+            an["photo_source"], an["photo_checked"] = source, PHOTO_CHECK
+            continue
         if not source or not url_works(source, site):
-            better = an["url"] and photo_from_page(an["url"], site, source)
-            if better:
-                an["photo"] = better
-                fixed += 1
+            base = source.split("?")[0].rsplit("/", 1)[-1] if source else None
+            for cand in (page_photos(an["url"], site) if an.get("url") else [])[:3]:
+                if cand.split("?")[0].rsplit("/", 1)[-1] != base and url_works(cand, site):
+                    an["photo"] = cand
+                    fixed += 1
+                    break
         an["photo_source"], an["photo_checked"] = source, PHOTO_CHECK
     return fixed
 

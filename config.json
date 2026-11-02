@@ -59,7 +59,9 @@
         "type-puppy",
         "type-kitten"
       ],
-      "delay_seconds": 10
+      "delay_seconds": 10,
+      "photo_from_page": true,
+      "photo_name_pattern": "\\d+(-\\d+x\\d+)?\\.jpe?g"
     },
     {
       "id": "pets-in-need",
