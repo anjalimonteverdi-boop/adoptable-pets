@@ -631,7 +631,7 @@
    "name": "Heidi",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1510778453.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1510778453.jpg?fit=1024%2C865&ssl=1",
    "url": "https://www.hssv.org/animals/495003/heidi",
    "org": "Humane Society Silicon Valley"
   },
@@ -639,7 +639,7 @@
    "name": "Midnight",
    "species": "Dog",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1727983115.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1727983115.jpg?fit=1024%2C1184&ssl=1",
    "url": "https://www.hssv.org/animals/494001/midnight",
    "org": "Humane Society Silicon Valley"
   },
@@ -647,16 +647,8 @@
    "name": "Wonky",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/676081010.jpg",
+   "photo": null,
    "url": "https://www.hssv.org/animals/493974/wonky",
-   "org": "Humane Society Silicon Valley"
-  },
-  "hssv-493970": {
-   "name": "Winky",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/618363059.jpg?fit=1024%2C1173&ssl=1",
-   "url": "https://www.hssv.org/animals/493970/winky",
    "org": "Humane Society Silicon Valley"
   },
   "hssv-493700": {
@@ -679,7 +671,7 @@
    "name": "Tapioca",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1498985638.jpg?fit=1024%2C1144&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1351554375.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/493578/tapioca",
    "org": "Humane Society Silicon Valley"
   },
@@ -687,7 +679,7 @@
    "name": "August",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/96054014.jpg?fit=1024%2C1077&ssl=1",
    "url": "https://www.hssv.org/animals/493574/august",
    "org": "Humane Society Silicon Valley"
   },
@@ -695,7 +687,7 @@
    "name": "Ash",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1558163271.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/2088849706.jpg?fit=1024%2C1421&ssl=1",
    "url": "https://www.hssv.org/animals/493572/ash",
    "org": "Humane Society Silicon Valley"
   },
@@ -703,7 +695,7 @@
    "name": "Allie",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1910084315.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1985947561.jpg?fit=1024%2C1280&ssl=1",
    "url": "https://www.hssv.org/animals/493570/allie",
    "org": "Humane Society Silicon Valley"
   },
@@ -711,7 +703,7 @@
    "name": "Abby",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/2025136641.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/371096493.jpg?fit=1024%2C1340&ssl=1",
    "url": "https://www.hssv.org/animals/493568/abby",
    "org": "Humane Society Silicon Valley"
   },
@@ -719,7 +711,7 @@
    "name": "Pepper",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/424423121.jpg?fit=1024%2C1213&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1024862452.jpg?fit=1024%2C1438&ssl=1",
    "url": "https://www.hssv.org/animals/492309/pepper",
    "org": "Humane Society Silicon Valley"
   },
@@ -727,7 +719,7 @@
    "name": "Wishbone",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/869614799.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026652621.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491968/wishbone",
    "org": "Humane Society Silicon Valley"
   },
@@ -735,7 +727,7 @@
    "name": "Emmie",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/710863505.jpg?fit=1024%2C1546&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1827047362.jpg?fit=1024%2C1546&ssl=1",
    "url": "https://www.hssv.org/animals/491872/emmie",
    "org": "Humane Society Silicon Valley"
   },
@@ -743,7 +735,7 @@
    "name": "Pandan",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/784551393.jpg?fit=1024%2C1280&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1403919827.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491852/pandan",
    "org": "Humane Society Silicon Valley"
   },
@@ -751,7 +743,7 @@
    "name": "Pugsley",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1009276555.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1274865821.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491780/pugsley",
    "org": "Humane Society Silicon Valley"
   },
@@ -759,7 +751,7 @@
    "name": "Vernon",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1887868062.jpg?fit=1024%2C1108&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/357597315.jpg?fit=1024%2C1194&ssl=1",
    "url": "https://www.hssv.org/animals/491749/vernon",
    "org": "Humane Society Silicon Valley"
   },
@@ -767,7 +759,7 @@
    "name": "Carl",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/109304101.jpg?fit=1024%2C1122&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/71900609.jpg?fit=1024%2C1219&ssl=1",
    "url": "https://www.hssv.org/animals/491746/carl",
    "org": "Humane Society Silicon Valley"
   },
@@ -775,7 +767,7 @@
    "name": "Raven",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/302123716.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/302123716.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491721/raven",
    "org": "Humane Society Silicon Valley"
   },
@@ -783,7 +775,7 @@
    "name": "Cobweb",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1340980914.jpg?fit=1024%2C925&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1206050452.jpg?fit=1024%2C925&ssl=1",
    "url": "https://www.hssv.org/animals/491716/cobweb",
    "org": "Humane Society Silicon Valley"
   },
@@ -791,7 +783,7 @@
    "name": "Jiji",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/262796679.jpg?fit=1024%2C768&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/108317614.jpg?fit=1024%2C768&ssl=1",
    "url": "https://www.hssv.org/animals/491360/jiji",
    "org": "Humane Society Silicon Valley"
   },
@@ -799,7 +791,7 @@
    "name": "Helena",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/165949263.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1819354595.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491358/helena",
    "org": "Humane Society Silicon Valley"
   },
@@ -807,7 +799,7 @@
    "name": "Flannel",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/642397440.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1155638863.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491272/flannel",
    "org": "Humane Society Silicon Valley"
   },
@@ -815,7 +807,7 @@
    "name": "Mocha Tesora",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/323190678.jpg?fit=1024%2C1419&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1826800378.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491091/mocha-tesora",
    "org": "Humane Society Silicon Valley"
   },
@@ -823,7 +815,7 @@
    "name": "Ella",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/913936675.jpg?fit=1024%2C1087&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/2140625755.jpg?fit=1024%2C1087&ssl=1",
    "url": "https://www.hssv.org/animals/491072/ella",
    "org": "Humane Society Silicon Valley"
   },
@@ -831,7 +823,7 @@
    "name": "Murmur",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/993012149.jpg?fit=1024%2C1269&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1417500794.jpg?fit=1024%2C1269&ssl=1",
    "url": "https://www.hssv.org/animals/490800/murmur",
    "org": "Humane Society Silicon Valley"
   },
@@ -839,23 +831,15 @@
    "name": "Brussel Sprout",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1667920923.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/632347762.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/490687/brussel-sprout",
-   "org": "Humane Society Silicon Valley"
-  },
-  "hssv-490665": {
-   "name": "Tomato",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/831942724.jpg?fit=1024%2C1017&ssl=1",
-   "url": "https://www.hssv.org/animals/490665/tomato",
    "org": "Humane Society Silicon Valley"
   },
   "hssv-490660": {
    "name": "Broccoli",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1059095594.jpg?fit=1024%2C996&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1140872122.jpg?fit=1024%2C996&ssl=1",
    "url": "https://www.hssv.org/animals/490660/broccoli",
    "org": "Humane Society Silicon Valley"
   },
@@ -863,7 +847,7 @@
    "name": "Natalie",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1046600956.jpg?fit=1024%2C1397&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1113942171.jpg?fit=1024%2C1397&ssl=1",
    "url": "https://www.hssv.org/animals/490442/natalie",
    "org": "Humane Society Silicon Valley"
   },
@@ -871,7 +855,7 @@
    "name": "Mutter",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/212737845.jpg?fit=1024%2C1303&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1751795898.jpg?fit=768%2C1024&ssl=1",
    "url": "https://www.hssv.org/animals/489715/mutter",
    "org": "Humane Society Silicon Valley"
   },
@@ -879,7 +863,7 @@
    "name": "Mumble",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/268588446.jpg?fit=1024%2C1130&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1475072521.jpg?fit=1024%2C1130&ssl=1",
    "url": "https://www.hssv.org/animals/489711/mumble",
    "org": "Humane Society Silicon Valley"
   },
@@ -887,7 +871,7 @@
    "name": "Penny",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/891625262.jpg?fit=1024%2C1032&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/353925265.jpg?fit=1024%2C1032&ssl=1",
    "url": "https://www.hssv.org/animals/489464/penny",
    "org": "Humane Society Silicon Valley"
   },
@@ -895,7 +879,7 @@
    "name": "Niko",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1354331443.jpg?fit=1024%2C1113&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/10897196.jpg?fit=1024%2C1113&ssl=1",
    "url": "https://www.hssv.org/animals/489126/niko",
    "org": "Humane Society Silicon Valley"
   },
@@ -903,7 +887,7 @@
    "name": "Horst",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/220883009.jpg?fit=1024%2C869&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/30242399.jpg?fit=1024%2C1291&ssl=1",
    "url": "https://www.hssv.org/animals/489089/horst",
    "org": "Humane Society Silicon Valley"
   },
@@ -911,7 +895,7 @@
    "name": "Story",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1686958249.jpg?fit=1024%2C1602&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1509922433.jpg?fit=1024%2C1602&ssl=1",
    "url": "https://www.hssv.org/animals/488714/story",
    "org": "Humane Society Silicon Valley"
   },
@@ -919,7 +903,7 @@
    "name": "Stacia",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/811021795.jpg?fit=1024%2C1065&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/549932073.jpg?fit=1024%2C1065&ssl=1",
    "url": "https://www.hssv.org/animals/488707/stacia",
    "org": "Humane Society Silicon Valley"
   },
@@ -927,7 +911,7 @@
    "name": "Iris",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1417333292.jpg?fit=1024%2C1022&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/772407804.jpg?fit=1024%2C1187&ssl=1",
    "url": "https://www.hssv.org/animals/488698/iris",
    "org": "Humane Society Silicon Valley"
   },
@@ -935,23 +919,15 @@
    "name": "Garden Strudel",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/233858413.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/233858413.jpg?fit=1024%2C1463&ssl=1",
    "url": "https://www.hssv.org/animals/488563/garden-strudel",
-   "org": "Humane Society Silicon Valley"
-  },
-  "hssv-488337": {
-   "name": "Molly",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1493945858.jpg?fit=1024%2C1208&ssl=1",
-   "url": "https://www.hssv.org/animals/488337/molly",
    "org": "Humane Society Silicon Valley"
   },
   "hssv-487388": {
    "name": "Bart",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/461456306.jpg?fit=1024%2C1134&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/849346216.jpg?fit=1024%2C1134&ssl=1",
    "url": "https://www.hssv.org/animals/487388/bart",
    "org": "Humane Society Silicon Valley"
   },
@@ -959,7 +935,7 @@
    "name": "Shadow",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2026538194.jpg?fit=1024%2C1571&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/380909672.jpg?fit=1024%2C1571&ssl=1",
    "url": "https://www.hssv.org/animals/487352/shadow",
    "org": "Humane Society Silicon Valley"
   },
@@ -967,7 +943,7 @@
    "name": "Stirling",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/202141754.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1729603337.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/487307/stirling",
    "org": "Humane Society Silicon Valley"
   },
@@ -975,7 +951,7 @@
    "name": "Muni",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/406611995.jpg?fit=1024%2C1198&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1172434751.jpg?fit=1024%2C1198&ssl=1",
    "url": "https://www.hssv.org/animals/487303/muni",
    "org": "Humane Society Silicon Valley"
   },
@@ -983,7 +959,7 @@
    "name": "Nisha",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/369480531.jpg?fit=1024%2C1820&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2138705968.jpg?fit=1024%2C1820&ssl=1",
    "url": "https://www.hssv.org/animals/487205/nisha",
    "org": "Humane Society Silicon Valley"
   },
@@ -991,7 +967,7 @@
    "name": "Trout",
    "species": "Cat",
    "breed": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1419591462.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1876100776.jpg?fit=1024%2C1098&ssl=1",
    "url": "https://www.hssv.org/animals/486982/trout",
    "org": "Humane Society Silicon Valley"
   },
@@ -999,7 +975,7 @@
    "name": "Salmon",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1756255197.jpg?fit=1024%2C1288&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/919480020.jpg?fit=1024%2C1288&ssl=1",
    "url": "https://www.hssv.org/animals/486977/salmon",
    "org": "Humane Society Silicon Valley"
   },
@@ -1007,7 +983,7 @@
    "name": "Jeffrey",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1520639513.jpg?fit=1024%2C1546&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/962821202.jpg?fit=1024%2C1546&ssl=1",
    "url": "https://www.hssv.org/animals/485932/pixel",
    "org": "Humane Society Silicon Valley"
   },
@@ -1015,7 +991,7 @@
    "name": "Sabina",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/394070056.jpg?fit=1024%2C1113&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1638019347.jpg?fit=1024%2C1113&ssl=1",
    "url": "https://www.hssv.org/animals/483798/sabina",
    "org": "Humane Society Silicon Valley"
   },
@@ -1023,7 +999,7 @@
    "name": "Stevie",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/752813065.jpg?fit=1024%2C939&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1713696485.jpg?fit=1024%2C939&ssl=1",
    "url": "https://www.hssv.org/animals/483274/stevie",
    "org": "Humane Society Silicon Valley"
   },
@@ -1031,7 +1007,7 @@
    "name": "Stella",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/646458969.jpg?fit=1024%2C1319&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1907529999.jpg?fit=1024%2C1403&ssl=1",
    "url": "https://www.hssv.org/animals/483270/stella",
    "org": "Humane Society Silicon Valley"
   },
@@ -1039,7 +1015,7 @@
    "name": "Phil",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/902783657.jpg?fit=1024%2C1385&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/418871038.jpg?fit=1024%2C1385&ssl=1",
    "url": "https://www.hssv.org/animals/480645/phil",
    "org": "Humane Society Silicon Valley"
   },
@@ -1047,7 +1023,7 @@
    "name": "Andy",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1472283961.jpg?fit=1024%2C1408&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1767348644.jpg?fit=1024%2C1408&ssl=1",
    "url": "https://www.hssv.org/animals/480611/andy",
    "org": "Humane Society Silicon Valley"
   },
@@ -1055,7 +1031,7 @@
    "name": "Moxie",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1188330262.jpg?fit=1024%2C1286&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1466623623.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/480599/moxie",
    "org": "Humane Society Silicon Valley"
   },
@@ -1335,7 +1311,7 @@
    "name": "Parmesan",
    "species": "Dog",
    "breed": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_3971-scaled.jpeg",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_4412-1-scaled.jpeg",
    "url": "https://www.petsinneed.org/pet/parmesan-prepped-needs-photos/",
    "org": "Pets In Need"
   },
@@ -1437,6 +1413,36 @@
   }
  },
  "gone": [
+  {
+   "name": "Winky",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/618363059.jpg?fit=1024%2C1173&ssl=1",
+   "url": "https://www.hssv.org/animals/493970/winky",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-493970",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Tomato",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/831942724.jpg?fit=1024%2C1017&ssl=1",
+   "url": "https://www.hssv.org/animals/490665/tomato",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-490665",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Molly",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1493945858.jpg?fit=1024%2C1208&ssl=1",
+   "url": "https://www.hssv.org/animals/488337/molly",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-488337",
+   "left_on": "2026-11-02"
+  },
   {
    "name": "Waldo",
    "species": "Cat",
