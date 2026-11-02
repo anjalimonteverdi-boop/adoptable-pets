@@ -34,6 +34,21 @@
   .brand img { width: 50px; height: 50px; }
   h1 { margin: 0; font: 700 2rem/1 Quicksand, system-ui, sans-serif; color: #a0703f; }
   h1 span { color: var(--accent); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .account { display: flex; align-items: center; gap: 10px; font-size: .88rem; color: var(--muted); min-width: 0; }
+  #who { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 220px; }
+  .acctbtn { border: 0; background: var(--accent); color: var(--accent-text); border-radius: 999px; padding: 7px 16px;
+             font-weight: 700; cursor: pointer; white-space: nowrap; }
+  .acctbtn.quiet { background: var(--field); color: var(--brown); border: 1.5px solid var(--tan-soft); }
+  .linkbtn { border: 0; background: none; color: var(--accent); cursor: pointer; font-weight: 600; }
+  dialog { border: 0; border-radius: 18px; padding: 22px; width: min(420px, calc(100vw - 32px));
+           box-shadow: 0 10px 40px rgba(0,0,0,.2); color: var(--text); }
+  dialog::backdrop { background: rgba(47,34,25,.35); }
+  dialog .note { color: var(--muted); font-size: .9rem; margin: 0; }
+  dialog h2 { margin: 0 0 4px; font-size: 1.2rem; color: var(--brown); }
+  dialog input { width: 100%; margin: 14px 0 12px; }
+  .dlgrow { display: flex; justify-content: flex-end; gap: 10px; }
+  @media (max-width: 560px) { #who { display: none; } }
   .sub { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
 
   .controls { background: var(--bg); padding: 12px 0; }
@@ -64,6 +79,8 @@
             padding: 5px 14px; font-weight: 700; cursor: pointer; }
   .count #share[hidden] + .favbtn { margin-left: auto; }
   .count .favbtn[aria-pressed=true] { background: var(--tan); border-color: var(--tan); color: #fff; }
+  .syncnote { background: var(--field); border-radius: 12px; padding: 10px 14px; color: var(--brown); font-size: .9rem; margin: 0 0 16px; }
+  .syncnote .linkbtn { padding: 0; }
   .favsec h2 { font-size: 1.15rem; color: var(--brown); margin: 8px 0 12px; }
   .favsec + .favsec { margin-top: 32px; }
   .gone { position: absolute; bottom: 8px; left: 8px; background: rgba(74,51,36,.85); color: #fff;
@@ -95,7 +112,13 @@
 </head>
 <body>
 <header class="wrap">
-  <div class="brand"><img src="logo.svg" alt=""><h1 id="title">Fetch <span>Feed</span></h1></div>
+  <div class="top">
+    <div class="brand"><img src="logo.svg" alt=""><h1 id="title">Fetch <span>Feed</span></h1></div>
+    <div class="account" id="account" hidden>
+      <span id="who" hidden></span>
+      <button class="acctbtn" id="signin">Sign in</button>
+    </div>
+  </div>
   <p class="sub" id="sub">Adoptable dogs and cats at local shelters.</p>
 </header>
 
@@ -123,7 +146,22 @@
   </footer>
 </main>
 
+<dialog id="signdlg">
+  <form id="signform" method="dialog">
+    <h2>Sign in to save favorites</h2>
+    <p class="note">We'll email you a link. Tap it and you're signed in. No password needed.</p>
+    <input type="email" id="email" required placeholder="you@example.com" autocomplete="email" aria-label="Email">
+    <div class="dlgrow"><button type="button" class="linkbtn" id="signcancel">Cancel</button><button class="acctbtn" id="signsend">Email me a link</button></div>
+    <p class="note" id="signmsg" aria-live="polite"></p>
+  </form>
+</dialog>
+
+<script src="vendor/supabase-js-2.45.4.js"></script>
 <script>
+// Sign-in service (Supabase). The URL and the "anon public" key are meant to be public;
+// each person's favorites are protected by the database's row rules. Empty = accounts off.
+const SUPABASE_URL = "";
+const SUPABASE_ANON_KEY = "";
 const $ = (id) => document.getElementById(id);
 const AGE_ORDER = ["Baby", "Young", "Adult", "Senior"];
 const SIZE_ORDER = ["Small", "Medium", "Large", "X-Large"];
@@ -201,7 +239,7 @@ function card(a, tag, gone) {
   </div>`;
 }
 
-// Favorites live in this browser for now. Each one keeps a copy of the pet, so it
+// Favorites are kept in this browser, and in the person's account when signed in. Each one keeps a copy of the pet, so it
 // still shows after the pet leaves the listings (most likely adopted).
 const FAV_KEY = "fetchfeed-favorites";
 let favs = {};
@@ -215,6 +253,67 @@ function toggleFav(id) {
                  org: { name: a.org.name, city: a.org.city }, saved: new Date().toISOString() };
   }
   saveFavs(); render();
+  if (user) {
+    const req = favs[id]
+      ? sb.from("favorites").upsert({ pet_id: id, pet: favs[id], saved_at: favs[id].saved })
+      : sb.from("favorites").delete().eq("pet_id", id);
+    req.then(({ error }) => error && console.warn("Couldn't sync favorite:", error.message));
+  }
+}
+
+// ---- Accounts: email sign-in link; favorites follow the person across devices ----
+let sb = null, user = null;
+
+async function pullFavs() {
+  // Anything saved on this device before signing in joins the account.
+  const { data: rows, error } = await sb.from("favorites").select("pet_id, pet, saved_at");
+  if (error) return console.warn("Couldn't load favorites:", error.message);
+  const remote = Object.fromEntries(rows.map(r => [r.pet_id, { ...r.pet, saved: r.saved_at }]));
+  const onlyHere = Object.values(favs).filter(f => !remote[f.id]);
+  if (onlyHere.length) {
+    await sb.from("favorites").upsert(onlyHere.map(f => ({ pet_id: f.id, pet: f, saved_at: f.saved })));
+  }
+  favs = { ...remote, ...Object.fromEntries(onlyHere.map(f => [f.id, f])) };
+  saveFavs(); if (data) render();
+}
+
+function showUser() {
+  $("who").hidden = !user;
+  $("who").textContent = user ? user.email : "";
+  $("signin").textContent = user ? "Sign out" : "Sign in";
+  $("signin").classList.toggle("quiet", !!user);
+}
+
+function setupAccounts() {
+  if (!SUPABASE_URL || !window.supabase) return;
+  sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  $("account").hidden = false;
+  sb.auth.onAuthStateChange((event, session) => {
+    const was = user && user.id;
+    user = session ? session.user : null;
+    showUser();
+    if (data) render();
+    if (user && user.id !== was) pullFavs();
+    if (event === "SIGNED_OUT") { favs = {}; saveFavs(); if (data) render(); }
+  });
+  $("signin").addEventListener("click", () => {
+    if (user) return sb.auth.signOut();
+    $("signmsg").textContent = ""; $("signsend").disabled = false;
+    $("signdlg").showModal(); $("email").focus();
+  });
+  $("signcancel").addEventListener("click", () => $("signdlg").close());
+  $("signform").addEventListener("submit", async e => {
+    e.preventDefault();
+    $("signsend").disabled = true; $("signmsg").textContent = "Sending…";
+    const { error } = await sb.auth.signInWithOtp({
+      email: $("email").value.trim(),
+      options: { emailRedirectTo: location.origin + location.pathname },
+    });
+    $("signmsg").textContent = error
+      ? "That didn't work: " + error.message
+      : "Check your email and tap the link. You can close this.";
+    $("signsend").disabled = false;
+  });
 }
 
 function renderFavs() {
@@ -228,12 +327,13 @@ function renderFavs() {
   $("clear").hidden = true;
   const live = Object.fromEntries(data.animals.map(a => [a.id, a]));
   const all = Object.values(favs).sort((a, b) => b.saved.localeCompare(a.saved));
-  $("favview").innerHTML = n ? [["Dog", "Dogs"], ["Cat", "Cats"]].map(([sp, title]) => {
+  const nudge = sb && !user ? `<p class="syncnote">Favorites are saved on this device. <button class="linkbtn" onclick="$('signin').click()">Sign in</button> to keep them on all your devices.</p>` : "";
+  $("favview").innerHTML = nudge + (n ? [["Dog", "Dogs"], ["Cat", "Cats"]].map(([sp, title]) => {
     const list = all.filter(f => f.species === sp);
     return `<section class="favsec"><h2>${title} (${list.length})</h2>${list.length
       ? `<div class="grid">${list.map(f => card(live[f.id] || f, "", !live[f.id])).join("")}</div>`
       : `<p class="meta">No ${title.toLowerCase()} saved yet.</p>`}</section>`;
-  }).join("") : `<p class="empty">Tap the &#9829; on any pet to save it here.<br><button onclick="state.fav='';render()">Browse pets</button></p>`;
+  }).join("") : `<p class="empty">Tap the &#9829; on any pet to save it here.<br><button onclick="state.fav='';render()">Browse pets</button></p>`);
 }
 
 // Miles from the visitor if they shared their location, otherwise from the area's center.
@@ -310,6 +410,7 @@ $("share").addEventListener("click", async () => {
   catch (e) { prompt("Copy this link:", location.href); }
   setTimeout(() => $("share").textContent = "Share", 2000);
 });
+setupAccounts();
 init();
 </script>
 </body>
