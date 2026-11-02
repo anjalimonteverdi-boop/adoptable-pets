@@ -36,5 +36,7 @@ jobs:
             echo "No changes today."
           else
             git commit -m "Daily update $(date -u +%Y-%m-%d)"
+            # Someone may have pushed site changes while this ran.
+            git pull --rebase origin main
             git push
           fi
