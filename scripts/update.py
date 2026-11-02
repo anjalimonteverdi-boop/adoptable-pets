@@ -255,8 +255,12 @@ def fetch_from_sites(area, sites, config, sample=None):
             found = shelter_sites.parse_site(site, items or [], area)
             if not found:
                 raise RuntimeError("no dogs or cats found")
+            fixed = 0
+            if sample is None:
+                fixed = shelter_sites.check_photos(site, found, previous)
             animals += found
-            print(f"  {site['name']}: {len(found)} dogs and cats")
+            print(f"  {site['name']}: {len(found)} dogs and cats"
+                  + (f", replaced {fixed} broken photos" if fixed else ""))
         except Exception as e:  # keep going with the other shelters
             failed.append(site["name"])
             kept = [an for an in previous if an["org"]["id"] == site["id"]]

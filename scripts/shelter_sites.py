@@ -27,6 +27,7 @@ Each shelter is one entry under "shelter_sites" in config.json:
 import html
 import json
 import math
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -90,6 +91,65 @@ def add_missing_photos(site, items):
         for m in media:
             if m.get("id") in need and m.get("source_url"):
                 need[m["id"]]["photo_url"] = m["source_url"]
+
+
+def url_works(url, site):
+    """True if the photo URL actually serves an image (some social-preview images
+    point at files the shelter later removed)."""
+    time.sleep(site.get("delay_seconds", 2))
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.status in (200, 206) and resp.headers.get_content_type().startswith("image/")
+    except Exception:
+        return False
+
+
+PAGE_IMAGE = re.compile(r"""https://[^"'\s>]+/wp-content/uploads/[^"'\s>]+?\.(?:jpe?g|png|webp)(?:\?[^"'\s>]*)?""", re.I)
+
+
+def photo_from_page(url, site, broken):
+    """Find the first photo on the animal's own page that isn't the broken one."""
+    time.sleep(site.get("delay_seconds", 2))
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            page = resp.read().decode("utf-8", "replace")
+    except Exception:
+        return None
+    base = broken.split("?")[0].rsplit("/", 1)[-1] if broken else None
+    for m in PAGE_IMAGE.finditer(html.unescape(page)):
+        cand = m.group(0)
+        name = cand.split("?")[0].rsplit("/", 1)[-1]
+        if name == base or "logo" in name.lower() or "icon" in name.lower():
+            continue
+        if url_works(cand, site):
+            return cand
+    return None
+
+
+def check_photos(site, animals, previous):
+    """Make sure each new photo loads; if not, take one from the animal's page.
+
+    Photos already checked on an earlier run are trusted, so this only costs a
+    request or two for each newly listed animal.
+    """
+    seen = {an["id"]: an for an in previous if an.get("photo_checked")}
+    fixed = 0
+    for an in animals:
+        before = seen.get(an["id"])
+        if before and before.get("photo_source") == an["photo"]:
+            an["photo"] = before["photo"]
+            an["photo_source"], an["photo_checked"] = before["photo_source"], True
+            continue
+        source = an["photo"]
+        if not source or not url_works(source, site):
+            better = an["url"] and photo_from_page(an["url"], site, source)
+            if better:
+                an["photo"] = better
+                fixed += 1
+        an["photo_source"], an["photo_checked"] = source, True
+    return fixed
 
 
 def miles_between(lat1, lon1, lat2, lon2):
