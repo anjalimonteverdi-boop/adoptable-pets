@@ -97,8 +97,8 @@ def url_works(url, site):
     """True if the photo URL actually serves an image (some social-preview images
     point at files the shelter later removed)."""
     time.sleep(site.get("delay_seconds", 2))
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"})
     try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"})
         with urllib.request.urlopen(req, timeout=30) as resp:
             return resp.status in (200, 206) and resp.headers.get_content_type().startswith("image/")
     except Exception:
@@ -108,24 +108,40 @@ def url_works(url, site):
 PAGE_IMAGE = re.compile(r"""https://[^"'\s>]+/wp-content/uploads/[^"'\s>]+?\.(?:jpe?g|png|webp)(?:\?[^"'\s>]*)?""", re.I)
 
 
+NOT_A_PET = re.compile(r"logo|icon|tiktok|facebook|instagram|twitter|youtube|badge|sprite|round|banner", re.I)
+
+
 def photo_from_page(url, site, broken):
-    """Find the first photo on the animal's own page that isn't the broken one."""
+    """Find a working photo of the animal on its own page.
+
+    Only photos uploaded in the same month as the broken one count, so site
+    decorations (logos, social icons) are never picked.
+    """
     time.sleep(site.get("delay_seconds", 2))
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=60) as resp:
             page = resp.read().decode("utf-8", "replace")
     except Exception:
         return None
+    month = re.search(r"/uploads/(\d{4}/\d{2})/", broken or "")
     base = broken.split("?")[0].rsplit("/", 1)[-1] if broken else None
+    tried = set()
     for m in PAGE_IMAGE.finditer(html.unescape(page)):
         cand = m.group(0)
         name = cand.split("?")[0].rsplit("/", 1)[-1]
-        if name == base or "logo" in name.lower() or "icon" in name.lower():
+        if (name == base or name in tried or NOT_A_PET.search(name)
+                or (month and f"/uploads/{month.group(1)}/" not in cand)):
             continue
+        tried.add(name)
         if url_works(cand, site):
             return cand
+        if len(tried) >= 3:
+            break
     return None
+
+
+PHOTO_CHECK = 2  # bump to re-check every photo on the next run
 
 
 def check_photos(site, animals, previous):
@@ -134,13 +150,13 @@ def check_photos(site, animals, previous):
     Photos already checked on an earlier run are trusted, so this only costs a
     request or two for each newly listed animal.
     """
-    seen = {an["id"]: an for an in previous if an.get("photo_checked")}
+    seen = {an["id"]: an for an in previous if an.get("photo_checked") == PHOTO_CHECK}
     fixed = 0
     for an in animals:
         before = seen.get(an["id"])
         if before and before.get("photo_source") == an["photo"]:
             an["photo"] = before["photo"]
-            an["photo_source"], an["photo_checked"] = before["photo_source"], True
+            an["photo_source"], an["photo_checked"] = before["photo_source"], PHOTO_CHECK
             continue
         source = an["photo"]
         if not source or not url_works(source, site):
@@ -148,7 +164,7 @@ def check_photos(site, animals, previous):
             if better:
                 an["photo"] = better
                 fixed += 1
-        an["photo_source"], an["photo_checked"] = source, True
+        an["photo_source"], an["photo_checked"] = source, PHOTO_CHECK
     return fixed
 
 
