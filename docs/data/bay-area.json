@@ -7,15 +7,279 @@
   "lat": 37.7726,
   "lon": -122.4099
  },
- "updated": "2026-11-01",
- "generated_at": "2026-11-01T13:42:42+00:00",
+ "updated": "2026-11-02",
+ "generated_at": "2026-11-02T14:05:38+00:00",
  "source": "shelter websites",
  "summary": {
-  "new_today": 22,
-  "left_since_last_run": 20,
+  "new_today": 11,
+  "left_since_last_run": 23,
   "first_run": false
  },
  "animals": [
+  {
+   "id": "hssv-493974",
+   "name": "Wonky",
+   "species": "Cat",
+   "breed": "",
+   "age": "",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1200204624.jpg",
+   "url": "https://www.hssv.org/animals/493974/wonky",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493970",
+   "name": "Winky",
+   "species": "Cat",
+   "breed": "",
+   "age": "",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/618363059.jpg",
+   "url": "https://www.hssv.org/animals/493970/winky",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493578",
+   "name": "Tapioca",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1498985638.jpg?fit=1024%2C1144&ssl=1",
+   "url": "https://www.hssv.org/animals/493578/tapioca",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "pets-in-need-11328",
+   "name": "Taki",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Taki.jpg",
+   "url": "https://www.petsinneed.org/pet/taki/",
+   "distance": 29.4,
+   "org": {
+    "id": "pets-in-need",
+    "name": "Pets In Need",
+    "type": "Shelter",
+    "city": "Palo Alto",
+    "state": "CA",
+    "url": "https://www.petsinneed.org",
+    "lat": 37.424,
+    "lon": -122.101
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-494001",
+   "name": "Midnight",
+   "species": "Dog",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1727983115.jpg",
+   "url": "https://www.hssv.org/animals/494001/midnight",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493676",
+   "name": "Chashu",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/418329103.jpg",
+   "url": "https://www.hssv.org/animals/493676/chashu",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493574",
+   "name": "August",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
+   "url": "https://www.hssv.org/animals/493574/august",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493572",
+   "name": "Ash",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1558163271.jpg",
+   "url": "https://www.hssv.org/animals/493572/ash",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493700",
+   "name": "Arwen",
+   "species": "Dog",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/330504559-667x1024.jpg",
+   "url": "https://www.hssv.org/animals/493700/arwen",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493570",
+   "name": "Allie",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/1910084315.jpg",
+   "url": "https://www.hssv.org/animals/493570/allie",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
+  {
+   "id": "hssv-493568",
+   "name": "Abby",
+   "species": "Cat",
+   "breed": "",
+   "age": "Baby",
+   "sex": "",
+   "size": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/11/2025136641.jpg",
+   "url": "https://www.hssv.org/animals/493568/abby",
+   "distance": 36.5,
+   "org": {
+    "id": "hssv",
+    "name": "Humane Society Silicon Valley",
+    "type": "Shelter",
+    "city": "Milpitas",
+    "state": "CA",
+    "url": "https://www.hssv.org",
+    "lat": 37.4231,
+    "lon": -121.9095
+   },
+   "first_seen": "2026-11-02",
+   "new": true
+  },
   {
    "id": "hssv-491968",
    "name": "Wishbone",
@@ -24,7 +288,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/869614799.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/869614799.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491968/wishbone",
    "distance": 36.5,
    "org": {
@@ -38,31 +302,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-492314",
-   "name": "Waldo",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/889249415.jpg",
-   "url": "https://www.hssv.org/animals/492314/waldo",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491749",
@@ -86,79 +326,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-492283",
-   "name": "Theodore",
-   "species": "Dog",
-   "breed": "",
-   "age": "",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/639523806.jpg",
-   "url": "https://www.hssv.org/animals/492283/theodore",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-491858",
-   "name": "Sierra",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/229797782.jpg",
-   "url": "https://www.hssv.org/animals/491858/sierra",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-491854",
-   "name": "Scout",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/984914802.jpg?fit=1024%2C1303&ssl=1",
-   "url": "https://www.hssv.org/animals/491854/scout",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491721",
@@ -182,7 +350,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491780",
@@ -192,7 +360,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/87087719.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/8834359.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491780/pugsley",
    "distance": 36.5,
    "org": {
@@ -206,7 +374,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "pets-in-need-11331",
@@ -230,7 +398,7 @@
     "lon": -122.101
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-492309",
@@ -240,7 +408,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/221544619.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/437503360.jpg?fit=1024%2C1213&ssl=1",
    "url": "https://www.hssv.org/animals/492309/pepper",
    "distance": 36.5,
    "org": {
@@ -254,7 +422,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491852",
@@ -264,7 +432,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/1447846475.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/784551393.jpg?fit=1024%2C1280&ssl=1",
    "url": "https://www.hssv.org/animals/491852/pandan",
    "distance": 36.5,
    "org": {
@@ -278,79 +446,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-491719",
-   "name": "Nuala",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1186863570.jpg?fit=768%2C1024&ssl=1",
-   "url": "https://www.hssv.org/animals/491719/nuala",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-492128",
-   "name": "Milo",
-   "species": "Dog",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1784710848.jpg?fit=1024%2C1259&ssl=1",
-   "url": "https://www.hssv.org/animals/492128/milo",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-491850",
-   "name": "Goldfish",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/218072843.jpg?fit=1024%2C1264&ssl=1",
-   "url": "https://www.hssv.org/animals/491850/goldfish",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491872",
@@ -360,7 +456,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/890135172.jpg?fit=1024%2C1546&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/710863505.jpg?fit=1024%2C1546&ssl=1",
    "url": "https://www.hssv.org/animals/491872/emmie",
    "distance": 36.5,
    "org": {
@@ -374,7 +470,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491716",
@@ -384,7 +480,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/266791586.jpg?fit=1024%2C925&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1110738277.jpg?fit=1024%2C925&ssl=1",
    "url": "https://www.hssv.org/animals/491716/cobweb",
    "distance": 36.5,
    "org": {
@@ -398,7 +494,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "pets-in-need-11337",
@@ -422,31 +518,7 @@
     "lon": -122.101
    },
    "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-491713",
-   "name": "Cerridwen",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2038780585.jpg?fit=1024%2C1249&ssl=1",
-   "url": "https://www.hssv.org/animals/491713/cerridwen",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-491746",
@@ -470,7 +542,7 @@
     "lon": -121.9095
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "pets-in-need-11327",
@@ -494,7 +566,7 @@
     "lon": -122.101
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "pets-in-need-11324",
@@ -518,7 +590,7 @@
     "lon": -122.101
    },
    "first_seen": "2026-11-01",
-   "new": true
+   "new": false
   },
   {
    "id": "pets-in-need-11321",
@@ -542,30 +614,6 @@
     "lon": -122.101
    },
    "first_seen": "2026-11-01",
-   "new": true
-  },
-  {
-   "id": "hssv-491366",
-   "name": "Professor Meatloaf",
-   "species": "Dog",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/382967493.jpg?fit=1024%2C1318&ssl=1",
-   "url": "https://www.hssv.org/animals/491366/professor-meatloaf",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-31",
    "new": false
   },
   {
@@ -768,7 +816,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/262796679.jpg",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/262796679.jpg?fit=1024%2C768&ssl=1",
    "url": "https://www.hssv.org/animals/491360/jiji",
    "distance": 36.5,
    "org": {
@@ -792,7 +840,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1340924412.jpg?fit=1024%2C1316&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/165949263.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491358/helena",
    "distance": 36.5,
    "org": {
@@ -816,7 +864,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/39115127.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1827063836.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491272/flannel",
    "distance": 36.5,
    "org": {
@@ -864,7 +912,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/601707024.jpg?fit=1024%2C1087&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/913936675.jpg?fit=1024%2C1087&ssl=1",
    "url": "https://www.hssv.org/animals/491072/ella",
    "distance": 36.5,
    "org": {
@@ -936,7 +984,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/325542806.jpg?fit=1024%2C1158&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/831942724.jpg?fit=1024%2C1017&ssl=1",
    "url": "https://www.hssv.org/animals/490665/tomato",
    "distance": 36.5,
    "org": {
@@ -1073,30 +1121,6 @@
    "new": false
   },
   {
-   "id": "hssv-490662",
-   "name": "Carrot",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1258104210.jpg?fit=1024%2C1055&ssl=1",
-   "url": "https://www.hssv.org/animals/490662/carrot",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-30",
-   "new": false
-  },
-  {
    "id": "hssv-490687",
    "name": "Brussel Sprout",
    "species": "Cat",
@@ -1104,7 +1128,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/102699875.jpg?fit=1024%2C1034&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1667920923.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/490687/brussel-sprout",
    "distance": 36.5,
    "org": {
@@ -1128,7 +1152,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1123042569.jpg?fit=1024%2C1214&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1059095594.jpg?fit=1024%2C996&ssl=1",
    "url": "https://www.hssv.org/animals/490660/broccoli",
    "distance": 36.5,
    "org": {
@@ -1142,30 +1166,6 @@
     "lon": -121.9095
    },
    "first_seen": "2026-10-30",
-   "new": false
-  },
-  {
-   "id": "hssv-489719",
-   "name": "Stashie",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/800653060.jpg?fit=1024%2C1508&ssl=1",
-   "url": "https://www.hssv.org/animals/489719/stashie",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-29",
    "new": false
   },
   {
@@ -1272,7 +1272,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/163302288.jpg?fit=1024%2C1113&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1354331443.jpg?fit=1024%2C1113&ssl=1",
    "url": "https://www.hssv.org/animals/489126/niko",
    "distance": 36.5,
    "org": {
@@ -1296,7 +1296,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2085011490.jpg?fit=1024%2C1303&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1874322367.jpg?fit=1024%2C1303&ssl=1",
    "url": "https://www.hssv.org/animals/489715/mutter",
    "distance": 36.5,
    "org": {
@@ -1356,30 +1356,6 @@
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
     "lon": -122.292
-   },
-   "first_seen": "2026-10-29",
-   "new": false
-  },
-  {
-   "id": "hssv-489093",
-   "name": "Kuro",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1744071504.jpg?fit=1024%2C1308&ssl=1",
-   "url": "https://www.hssv.org/animals/489093/kuro",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
    },
    "first_seen": "2026-10-29",
    "new": false
@@ -1481,30 +1457,6 @@
    "new": false
   },
   {
-   "id": "hssv-488402",
-   "name": "Polaris",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1604935084.jpg?fit=1024%2C1365&ssl=1",
-   "url": "https://www.hssv.org/animals/488402/polaris",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-28",
-   "new": false
-  },
-  {
    "id": "hssv-488337",
    "name": "Molly",
    "species": "Cat",
@@ -1514,30 +1466,6 @@
    "size": "",
    "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1493945858.jpg?fit=1024%2C1208&ssl=1",
    "url": "https://www.hssv.org/animals/488337/molly",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-28",
-   "new": false
-  },
-  {
-   "id": "hssv-488635",
-   "name": "Midnight",
-   "species": "Dog",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/260130178.jpg?fit=1024%2C1184&ssl=1",
-   "url": "https://www.hssv.org/animals/488635/midnight",
    "distance": 36.5,
    "org": {
     "id": "hssv",
@@ -1601,30 +1529,6 @@
    "new": false
   },
   {
-   "id": "hssv-488335",
-   "name": "Dippin",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1935952065.jpg?fit=1024%2C1202&ssl=1",
-   "url": "https://www.hssv.org/animals/488335/dippin",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-28",
-   "new": false
-  },
-  {
    "id": "hssv-487307",
    "name": "Stirling",
    "species": "Dog",
@@ -1644,30 +1548,6 @@
     "url": "https://www.hssv.org",
     "lat": 37.4231,
     "lon": -121.9095
-   },
-   "first_seen": "2026-10-27",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-10871",
-   "name": "Simon",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_0137-scaled.jpeg",
-   "url": "https://www.petsinneed.org/pet/simon/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
    },
    "first_seen": "2026-10-27",
    "new": false
@@ -1800,7 +1680,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/245484406.jpg?fit=768%2C1024&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1447520348.jpg?fit=1024%2C1098&ssl=1",
    "url": "https://www.hssv.org/animals/486982/trout",
    "distance": 36.5,
    "org": {
@@ -1824,7 +1704,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/115214942.jpg?fit=1024%2C1288&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/846831316.jpg?fit=1024%2C1288&ssl=1",
    "url": "https://www.hssv.org/animals/486977/salmon",
    "distance": 36.5,
    "org": {
@@ -1850,54 +1730,6 @@
    "size": "",
    "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Image-65-768x1024.png",
    "url": "https://www.petsinneed.org/pet/vivaldi-needs-pics-and-bio/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
-   },
-   "first_seen": "2026-10-25",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-8809",
-   "name": "Donut",
-   "species": "Dog",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_3870-scaled.jpeg",
-   "url": "https://www.petsinneed.org/pet/donut/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
-   },
-   "first_seen": "2026-10-25",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-10589",
-   "name": "Casper",
-   "species": "Dog",
-   "breed": "",
-   "age": "",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-16-151247.png",
-   "url": "https://www.petsinneed.org/pet/casper-3/",
    "distance": 29.4,
    "org": {
     "id": "pets-in-need",
@@ -1980,30 +1812,6 @@
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
     "lon": -122.101
-   },
-   "first_seen": "2026-10-24",
-   "new": false
-  },
-  {
-   "id": "hssv-486351",
-   "name": "Nori",
-   "species": "Cat",
-   "breed": "",
-   "age": "",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/452051410.jpg?fit=1024%2C1365&ssl=1",
-   "url": "https://www.hssv.org/animals/486351/nori",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
    },
    "first_seen": "2026-10-24",
    "new": false
@@ -2172,30 +1980,6 @@
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
     "lon": -122.292
-   },
-   "first_seen": "2026-10-23",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-10844",
-   "name": "Odie",
-   "species": "Dog",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/A185779.000.jpg",
-   "url": "https://www.petsinneed.org/pet/odie/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
    },
    "first_seen": "2026-10-23",
    "new": false
@@ -2616,7 +2400,7 @@
    "age": "",
    "sex": "",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/134387963.jpg?fit=1024%2C939&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/752813065.jpg?fit=1024%2C939&ssl=1",
    "url": "https://www.hssv.org/animals/483274/stevie",
    "distance": 36.5,
    "org": {
@@ -2945,54 +2729,6 @@
    "new": false
   },
   {
-   "id": "pets-in-need-9761",
-   "name": "Moses",
-   "species": "Dog",
-   "breed": "",
-   "age": "",
-   "sex": "",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Happy-Dog-at-Playtime-768x1024.png",
-   "url": "https://www.petsinneed.org/pet/moses/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
-   },
-   "first_seen": "2026-10-20",
-   "new": false
-  },
-  {
-   "id": "hssv-477467",
-   "name": "Momo",
-   "species": "Dog",
-   "breed": "",
-   "age": "",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1810972561.jpg?fit=1024%2C1366&ssl=1",
-   "url": "https://www.hssv.org/animals/477467/momo",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "first_seen": "2026-10-20",
-   "new": false
-  },
-  {
    "id": "pets-in-need-10280",
    "name": "Manny",
    "species": "Cat",
@@ -3137,15 +2873,15 @@
    "new": false
   },
   {
-   "id": "pets-in-need-10577",
-   "name": "Fawn",
-   "species": "Cat",
+   "id": "pets-in-need-8941",
+   "name": "Emmy Jay",
+   "species": "Dog",
    "breed": "",
-   "age": "",
+   "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_5817-scaled.jpeg",
-   "url": "https://www.petsinneed.org/pet/fawn/",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/emmy-jay-scaled.jpeg",
+   "url": "https://www.petsinneed.org/pet/emmy-jay/",
    "distance": 29.4,
    "org": {
     "id": "pets-in-need",
@@ -3450,6 +3186,236 @@
   }
  ],
  "recently_left": [
+  {
+   "name": "Waldo",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/889249415.jpg",
+   "url": "https://www.hssv.org/animals/492314/waldo",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-492314",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Theodore",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/639523806.jpg",
+   "url": "https://www.hssv.org/animals/492283/theodore",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-492283",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Milo",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1784710848.jpg?fit=1024%2C1259&ssl=1",
+   "url": "https://www.hssv.org/animals/492128/milo",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-492128",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Sierra",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.hssv.org/wp-content/uploads/2026/10/229797782.jpg",
+   "url": "https://www.hssv.org/animals/491858/sierra",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491858",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Scout",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/984914802.jpg?fit=1024%2C1303&ssl=1",
+   "url": "https://www.hssv.org/animals/491854/scout",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491854",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Goldfish",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/218072843.jpg?fit=1024%2C1264&ssl=1",
+   "url": "https://www.hssv.org/animals/491850/goldfish",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491850",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Nuala",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1186863570.jpg?fit=768%2C1024&ssl=1",
+   "url": "https://www.hssv.org/animals/491719/nuala",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491719",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Cerridwen",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2038780585.jpg?fit=1024%2C1249&ssl=1",
+   "url": "https://www.hssv.org/animals/491713/cerridwen",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491713",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Professor Meatloaf",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/382967493.jpg?fit=1024%2C1318&ssl=1",
+   "url": "https://www.hssv.org/animals/491366/professor-meatloaf",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491366",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Carrot",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1258104210.jpg?fit=1024%2C1055&ssl=1",
+   "url": "https://www.hssv.org/animals/490662/carrot",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-490662",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Stashie",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/800653060.jpg?fit=1024%2C1508&ssl=1",
+   "url": "https://www.hssv.org/animals/489719/stashie",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-489719",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Kuro",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1744071504.jpg?fit=1024%2C1308&ssl=1",
+   "url": "https://www.hssv.org/animals/489093/kuro",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-489093",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Midnight",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/260130178.jpg?fit=1024%2C1184&ssl=1",
+   "url": "https://www.hssv.org/animals/488635/midnight",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-488635",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Polaris",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1604935084.jpg?fit=1024%2C1365&ssl=1",
+   "url": "https://www.hssv.org/animals/488402/polaris",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-488402",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Dippin",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1935952065.jpg?fit=1024%2C1202&ssl=1",
+   "url": "https://www.hssv.org/animals/488335/dippin",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-488335",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Nori",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/452051410.jpg?fit=1024%2C1365&ssl=1",
+   "url": "https://www.hssv.org/animals/486351/nori",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-486351",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Momo",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1810972561.jpg?fit=1024%2C1366&ssl=1",
+   "url": "https://www.hssv.org/animals/477467/momo",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-477467",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Simon",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_0137-scaled.jpeg",
+   "url": "https://www.petsinneed.org/pet/simon/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-10871",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Odie",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/A185779.000.jpg",
+   "url": "https://www.petsinneed.org/pet/odie/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-10844",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Fawn",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_5817-scaled.jpeg",
+   "url": "https://www.petsinneed.org/pet/fawn/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-10577",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Casper",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-16-151247.png",
+   "url": "https://www.petsinneed.org/pet/casper-3/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-10589",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Moses",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Happy-Dog-at-Playtime-768x1024.png",
+   "url": "https://www.petsinneed.org/pet/moses/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-9761",
+   "left_on": "2026-11-02"
+  },
+  {
+   "name": "Donut",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_3870-scaled.jpeg",
+   "url": "https://www.petsinneed.org/pet/donut/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-8809",
+   "left_on": "2026-11-02"
+  },
   {
    "name": "Smudge & Speckle",
    "species": "Cat",
@@ -5448,16 +5414,6 @@
    "url": "https://www.petsinneed.org/pet/cisco/",
    "org": "Pets In Need",
    "id": "pets-in-need-10705",
-   "left_on": "2026-10-22"
-  },
-  {
-   "name": "Emmy Jay",
-   "species": "Dog",
-   "breed": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/emmy-jay-scaled.jpeg",
-   "url": "https://www.petsinneed.org/pet/emmy-jay/",
-   "org": "Pets In Need",
-   "id": "pets-in-need-8941",
    "left_on": "2026-10-22"
   },
   {
