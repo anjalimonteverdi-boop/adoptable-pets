@@ -8,7 +8,7 @@
   "lon": -122.4099
  },
  "updated": "2026-11-02",
- "generated_at": "2026-11-02T19:59:47+00:00",
+ "generated_at": "2026-11-02T20:14:54+00:00",
  "source": "shelter websites",
  "summary": {
   "new_today": 12,
@@ -38,7 +38,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/676081010.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -64,7 +64,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/618363059.jpg?fit=1024%2C1173&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -90,7 +90,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1498985638.jpg?fit=1024%2C1144&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -116,7 +116,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Taki.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -142,7 +142,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1727983115.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -168,7 +168,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1510778453.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -180,7 +180,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2021/05/tiktok-round.png",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1816889222.jpg?fit=1024%2C1165&ssl=1",
    "url": "https://www.hssv.org/animals/493676/chashu",
    "distance": 36.5,
    "org": {
@@ -194,7 +194,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/418329103.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -220,7 +220,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -246,7 +246,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1558163271.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -258,7 +258,7 @@
    "age": "Baby",
    "sex": "",
    "size": "",
-   "photo": "https://www.hssv.org/wp-content/uploads/2021/05/tiktok-round.png",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1796460815.jpg?fit=1024%2C1572&ssl=1",
    "url": "https://www.hssv.org/animals/493700/arwen",
    "distance": 36.5,
    "org": {
@@ -272,7 +272,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/330504559-667x1024.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -298,7 +298,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1910084315.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -324,7 +324,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/2025136641.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-02",
    "new": true
   },
@@ -350,7 +350,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/869614799.jpg?fit=1024%2C1365&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -376,7 +376,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1887868062.jpg?fit=1024%2C1108&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -402,7 +402,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/10/302123716.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -428,7 +428,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1009276555.jpg?fit=1024%2C1365&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -454,7 +454,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186032.000.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -480,7 +480,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/424423121.jpg?fit=1024%2C1213&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -506,7 +506,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/784551393.jpg?fit=1024%2C1280&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -532,7 +532,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/710863505.jpg?fit=1024%2C1546&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -558,7 +558,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1340980914.jpg?fit=1024%2C925&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -584,7 +584,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261030_080004-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -610,7 +610,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/109304101.jpg?fit=1024%2C1122&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -636,7 +636,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186031.000.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -662,7 +662,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186030.000.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -688,7 +688,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186029.000.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-11-01",
    "new": false
   },
@@ -714,7 +714,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/Screenshot-2026-10-31-171008.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -740,7 +740,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/323190678.jpg?fit=1024%2C1419&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -766,7 +766,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-113706.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -792,7 +792,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261029_170846-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -818,7 +818,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-135305-1.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -844,7 +844,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-153026.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -870,7 +870,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/89940B30@27DD4931.CC21E56A00000000-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -896,7 +896,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261029_170857.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -922,7 +922,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/262796679.jpg?fit=1024%2C768&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -948,7 +948,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/165949263.jpg?fit=1024%2C1365&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -974,7 +974,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/642397440.jpg?fit=1024%2C1365&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -1000,7 +1000,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-114826.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -1026,7 +1026,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/913936675.jpg?fit=1024%2C1087&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -1052,7 +1052,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/dax-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -1078,7 +1078,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-114036.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
   },
@@ -1104,7 +1104,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/831942724.jpg?fit=1024%2C1017&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1130,7 +1130,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1046600956.jpg?fit=1024%2C1397&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1156,7 +1156,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/993012149.jpg?fit=1024%2C1269&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1182,7 +1182,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image1-6-1.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1208,7 +1208,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-112037.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1234,7 +1234,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/0627d796-62ca-40a4-9941-bcd9889b4d7a.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1260,7 +1260,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1667920923.jpg?fit=1024%2C1365&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1286,7 +1286,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1059095594.jpg?fit=1024%2C996&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-30",
    "new": false
   },
@@ -1312,7 +1312,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/Shaggy-6.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1338,7 +1338,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/2026-10-27-Puna-4-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1364,7 +1364,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/professor-1-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1390,7 +1390,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/891625262.jpg?fit=1024%2C1032&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1416,7 +1416,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1354331443.jpg?fit=1024%2C1113&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1442,7 +1442,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/212737845.jpg?fit=1024%2C1303&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1468,7 +1468,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/268588446.jpg?fit=1024%2C1130&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1494,7 +1494,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/group-1-Large.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1520,7 +1520,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_4296.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1546,7 +1546,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/220883009.jpg?fit=1024%2C869&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-29",
    "new": false
   },
@@ -1572,7 +1572,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1686958249.jpg?fit=1024%2C1602&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-28",
    "new": false
   },
@@ -1598,7 +1598,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/811021795.jpg?fit=1024%2C1065&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-28",
    "new": false
   },
@@ -1624,7 +1624,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1493945858.jpg?fit=1024%2C1208&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-28",
    "new": false
   },
@@ -1650,7 +1650,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1417333292.jpg?fit=1024%2C1022&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-28",
    "new": false
   },
@@ -1676,7 +1676,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/10/233858413.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-28",
    "new": false
   },
@@ -1702,7 +1702,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/202141754.jpg?fit=1024%2C1365&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-27",
    "new": false
   },
@@ -1728,7 +1728,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2026538194.jpg?fit=1024%2C1571&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-27",
    "new": false
   },
@@ -1754,7 +1754,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_9958-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-27",
    "new": false
   },
@@ -1780,7 +1780,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/369480531.jpg?fit=1024%2C1820&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-27",
    "new": false
   },
@@ -1806,7 +1806,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/406611995.jpg?fit=1024%2C1198&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-27",
    "new": false
   },
@@ -1832,7 +1832,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/461456306.jpg?fit=1024%2C1134&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-27",
    "new": false
   },
@@ -1858,7 +1858,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1419591462.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-26",
    "new": false
   },
@@ -1884,7 +1884,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1756255197.jpg?fit=1024%2C1288&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-26",
    "new": false
   },
@@ -1910,7 +1910,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Image-65-768x1024.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-25",
    "new": false
   },
@@ -1936,7 +1936,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-165357.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-25",
    "new": false
   },
@@ -1962,7 +1962,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/2026-10-27-Connie-2-Large.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-24",
    "new": false
   },
@@ -1988,7 +1988,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_1665-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-24",
    "new": false
   },
@@ -2014,7 +2014,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_1667-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-24",
    "new": false
   },
@@ -2040,7 +2040,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_9286-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2066,7 +2066,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_9548-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2092,7 +2092,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_0852-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2118,7 +2118,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image0-41-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2144,7 +2144,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_3971-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2170,7 +2170,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_9024-2.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2196,7 +2196,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/298qvxiab5u948dymsw1sq20i-1-1.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2222,7 +2222,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_6649-1-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2248,7 +2248,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/1v9f12ulnkq47clcqcy1xadk7.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2274,7 +2274,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1520639513.jpg?fit=1024%2C1546&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2300,7 +2300,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/hana2-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-23",
    "new": false
   },
@@ -2326,7 +2326,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_1760-Large.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-22",
    "new": false
   },
@@ -2352,7 +2352,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image0-39-rotated.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-22",
    "new": false
   },
@@ -2378,7 +2378,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_8755-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-22",
    "new": false
   },
@@ -2404,7 +2404,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_4535-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-22",
    "new": false
   },
@@ -2430,7 +2430,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Fern2-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-22",
    "new": false
   },
@@ -2456,7 +2456,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-133853.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2482,7 +2482,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_5915.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2508,7 +2508,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/08/20260915_111535-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2534,7 +2534,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261023_100742-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2560,7 +2560,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/08/IMG_4616-2-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2586,7 +2586,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/greg_wirt_IMG_5072-Large-rotated-e1791591227313.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2612,7 +2612,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/06/Tai-Lung-8.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2638,7 +2638,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/05/IMG_8219-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2664,7 +2664,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/752813065.jpg?fit=1024%2C939&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2690,7 +2690,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/646458969.jpg?fit=1024%2C1319&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2716,7 +2716,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Sabrina3.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2742,7 +2742,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/394070056.jpg?fit=1024%2C1113&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2768,7 +2768,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/06/IMG_2856-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2794,7 +2794,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_3892-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2820,7 +2820,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_3529-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2846,7 +2846,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_9195-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2872,7 +2872,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/pot-stick1-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2898,7 +2898,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/902783657.jpg?fit=1024%2C1385&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2924,7 +2924,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/PXL_20261015_170609271-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2950,7 +2950,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/pitbull.png",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -2976,7 +2976,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261002_115355-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3002,7 +3002,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1188330262.jpg?fit=1024%2C1286&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3028,7 +3028,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A184298.000.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3054,7 +3054,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/lilithandlira-scaled-rtelpsjkspyb0l4dzptx9sn8lznnhtrg1qlvoo0yok.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3080,7 +3080,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/08/2026_10_08_Lime-and-Clementine_-Silke-6-Large.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3106,7 +3106,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/1000013670-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3132,7 +3132,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/Image-1-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3158,7 +3158,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/Fred-5-rtgfpli2xq902y4syo6zi9pl6hmawpjhcvnbidebo4.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3184,7 +3184,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/emmy-jay-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3210,7 +3210,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/Emmit-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3236,7 +3236,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/71bwajhk820k6nywh6v1qkmiv.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3262,7 +3262,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/08/28c2da7f-9260-4102-8875-a56831258944.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3288,7 +3288,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/05/IMG_9277-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3314,7 +3314,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image4-9-3.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3340,7 +3340,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image0-65-1-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3366,7 +3366,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_0874-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3392,7 +3392,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/20260918_163645-scaled.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3418,7 +3418,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/07/IMG_4536.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3444,7 +3444,7 @@
     "lon": -121.9095
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1472283961.jpg?fit=1024%2C1408&ssl=1",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3470,7 +3470,7 @@
     "lon": -122.101
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_3350-scaled.jpeg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   },
@@ -3496,7 +3496,7 @@
     "lon": -122.292
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_6795.jpg",
-   "photo_checked": true,
+   "photo_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
   }
