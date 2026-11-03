@@ -105,6 +105,21 @@ def url_works(url, site):
         return False
 
 
+_pages = {}  # pages already read during this run, so photos and facts share one request
+
+
+def fetch_page(url, site):
+    if url not in _pages:
+        time.sleep(site.get("delay_seconds", 2))
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                _pages[url] = resp.read().decode("utf-8", "replace")
+        except Exception:
+            _pages[url] = None
+    return _pages[url]
+
+
 PAGE_IMAGE = re.compile(r"""https://[^"'\s>]+/wp-content/uploads/[^"'\s>]+?\.(?:jpe?g|png|webp)(?:\?[^"'\s>]*)?""", re.I)
 
 
@@ -118,12 +133,8 @@ def page_photos(url, site):
     they've since replaced), and so are logos and icons. If the site config has
     "photo_name_pattern", only file names matching it count.
     """
-    time.sleep(site.get("delay_seconds", 2))
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            page = resp.read().decode("utf-8", "replace")
-    except Exception:
+    page = fetch_page(url, site)
+    if not page:
         return []
     page = re.sub(r"<meta[^>]*>", "", html.unescape(page))
     pattern = site.get("photo_name_pattern")
@@ -175,6 +186,83 @@ def check_photos(site, animals, previous):
                     break
         an["photo_source"], an["photo_checked"] = source, PHOTO_CHECK
     return fixed
+
+
+FACTS_CHECK = 1  # bump to re-read every animal's age and sex on the next run
+UNIT = r"(?:years?|yrs?|months?|mos?|weeks?|wks?)"
+AGE_RE = re.compile(r"\bAge\b\W{0,6}((?:\d+(?:\.\d+)?\s*" + UNIT + r"\b[\s,&and]*){1,3})", re.I)
+SEX_RE = re.compile(r"\b(?:Sex|Gender)\b\W{0,6}(Male|Female)\b", re.I)
+
+
+def age_months(text):
+    """'2 Years 3 Months' -> 27, '8Wks' -> 2. None if there's no number with a unit."""
+    total, found = 0.0, False
+    for num, unit in re.findall(r"(\d+(?:\.\d+)?)\s*(" + UNIT + r")\b", text, re.I):
+        found = True
+        u = unit.lower()
+        total += float(num) * (12 if u.startswith("y") else 1 if u.startswith("m") else 12 / 52)
+    return round(total, 1) if found else None
+
+
+def age_group(months, species):
+    """The age groups shown in the filter."""
+    if months < 12:
+        return "Baby"
+    if months < 36:
+        return "Young"
+    if months < 96:
+        return "Adult"
+    return "Senior"
+
+
+def nice_age(months):
+    if months < 2:
+        return f"{max(1, round(months * 52 / 12))} weeks"
+    if months < 12:
+        return f"{round(months)} months"
+    years = int(months // 12)
+    return f"{years} year" + ("s" if years != 1 else "")
+
+
+def page_facts(page):
+    """Age and sex as written on an animal's page."""
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", page))))
+    facts = {}
+    m = AGE_RE.search(text)
+    months = age_months(m.group(1)) if m else None
+    if months is not None and months < 360:
+        facts["age_months"] = months
+    m = SEX_RE.search(text)
+    if m:
+        facts["sex"] = m.group(1).capitalize()
+    return facts
+
+
+def add_facts(site, animals, previous):
+    """Fill in age group, exact age and sex from each animal's own page.
+
+    The feeds don't carry them. Each animal's page is read once and the answer kept,
+    so later runs only read pages for new animals. Returns how many pages were read.
+    """
+    seen = {an["id"]: an for an in previous if an.get("facts_checked") == FACTS_CHECK}
+    read = 0
+    for an in animals:
+        before = seen.get(an["id"])
+        if before:
+            facts = {k: before[k] for k in ("age_months", "sex") if before.get(k) not in (None, "")}
+        else:
+            page = fetch_page(an["url"], site) if an.get("url") else None
+            read += 1
+            facts = page_facts(page) if page else {}
+        if "age_months" in facts:
+            an["age_months"] = facts["age_months"]
+            an["age"] = age_group(facts["age_months"], an["species"])
+            an["age_text"] = nice_age(facts["age_months"])
+        if facts.get("sex"):
+            an["sex"] = facts["sex"]
+        an["facts_checked"] = FACTS_CHECK
+    _pages.clear()
+    return read
 
 
 def miles_between(lat1, lon1, lat2, lon2):

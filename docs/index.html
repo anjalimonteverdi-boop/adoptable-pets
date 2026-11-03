@@ -106,7 +106,7 @@
   .feedend { height: 100dvh; scroll-snap-align: start; display: grid; place-items: center; text-align: center; color: #fff; padding: 24px; }
   .feedend button { margin-top: 12px; border: 0; background: #fff; color: var(--brown); font-weight: 700; padding: 10px 18px; border-radius: 999px; cursor: pointer; }
   body.feeding { overflow: hidden; }
-  body.feeding header, body.feeding nav, body.feeding .count, body.feeding .views, body.feeding #grid, body.feeding footer { display: none; }
+  body.feeding header, body.feeding nav, body.feeding .count, body.feeding .viewrow, body.feeding #grid, body.feeding footer { display: none; }
   @media (max-width: 430px) { .fftext { display: none; } }
   .views { display: flex; gap: 4px; background: var(--field); border-radius: 999px; padding: 4px; margin: 0 0 18px; width: max-content; max-width: 100%; }
   .views button { display: flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--brown); font: inherit; font-weight: 700;
@@ -114,6 +114,12 @@
   .views svg { width: 16px; height: 16px; fill: currentColor; }
   .views button[aria-pressed=true] { background: #fff; color: var(--accent); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
   .views[hidden] { display: none; }
+  .viewrow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 0 0 18px; }
+  .viewrow .views { margin: 0; }
+  .swipego { display: flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 999px; background: var(--accent); color: #fff;
+             font: inherit; font-weight: 700; font-size: .92rem; padding: 9px 18px; cursor: pointer; white-space: nowrap; }
+  .swipego svg { width: 15px; height: 15px; fill: currentColor; }
+  .swipego[hidden] { display: none; }
   .grid.list { grid-template-columns: 1fr; gap: 0; }
   .grid.list .card { display: flex; align-items: center; border-bottom: 1px solid var(--tan-soft); padding: 10px 0; }
   .grid.list .card > a { display: grid; grid-template-columns: 76px 1fr; grid-template-rows: auto auto auto; column-gap: 14px; align-items: center; flex: 1; min-width: 0; }
@@ -172,7 +178,7 @@
     #org { flex-basis: 100%; }
     .brand img { width: 42px; height: 42px; } h1 { font-size: 1.7rem; }
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 10px; }
-    .views { width: 100%; } .views button { flex: 1; justify-content: center; padding: 7px 4px; gap: 4px; font-size: .8rem; }
+    .views, .swipego { width: 100%; } .views button { flex: 1; justify-content: center; padding: 7px 4px; gap: 4px; font-size: .8rem; }
   }
   @media (max-width: 380px) { .views svg { display: none; } }
 </style>
@@ -200,14 +206,16 @@
     <select id="age" aria-label="Age"></select>
     <select id="sex" aria-label="Sex"></select>
     <select id="size" aria-label="Size"></select>
-    <select id="sort" aria-label="Sort"><option value="">Newest first</option><option value="near">Closest to me</option></select>
+    <select id="sort" aria-label="Sort"><option value="">Newest</option><option value="near">Closest to me</option></select>
   </div>
 </nav>
 
 <main class="wrap">
   <div class="count"><span id="count" aria-live="polite"></span> <button id="clear" hidden>Clear</button><button class="share" id="share">Share</button><button class="favbtn" id="favs" aria-pressed="false">&#9829; Favorites</button></div>
+  <div class="viewrow">
   <div class="views" role="group" aria-label="View" id="views">
-    <button data-view="grid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Grid</button><button data-view="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v4H4zM10 6h10v2H10zM4 10.5h4v4H4zM10 11.5h10v2H10zM4 16h4v4H4zM10 17h10v2H10z"/></svg>List</button><button data-view="shelter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>By shelter</button><button data-view="feed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>Swipe</button>
+    <button data-view="grid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Grid</button><button data-view="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v4H4zM10 6h10v2H10zM4 10.5h4v4H4zM10 11.5h10v2H10zM4 16h4v4H4zM10 17h10v2H10z"/></svg>List</button><button data-view="shelter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>By shelter</button></div>
+  <button class="swipego" id="swipego" data-view="feed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>Tap to activate swipe mode</button>
   </div>
   <div class="grid" id="grid"></div>
   <div id="favview" hidden></div>
@@ -243,6 +251,7 @@ const $ = (id) => document.getElementById(id);
 const AGE_ORDER = ["Baby", "Young", "Adult", "Senior"];
 const SIZE_ORDER = ["Small", "Medium", "Large", "X-Large"];
 const FILTERS = ["org", "age", "sex", "size"];
+const AGE_LABEL = { Baby: "Puppy or kitten (under 1)", Young: "Young (1 to 3 years)", Adult: "Adult (3 to 8 years)", Senior: "Senior (8+ years)" };
 const ANY = { org: "All shelters", age: "Any age", sex: "Any sex", size: "Any size" };
 let data = null, areas = [];
 const state = { area: "", species: "", org: "", age: "", sex: "", size: "", q: "", sort: "", fav: "", view: "" };
@@ -278,7 +287,7 @@ function buildSelects() {
     // Hide a filter with nothing to choose (shelter websites don't give sex or size).
     $(k).hidden = values.length < (k === "age" ? 1 : 2);
     $(k).replaceChildren(new Option(ANY[k], ""),
-      ...values.map(v => new Option(k === "age" && v === "Baby" ? "Puppies & kittens" : v, v)));
+      ...values.map(v => new Option(k === "age" ? AGE_LABEL[v] || v : v, v)));
     $(k).value = state[k];
   }
 }
@@ -294,7 +303,7 @@ function render() {
   $("clear").hidden = !filtered;
   const view = currentView();
   for (const b of $("views").children) b.setAttribute("aria-pressed", b.dataset.view === view);
-  $("views").hidden = state.fav === "1";
+  $("views").hidden = $("swipego").hidden = state.fav === "1";
   $("grid").className = view === "list" ? "grid list" : view === "shelter" ? "shelters" : "grid";
   const cards = l => l.map(a => card(a, a.new ? "New" : "")).join("");
   $("grid").innerHTML = !list.length ? `<p class="empty">No pets match. <button onclick="clearFilters()">Show all</button></p>`
@@ -341,7 +350,7 @@ function renderFeed(list) {
       <div class="info">
         ${a.new ? `<span class="chip">New today</span>` : ""}
         <div class="pname">${esc(a.name)}</div>
-        <div class="pmeta">${esc(kindOf(a))} · ${esc(a.org.name)}${a.org.city ? `, ${esc(a.org.city)}` : ""}${milesTo(a) != null ? ` · ${Math.round(milesTo(a))} mi` : ""}</div>
+        <div class="pmeta">${esc(kindOf(a))}${a.age_text ? `, ${esc(a.age_text)}` : ""} · ${esc(a.org.name)}${a.org.city ? `, ${esc(a.org.city)}` : ""}${milesTo(a) != null ? ` · ${Math.round(milesTo(a))} mi` : ""}</div>
         <a class="meet" href="${esc(a.url)}" target="_blank" rel="noopener">Meet ${esc(a.name)} &rarr;</a>
       </div>
       <div class="rail">
@@ -407,7 +416,7 @@ function card(a, tag, gone) {
         ${gone ? `<span class="gone">No longer listed</span>` : ""}
       </div>
       <div class="name">${esc(a.name)}</div>
-      <div class="meta" title="${esc(a.org.name)}"><span class="kind">${esc(kindOf(a))}</span> · ${esc(a.org.city || a.org.name)}${state.sort === "near" && milesTo(a) != null ? ` · ${Math.round(milesTo(a))} mi` : ""}</div>
+      <div class="meta" title="${esc(a.org.name)}"><span class="kind">${esc(kindOf(a))}</span>${a.age_text ? ` · ${esc(a.age_text)}` : ""} · ${esc(a.org.city || a.org.name)}${state.sort === "near" && milesTo(a) != null ? ` · ${Math.round(milesTo(a))} mi` : ""}</div>
       <div class="orgline">${esc(a.org.name)}</div>
     </a>
     <button class="heart" data-id="${esc(a.id)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${esc(a.name)} ${saved ? "from" : "to"} favorites">${HEART}</button>
@@ -573,6 +582,7 @@ $("sort").addEventListener("change", e => {
 });
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("clear").addEventListener("click", clearFilters);
+$("swipego").addEventListener("click", () => { state.view = "feed"; state.fav = ""; render(); });
 $("views").addEventListener("click", e => {
   const b = e.target.closest("[data-view]"); if (!b) return;
   state.view = b.dataset.view; state.fav = ""; render(); if (b.dataset.view !== "feed") scrollTo(0, 0);
