@@ -784,7 +784,7 @@
    "name": "Heidi",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/921677857.jpg?fit=1024%2C1404&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/930514731.jpg?fit=1024%2C1404&ssl=1",
    "url": "https://www.hssv.org/animals/495003/heidi",
    "org": "Humane Society Silicon Valley"
   },
@@ -802,14 +802,6 @@
    "breed": "",
    "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/202808393.jpg?fit=1024%2C1165&ssl=1",
    "url": "https://www.hssv.org/animals/493676/chashu",
-   "org": "Humane Society Silicon Valley"
-  },
-  "hssv-493574": {
-   "name": "August",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
-   "url": "https://www.hssv.org/animals/493574/august",
    "org": "Humane Society Silicon Valley"
   },
   "hssv-493572": {
@@ -840,7 +832,7 @@
    "name": "Pugsley",
    "species": "Dog",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1110739412.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1656382536.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491780/pugsley",
    "org": "Humane Society Silicon Valley"
   },
@@ -864,7 +856,7 @@
    "name": "Cobweb",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/91095614.jpg?fit=1024%2C925&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/346367725.jpg?fit=1024%2C925&ssl=1",
    "url": "https://www.hssv.org/animals/491716/cobweb",
    "org": "Humane Society Silicon Valley"
   },
@@ -880,16 +872,8 @@
    "name": "Flannel",
    "species": "Cat",
    "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1879410466.jpg?fit=1024%2C1330&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1351111556.jpg?fit=1024%2C1330&ssl=1",
    "url": "https://www.hssv.org/animals/491272/flannel",
-   "org": "Humane Society Silicon Valley"
-  },
-  "hssv-491091": {
-   "name": "Mocha Tesora",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1750984833.jpg?fit=1024%2C1365&ssl=1",
-   "url": "https://www.hssv.org/animals/491091/mocha-tesora",
    "org": "Humane Society Silicon Valley"
   },
   "hssv-491072": {
@@ -1026,14 +1010,6 @@
    "breed": "",
    "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/2138705968.jpg?fit=1024%2C1820&ssl=1",
    "url": "https://www.hssv.org/animals/487205/nisha",
-   "org": "Humane Society Silicon Valley"
-  },
-  "hssv-486982": {
-   "name": "Trout",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1876100776.jpg?fit=1024%2C1098&ssl=1",
-   "url": "https://www.hssv.org/animals/486982/trout",
    "org": "Humane Society Silicon Valley"
   },
   "hssv-485932": {
@@ -1196,22 +1172,6 @@
    "url": "https://www.petsinneed.org/pet/jupiter/",
    "org": "Pets In Need"
   },
-  "pets-in-need-11184": {
-   "name": "Bud Abbott",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-114036.png",
-   "url": "https://www.petsinneed.org/pet/bud-abbott/",
-   "org": "Pets In Need"
-  },
-  "pets-in-need-11160": {
-   "name": "Freddi",
-   "species": "Cat",
-   "breed": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-112037.png",
-   "url": "https://www.petsinneed.org/pet/freddi/",
-   "org": "Pets In Need"
-  },
   "pets-in-need-11103": {
    "name": "Espurr-Esso",
    "species": "Cat",
@@ -1322,14 +1282,6 @@
    "breed": "",
    "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/PXL_20261015_164856534-scaled.jpg",
    "url": "https://www.petsinneed.org/pet/noel/",
-   "org": "Pets In Need"
-  },
-  "pets-in-need-9801": {
-   "name": "Potsticker",
-   "species": "Dog",
-   "breed": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/pot-stick1-scaled.jpg",
-   "url": "https://www.petsinneed.org/pet/potsticker/",
    "org": "Pets In Need"
   },
   "pets-in-need-9800": {
@@ -1462,6 +1414,66 @@
   }
  },
  "gone": [
+  {
+   "name": "August",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
+   "url": "https://www.hssv.org/animals/493574/august",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-493574",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Mocha Tesora",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1750984833.jpg?fit=1024%2C1365&ssl=1",
+   "url": "https://www.hssv.org/animals/491091/mocha-tesora",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491091",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Trout",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1876100776.jpg?fit=1024%2C1098&ssl=1",
+   "url": "https://www.hssv.org/animals/486982/trout",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-486982",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Bud Abbott",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-114036.png",
+   "url": "https://www.petsinneed.org/pet/bud-abbott/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-11184",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Freddi",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-112037.png",
+   "url": "https://www.petsinneed.org/pet/freddi/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-11160",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Potsticker",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/pot-stick1-scaled.jpg",
+   "url": "https://www.petsinneed.org/pet/potsticker/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-9801",
+   "left_on": "2026-11-03"
+  },
   {
    "name": "Allie",
    "species": "Cat",

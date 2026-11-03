@@ -8,11 +8,11 @@
   "lon": -122.4099
  },
  "updated": "2026-11-03",
- "generated_at": "2026-11-03T21:23:38+00:00",
+ "generated_at": "2026-11-03T23:28:07+00:00",
  "source": "shelter websites",
  "summary": {
   "new_today": 17,
-  "left_since_last_run": 0,
+  "left_since_last_run": 6,
   "first_run": false
  },
  "animals": [
@@ -35,7 +35,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/72186570.jpg",
    "photo_checked": 3,
@@ -64,7 +67,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1051719419.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
@@ -91,7 +97,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/150124633.jpg",
    "photo_checked": 3,
@@ -120,7 +129,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/676915942.jpg?fit=1024%2C1248&ssl=1",
    "photo_checked": 3,
@@ -149,7 +161,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/493567026.jpg",
    "photo_checked": 3,
@@ -178,7 +193,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1348656620.jpg?fit=1024%2C1364&ssl=1",
    "photo_checked": 3,
@@ -207,7 +225,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1386125966.jpg?fit=1024%2C1364&ssl=1",
    "photo_checked": 3,
@@ -236,7 +257,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/414641152.jpg",
    "photo_checked": 3,
@@ -265,7 +289,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1156602223.jpg",
    "photo_checked": 3,
@@ -294,7 +321,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/806127176.jpg?fit=1024%2C1362&ssl=1",
    "photo_checked": 3,
@@ -323,7 +353,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1921503039.jpg",
    "photo_checked": 3,
@@ -352,7 +385,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/229101421.jpg",
    "photo_checked": 3,
@@ -381,7 +417,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1759614307.jpg?fit=1024%2C1364&ssl=1",
    "photo_checked": 3,
@@ -410,7 +449,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/1297980371.jpg",
    "photo_checked": 3,
@@ -439,7 +481,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/46292402.jpg",
    "photo_checked": 3,
@@ -466,7 +511,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/11/IMG_0330-Large.jpg",
    "photo_checked": 3,
@@ -493,7 +541,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/2108971607.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
@@ -520,7 +571,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Taki.jpg",
    "photo_checked": 3,
@@ -549,7 +603,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1347473625.jpg?fit=1024%2C1184&ssl=1",
    "photo_checked": 3,
@@ -565,7 +622,7 @@
    "age": "Baby",
    "sex": "Female",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/921677857.jpg?fit=1024%2C1404&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/930514731.jpg?fit=1024%2C1404&ssl=1",
    "url": "https://www.hssv.org/animals/495003/heidi",
    "distance": 36.5,
    "org": {
@@ -576,9 +633,12 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/748889749.jpg?fit=1024%2C1404&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/921677857.jpg?fit=1024%2C1404&ssl=1",
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-02",
@@ -603,39 +663,15 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/170191853.jpg?fit=1024%2C1165&ssl=1",
    "photo_checked": 3,
    "age_months": 1.8,
    "age_text": "8 weeks",
-   "facts_checked": 2,
-   "first_seen": "2026-11-02",
-   "new": false
-  },
-  {
-   "id": "hssv-493574",
-   "name": "August",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
-   "url": "https://www.hssv.org/animals/493574/august",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
-   "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-02",
    "new": false
@@ -659,7 +695,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/2088849706.jpg?fit=1024%2C1421&ssl=1",
    "photo_checked": 3,
@@ -686,7 +725,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/443910122.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
@@ -713,7 +755,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/357597315.jpg?fit=1024%2C1194&ssl=1",
    "photo_checked": 3,
@@ -742,7 +787,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://www.hssv.org/wp-content/uploads/2026/11/846785772.jpg",
    "photo_checked": 3,
@@ -760,7 +808,7 @@
    "age": "Baby",
    "sex": "Male",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1110739412.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1656382536.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491780/pugsley",
    "distance": 36.5,
    "org": {
@@ -771,9 +819,12 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1223133603.jpg?fit=1024%2C1365&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1010853986.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-01",
@@ -798,7 +849,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186032.000.jpg",
    "photo_checked": 3,
@@ -827,7 +881,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1403919827.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
@@ -845,7 +902,7 @@
    "age": "Baby",
    "sex": "Male",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/91095614.jpg?fit=1024%2C925&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/346367725.jpg?fit=1024%2C925&ssl=1",
    "url": "https://www.hssv.org/animals/491716/cobweb",
    "distance": 36.5,
    "org": {
@@ -856,9 +913,12 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/484554673.jpg?fit=1024%2C925&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/222943344.jpg?fit=1024%2C925&ssl=1",
    "photo_checked": 3,
    "age_months": 2.3,
    "age_text": "2 months",
@@ -885,7 +945,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261030_080004-scaled.jpg",
    "photo_checked": 3,
@@ -914,7 +977,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186031.000.jpg",
    "photo_checked": 3,
@@ -943,7 +1009,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186030.000.jpg",
    "photo_checked": 3,
@@ -972,7 +1041,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A186029.000.jpg",
    "photo_checked": 3,
@@ -1001,36 +1073,12 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/Screenshot-2026-10-31-171008.png",
-   "photo_checked": 3,
-   "facts_checked": 2,
-   "first_seen": "2026-10-31",
-   "new": false
-  },
-  {
-   "id": "hssv-491091",
-   "name": "Mocha Tesora",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1750984833.jpg?fit=1024%2C1365&ssl=1",
-   "url": "https://www.hssv.org/animals/491091/mocha-tesora",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1750984833.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-10-31",
@@ -1055,7 +1103,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-113706.png",
    "photo_checked": 3,
@@ -1084,7 +1135,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261029_170846-scaled.jpg",
    "photo_checked": 3,
@@ -1113,7 +1167,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-135305-1.png",
    "photo_checked": 3,
@@ -1142,7 +1199,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-153026.png",
    "photo_checked": 3,
@@ -1171,7 +1231,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/89940B30@27DD4931.CC21E56A00000000-scaled.jpg",
    "photo_checked": 3,
@@ -1198,7 +1261,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261029_170857.jpg",
    "photo_checked": 3,
@@ -1227,7 +1293,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1755086210.jpg?fit=1024%2C768&ssl=1",
    "photo_checked": 3,
@@ -1245,7 +1314,7 @@
    "age": "Baby",
    "sex": "Female",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1879410466.jpg?fit=1024%2C1330&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1351111556.jpg?fit=1024%2C1330&ssl=1",
    "url": "https://www.hssv.org/animals/491272/flannel",
    "distance": 36.5,
    "org": {
@@ -1256,9 +1325,12 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/857482392.jpg?fit=1024%2C1330&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1351111556.jpg?fit=1024%2C1330&ssl=1",
    "photo_checked": 3,
    "age_months": 1.8,
    "age_text": "8 weeks",
@@ -1285,7 +1357,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-114826.png",
    "photo_checked": 3,
@@ -1314,7 +1389,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/2140625755.jpg?fit=1024%2C1087&ssl=1",
    "photo_checked": 3,
@@ -1341,41 +1419,15 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/dax-scaled.jpg",
    "photo_checked": 3,
    "age_months": 3.0,
    "age_text": "3 months",
-   "facts_checked": 2,
-   "first_seen": "2026-10-31",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-11184",
-   "name": "Bud Abbott",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "Male",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-114036.png",
-   "url": "https://www.petsinneed.org/pet/bud-abbott/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
-   },
-   "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-114036.png",
-   "photo_checked": 3,
-   "age_months": 2.0,
-   "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-10-31",
    "new": false
@@ -1399,7 +1451,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1046600956.jpg?fit=1024%2C1397&ssl=1",
    "photo_checked": 3,
@@ -1426,7 +1481,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/993012149.jpg?fit=1024%2C1269&ssl=1",
    "photo_checked": 3,
@@ -1453,36 +1511,12 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image1-6-1.jpeg",
-   "photo_checked": 3,
-   "facts_checked": 2,
-   "first_seen": "2026-10-30",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-11160",
-   "name": "Freddi",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "Female",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-112037.png",
-   "url": "https://www.petsinneed.org/pet/freddi/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
-   },
-   "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-112037.png",
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-10-30",
@@ -1507,7 +1541,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/0627d796-62ca-40a4-9941-bcd9889b4d7a.jpeg",
    "photo_checked": 3,
@@ -1536,7 +1573,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/714066787.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
@@ -1565,7 +1605,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/374240314.jpg?fit=1024%2C996&ssl=1",
    "photo_checked": 3,
@@ -1594,7 +1637,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/Shaggy-6.jpg",
    "photo_checked": 3,
@@ -1621,7 +1667,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/2026-10-27-Puna-4-scaled.jpg",
    "photo_checked": 3,
@@ -1648,7 +1697,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/professor-1-scaled.jpeg",
    "photo_checked": 3,
@@ -1675,7 +1727,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/891625262.jpg?fit=1024%2C1032&ssl=1",
    "photo_checked": 3,
@@ -1702,7 +1757,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1354331443.jpg?fit=1024%2C1113&ssl=1",
    "photo_checked": 3,
@@ -1729,7 +1787,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/180945002.jpg?fit=1024%2C1303&ssl=1",
    "photo_checked": 3,
@@ -1756,7 +1817,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/268588446.jpg?fit=1024%2C1130&ssl=1",
    "photo_checked": 3,
@@ -1783,7 +1847,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/group-1-Large.jpg",
    "photo_checked": 3,
@@ -1810,7 +1877,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_4296.png",
    "photo_checked": 3,
@@ -1837,7 +1907,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/147352625.jpg?fit=1024%2C1298&ssl=1",
    "photo_checked": 3,
@@ -1866,7 +1939,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1686958249.jpg?fit=1024%2C1602&ssl=1",
    "photo_checked": 3,
@@ -1895,7 +1971,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/811021795.jpg?fit=1024%2C1065&ssl=1",
    "photo_checked": 3,
@@ -1924,7 +2003,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/817102108.jpg?fit=1024%2C1286&ssl=1",
    "photo_checked": 3,
@@ -1953,7 +2035,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/202141754.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
@@ -1982,7 +2067,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/29ee8f3a-376f-4bb4-b884-3a71b1e0ecdb.jpg",
    "photo_checked": 3,
@@ -2009,7 +2097,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/369480531.jpg?fit=1024%2C1820&ssl=1",
    "photo_checked": 3,
@@ -2036,7 +2127,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/406611995.jpg?fit=1024%2C1198&ssl=1",
    "photo_checked": 3,
@@ -2065,7 +2159,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/461456306.jpg?fit=1024%2C1134&ssl=1",
    "photo_checked": 3,
@@ -2073,35 +2170,6 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-10-27",
-   "new": false
-  },
-  {
-   "id": "hssv-486982",
-   "name": "Trout",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "Male",
-   "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1876100776.jpg?fit=1024%2C1098&ssl=1",
-   "url": "https://www.hssv.org/animals/486982/trout",
-   "distance": 36.5,
-   "org": {
-    "id": "hssv",
-    "name": "Humane Society Silicon Valley",
-    "type": "Shelter",
-    "city": "Milpitas",
-    "state": "CA",
-    "url": "https://www.hssv.org",
-    "lat": 37.4231,
-    "lon": -121.9095
-   },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1419591462.jpg?fit=1024%2C1098&ssl=1",
-   "photo_checked": 3,
-   "age_months": 2.1,
-   "age_text": "2 months",
-   "facts_checked": 2,
-   "first_seen": "2026-10-26",
    "new": false
   },
   {
@@ -2123,7 +2191,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Image-65-768x1024.png",
    "photo_checked": 3,
@@ -2152,7 +2223,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-165357.png",
    "photo_checked": 3,
@@ -2181,7 +2255,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/2026-10-27-Connie-2-Large.jpg",
    "photo_checked": 3,
@@ -2208,7 +2285,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_1665-scaled.jpeg",
    "photo_checked": 3,
@@ -2237,7 +2317,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_1667-scaled.jpeg",
    "photo_checked": 3,
@@ -2266,7 +2349,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_9286-scaled.jpeg",
    "photo_checked": 3,
@@ -2295,7 +2381,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_9548-scaled.jpeg",
    "photo_checked": 3,
@@ -2322,7 +2411,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_0852-scaled.jpeg",
    "photo_checked": 3,
@@ -2349,7 +2441,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image0-41-scaled.jpeg",
    "photo_checked": 3,
@@ -2376,7 +2471,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_4408-1-scaled.jpeg",
    "photo_checked": 3,
@@ -2405,7 +2503,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_9024-2.jpg",
    "photo_checked": 3,
@@ -2432,7 +2533,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/298qvxiab5u948dymsw1sq20i-1-1.jpg",
    "photo_checked": 3,
@@ -2459,7 +2563,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_6649-1-scaled.jpeg",
    "photo_checked": 3,
@@ -2486,7 +2593,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/1v9f12ulnkq47clcqcy1xadk7.jpg",
    "photo_checked": 3,
@@ -2513,7 +2623,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1520639513.jpg?fit=1024%2C1546&ssl=1",
    "photo_checked": 3,
@@ -2540,7 +2653,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/hana2-scaled.jpg",
    "photo_checked": 3,
@@ -2567,7 +2683,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_1760-Large.jpg",
    "photo_checked": 3,
@@ -2594,7 +2713,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image0-39-rotated.jpeg",
    "photo_checked": 3,
@@ -2621,7 +2743,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_8755-scaled.jpg",
    "photo_checked": 3,
@@ -2648,7 +2773,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_4535-scaled.jpeg",
    "photo_checked": 3,
@@ -2675,7 +2803,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Fern2-scaled.jpg",
    "photo_checked": 3,
@@ -2704,7 +2835,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-30-133853.png",
    "photo_checked": 3,
@@ -2733,7 +2867,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_5915.jpeg",
    "photo_checked": 3,
@@ -2762,7 +2899,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/08/20260915_111535-scaled.jpg",
    "photo_checked": 3,
@@ -2791,7 +2931,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261023_100742-scaled.jpg",
    "photo_checked": 3,
@@ -2820,7 +2963,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/08/IMG_4616-2-scaled.jpeg",
    "photo_checked": 3,
@@ -2849,7 +2995,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/greg_wirt_IMG_5072-Large-rotated-e1791591227313.jpeg",
    "photo_checked": 3,
@@ -2876,7 +3025,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/06/Tai-Lung-8.jpg",
    "photo_checked": 3,
@@ -2905,7 +3057,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/05/IMG_8219-scaled.jpeg",
    "photo_checked": 3,
@@ -2934,7 +3089,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1713696485.jpg?fit=1024%2C939&ssl=1",
    "photo_checked": 3,
@@ -2963,7 +3121,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1907529999.jpg?fit=1024%2C1403&ssl=1",
    "photo_checked": 3,
@@ -2990,7 +3151,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/Sabrina3.jpg",
    "photo_checked": 3,
@@ -3019,7 +3183,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/394070056.jpg?fit=1024%2C1113&ssl=1",
    "photo_checked": 3,
@@ -3048,7 +3215,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/06/IMG_2856-scaled.jpeg",
    "photo_checked": 3,
@@ -3077,7 +3247,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_3892-scaled.jpeg",
    "photo_checked": 3,
@@ -3106,7 +3279,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_3529-scaled.jpeg",
    "photo_checked": 3,
@@ -3135,41 +3311,15 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_9196-scaled.jpeg",
    "photo_checked": 3,
    "age_months": 4.0,
    "age_text": "4 months",
-   "facts_checked": 2,
-   "first_seen": "2026-10-20",
-   "new": false
-  },
-  {
-   "id": "pets-in-need-9801",
-   "name": "Potsticker",
-   "species": "Dog",
-   "breed": "",
-   "age": "Baby",
-   "sex": "Male",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/pot-stick1-scaled.jpg",
-   "url": "https://www.petsinneed.org/pet/potsticker/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101
-   },
-   "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/pot-stick1-scaled.jpg",
-   "photo_checked": 3,
-   "age_months": 3.0,
-   "age_text": "3 months",
    "facts_checked": 2,
    "first_seen": "2026-10-20",
    "new": false
@@ -3193,7 +3343,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/902783657.jpg?fit=1024%2C1385&ssl=1",
    "photo_checked": 3,
@@ -3222,7 +3375,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/PXL_20261015_164856534-scaled.jpg",
    "photo_checked": 3,
@@ -3251,7 +3407,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/pitbull.png",
    "photo_checked": 3,
@@ -3280,7 +3439,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/20261002_115355-scaled.jpg",
    "photo_checked": 3,
@@ -3309,7 +3471,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1188330262.jpg?fit=1024%2C1286&ssl=1",
    "photo_checked": 3,
@@ -3336,7 +3501,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/A184298.000.jpg",
    "photo_checked": 3,
@@ -3365,7 +3533,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/lilithandlira-scaled-rtelpsjkspyb0l4dzptx9sn8lznnhtrg1qlvoo0yok.jpg",
    "photo_checked": 3,
@@ -3392,7 +3563,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/08/2026_10_08_Lime-and-Clementine_-Silke-6-Large.jpg",
    "photo_checked": 3,
@@ -3419,7 +3593,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/1000013670-scaled.jpg",
    "photo_checked": 3,
@@ -3446,7 +3623,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_8736-1-scaled.jpeg",
    "photo_checked": 3,
@@ -3475,7 +3655,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/Fred-5-rtgfpli2xq902y4syo6zi9pl6hmawpjhcvnbidebo4.jpg",
    "photo_checked": 3,
@@ -3502,7 +3685,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/Emmit-scaled.jpeg",
    "photo_checked": 3,
@@ -3531,7 +3717,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/71bwajhk820k6nywh6v1qkmiv.jpg",
    "photo_checked": 3,
@@ -3558,7 +3747,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/08/28c2da7f-9260-4102-8875-a56831258944.jpeg",
    "photo_checked": 3,
@@ -3587,7 +3779,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/05/IMG_9277-scaled.jpeg",
    "photo_checked": 3,
@@ -3616,7 +3811,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image4-9-3.jpeg",
    "photo_checked": 3,
@@ -3643,7 +3841,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/image0-65-1-scaled.jpg",
    "photo_checked": 3,
@@ -3670,7 +3871,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_0874-scaled.jpg",
    "photo_checked": 3,
@@ -3697,7 +3901,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/09/20260918_163645-scaled.jpg",
    "photo_checked": 3,
@@ -3724,7 +3931,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/07/IMG_4536.jpg",
    "photo_checked": 3,
@@ -3751,7 +3961,10 @@
     "state": "CA",
     "url": "https://www.hssv.org",
     "lat": 37.4231,
-    "lon": -121.9095
+    "lon": -121.9095,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "South Bay"
    },
    "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1472283961.jpg?fit=1024%2C1408&ssl=1",
    "photo_checked": 3,
@@ -3780,7 +3993,10 @@
     "state": "CA",
     "url": "https://www.petsinneed.org",
     "lat": 37.424,
-    "lon": -122.101
+    "lon": -122.101,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "Peninsula"
    },
    "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/10/IMG_3350-scaled.jpeg",
    "photo_checked": 3,
@@ -3809,7 +4025,10 @@
     "state": "CA",
     "url": "https://berkeleyhumane.org",
     "lat": 37.858,
-    "lon": -122.292
+    "lon": -122.292,
+    "region": "Northern California",
+    "metro": "Bay Area",
+    "subarea": "East Bay"
    },
    "photo_source": "https://berkeleyhumane.org/wp-content/uploads/2026/10/IMG_6795.jpg",
    "photo_checked": 3,
@@ -3819,6 +4038,66 @@
   }
  ],
  "recently_left": [
+  {
+   "name": "August",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1026918352.jpg?fit=1024%2C1020&ssl=1",
+   "url": "https://www.hssv.org/animals/493574/august",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-493574",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Mocha Tesora",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1750984833.jpg?fit=1024%2C1365&ssl=1",
+   "url": "https://www.hssv.org/animals/491091/mocha-tesora",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-491091",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Trout",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1876100776.jpg?fit=1024%2C1098&ssl=1",
+   "url": "https://www.hssv.org/animals/486982/trout",
+   "org": "Humane Society Silicon Valley",
+   "id": "hssv-486982",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Bud Abbott",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-114036.png",
+   "url": "https://www.petsinneed.org/pet/bud-abbott/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-11184",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Freddi",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/Screenshot-2026-10-29-112037.png",
+   "url": "https://www.petsinneed.org/pet/freddi/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-11160",
+   "left_on": "2026-11-03"
+  },
+  {
+   "name": "Potsticker",
+   "species": "Dog",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/10/pot-stick1-scaled.jpg",
+   "url": "https://www.petsinneed.org/pet/potsticker/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-9801",
+   "left_on": "2026-11-03"
+  },
   {
    "name": "Allie",
    "species": "Cat",
