@@ -188,9 +188,12 @@ def check_photos(site, animals, previous):
     return fixed
 
 
-FACTS_CHECK = 1  # bump to re-read every animal's age and sex on the next run
+FACTS_CHECK = 2  # bump to re-read every animal's age and sex on the next run
 UNIT = r"(?:years?|yrs?|months?|mos?|weeks?|wks?)"
 AGE_RE = re.compile(r"\bAge\b\W{0,6}((?:\d+(?:\.\d+)?\s*" + UNIT + r"\b[\s,&and]*){1,3})", re.I)
+# Some sites show the facts with icons instead of labels, each in its own element ("8Wks", "Female").
+CELL_AGE_RE = re.compile(r"\|\s*((?:\d+\s*" + UNIT + r"\.?\s*){1,3})\|", re.I)
+CELL_SEX_RE = re.compile(r"\|\s*(Male|Female)\s*\|", re.I)
 SEX_RE = re.compile(r"\b(?:Sex|Gender)\b\W{0,6}(Male|Female)\b", re.I)
 
 
@@ -226,13 +229,15 @@ def nice_age(months):
 
 def page_facts(page):
     """Age and sex as written on an animal's page."""
-    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", page))))
+    page = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", page)
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", page)))
+    cells = re.sub(r"\s*(\|\s*)+", "|", re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "|", page))))
     facts = {}
-    m = AGE_RE.search(text)
+    m = AGE_RE.search(text) or CELL_AGE_RE.search(cells)
     months = age_months(m.group(1)) if m else None
     if months is not None and months < 360:
         facts["age_months"] = months
-    m = SEX_RE.search(text)
+    m = SEX_RE.search(text) or CELL_SEX_RE.search(cells)
     if m:
         facts["sex"] = m.group(1).capitalize()
     return facts
