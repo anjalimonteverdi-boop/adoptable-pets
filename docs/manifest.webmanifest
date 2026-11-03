@@ -2,7 +2,7 @@
   "name": "Fetch Feed",
   "short_name": "Fetch Feed",
   "description": "Adoptable dogs and cats at Bay Area shelters, updated every morning.",
-  "start_url": "./",
+  "start_url": "./#view=feed",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",

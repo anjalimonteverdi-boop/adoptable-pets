@@ -107,7 +107,27 @@
   .feedend button { margin-top: 12px; border: 0; background: #fff; color: var(--brown); font-weight: 700; padding: 10px 18px; border-radius: 999px; cursor: pointer; }
   body.feeding { overflow: hidden; }
   @media (max-width: 430px) { .fftext { display: none; } }
-  .count .swipebtn { border: 0; background: var(--brown); color: #fff; border-radius: 999px; padding: 6px 14px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+  .views { display: flex; gap: 4px; background: var(--field); border-radius: 999px; padding: 4px; margin: 0 0 18px; width: max-content; max-width: 100%; }
+  .views button { display: flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--brown); font: inherit; font-weight: 700;
+                  font-size: .88rem; padding: 6px 14px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
+  .views svg { width: 16px; height: 16px; fill: currentColor; }
+  .views button[aria-pressed=true] { background: #fff; color: var(--accent); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+  .views[hidden] { display: none; }
+  .grid.list { grid-template-columns: 1fr; gap: 0; }
+  .grid.list .card { display: flex; align-items: center; border-bottom: 1px solid var(--tan-soft); padding: 10px 0; }
+  .grid.list .card > a { display: grid; grid-template-columns: 76px 1fr; grid-template-rows: auto auto auto; column-gap: 14px; align-items: center; flex: 1; min-width: 0; }
+  .grid.list .photo { grid-row: 1 / 4; width: 76px; border-radius: 12px; }
+  .grid.list .name { margin: 0; align-self: end; }
+  .grid.list .meta { align-self: start; }
+  .grid.list .orgline { display: block; color: var(--muted); font-size: .82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; align-self: start; }
+  .grid.list .new { top: 4px; left: 4px; font-size: .62rem; padding: 2px 6px; }
+  .grid.list .heart { position: static; flex: none; box-shadow: none; background: var(--field); margin-left: 10px; }
+  .grid.list .card:hover .photo { box-shadow: none; }
+  .orgline { display: none; }
+  .shelters .sgroup + .sgroup { margin-top: 34px; }
+  .sgroup h2 { font-size: 1.15rem; color: var(--brown); margin: 0 0 2px; }
+  .sgroup .shint { color: var(--muted); font-size: .88rem; margin: 0 0 12px; }
+  .sgroup .shint a { color: var(--accent); }
   .count .share { margin-left: auto; white-space: nowrap; border: 1.5px solid var(--accent); border-radius: 999px; padding: 5px 14px; font-weight: 700; }
   .count button, .empty button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; }
   .grid { display: grid; gap: 22px 16px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
@@ -151,7 +171,9 @@
     #org { flex-basis: 100%; }
     .brand img { width: 42px; height: 42px; } h1 { font-size: 1.7rem; }
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 10px; }
+    .views { width: 100%; } .views button { flex: 1; justify-content: center; padding: 7px 4px; gap: 4px; font-size: .8rem; }
   }
+  @media (max-width: 380px) { .views svg { display: none; } }
 </style>
 </head>
 <body>
@@ -182,7 +204,10 @@
 </nav>
 
 <main class="wrap">
-  <div class="count"><span id="count" aria-live="polite"></span> <button id="clear" hidden>Clear</button><button class="share" id="share">Share</button><button class="favbtn" id="favs" aria-pressed="false">&#9829; Favorites</button><button class="swipebtn" id="swipe">&#9654; Swipe</button></div>
+  <div class="count"><span id="count" aria-live="polite"></span> <button id="clear" hidden>Clear</button><button class="share" id="share">Share</button><button class="favbtn" id="favs" aria-pressed="false">&#9829; Favorites</button></div>
+  <div class="views" role="group" aria-label="View" id="views">
+    <button data-view="grid"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Grid</button><button data-view="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v4H4zM10 6h10v2H10zM4 10.5h4v4H4zM10 11.5h10v2H10zM4 16h4v4H4zM10 17h10v2H10z"/></svg>List</button><button data-view="shelter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>By shelter</button><button data-view="feed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>Swipe</button>
+  </div>
   <div class="grid" id="grid"></div>
   <div id="favview" hidden></div>
   <div class="feedbar" id="feedbar" hidden>
@@ -266,8 +291,19 @@ function render() {
   const filtered = Object.entries(state).some(([k, v]) => !["area", "sort", "fav", "view"].includes(k) && v);
   $("count").textContent = `${list.length.toLocaleString()} ${list.length === 1 ? "pet" : "pets"}`;
   $("clear").hidden = !filtered;
-  $("grid").innerHTML = list.length ? list.map(a => card(a, a.new ? "New" : "")).join("")
-    : `<p class="empty">No pets match. <button onclick="clearFilters()">Show all</button></p>`;
+  const view = currentView();
+  for (const b of $("views").children) b.setAttribute("aria-pressed", b.dataset.view === view);
+  $("views").hidden = state.fav === "1";
+  $("grid").className = view === "list" ? "grid list" : view === "shelter" ? "shelters" : "grid";
+  const cards = l => l.map(a => card(a, a.new ? "New" : "")).join("");
+  $("grid").innerHTML = !list.length ? `<p class="empty">No pets match. <button onclick="clearFilters()">Show all</button></p>`
+    : view !== "shelter" ? cards(list)
+    : [...new Set(list.map(a => a.org.name))].map(name => {
+        const pets = list.filter(a => a.org.name === name), o = pets[0].org;
+        return `<section class="sgroup"><h2>${esc(name)}</h2>
+          <p class="shint">${esc(o.city || "")}${o.city ? " · " : ""}${pets.length} ${pets.length === 1 ? "pet" : "pets"}${o.url ? ` · <a href="${esc(o.url)}" target="_blank" rel="noopener">Website</a>` : ""}</p>
+          <div class="grid">${cards(pets)}</div></section>`;
+      }).join("");
   renderFavs();
   renderFeed(list);
   writeHash();
@@ -276,7 +312,12 @@ function render() {
 const SHARE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 // Phones open in the swipe feed; computers in the grid. Either can switch.
-const feedOn = () => state.view === "feed" || (!state.view && matchMedia("(max-width: 700px)").matches);
+const VIEWS = ["grid", "list", "shelter", "feed"];
+// The home-screen app always opens in the swipe feed; the website picks by screen size.
+const asApp = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const currentView = () => VIEWS.includes(state.view) ? state.view
+  : asApp || matchMedia("(max-width: 700px)").matches ? "feed" : "grid";
+const feedOn = () => currentView() === "feed";
 let feedKey = "";
 
 function renderFeed(list) {
@@ -348,6 +389,7 @@ function card(a, tag, gone) {
       </div>
       <div class="name">${esc(a.name)}</div>
       <div class="meta" title="${esc(a.org.name)}"><span class="kind">${esc(kindOf(a))}</span> · ${esc(a.org.city || a.org.name)}${state.sort === "near" && milesTo(a) != null ? ` · ${Math.round(milesTo(a))} mi` : ""}</div>
+      <div class="orgline">${esc(a.org.name)}</div>
     </a>
     <button class="heart" data-id="${esc(a.id)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${esc(a.name)} ${saved ? "from" : "to"} favorites">${HEART}</button>
   </div>`;
@@ -512,7 +554,10 @@ $("sort").addEventListener("change", e => {
 });
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("clear").addEventListener("click", clearFilters);
-$("swipe").addEventListener("click", () => { state.view = "feed"; state.fav = ""; render(); });
+$("views").addEventListener("click", e => {
+  const b = e.target.closest("[data-view]"); if (!b) return;
+  state.view = b.dataset.view; state.fav = ""; render(); if (b.dataset.view !== "feed") scrollTo(0, 0);
+});
 $("feedfavs").addEventListener("click", () => { state.fav = "1"; render(); scrollTo(0, 0); });
 $("togrid").addEventListener("click", () => { state.view = "grid"; render(); scrollTo(0, 0); });
 $("feedbar").addEventListener("click", e => {
