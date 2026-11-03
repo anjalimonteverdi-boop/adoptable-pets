@@ -35,7 +35,10 @@
           "pet_species-cat"
         ]
       },
-      "delay_seconds": 2
+      "delay_seconds": 2,
+      "region": "Northern California",
+      "metro": "Bay Area",
+      "subarea": "East Bay"
     },
     {
       "id": "hssv",
@@ -61,7 +64,10 @@
       ],
       "delay_seconds": 10,
       "photo_from_page": true,
-      "photo_name_pattern": "\\d+(-\\d+x\\d+)?\\.jpe?g"
+      "photo_name_pattern": "\\d+(-\\d+x\\d+)?\\.jpe?g",
+      "region": "Northern California",
+      "metro": "Bay Area",
+      "subarea": "South Bay"
     },
     {
       "id": "pets-in-need",
@@ -85,7 +91,10 @@
         "category-kittens",
         "dog-puppies"
       ],
-      "delay_seconds": 2
+      "delay_seconds": 2,
+      "region": "Northern California",
+      "metro": "Bay Area",
+      "subarea": "Peninsula"
     }
   ]
 }

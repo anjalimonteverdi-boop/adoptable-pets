@@ -288,6 +288,12 @@ def photo_of(item):
     return None
 
 
+# Some sites tag pets with their age group or sex, e.g. "pet_age-senior", "pet_sex-female".
+CLASS_AGE = re.compile(r"age[-_](baby|puppy|kitten|young|adult|senior)\b", re.I)
+CLASS_SEX = re.compile(r"(?:sex|gender)[-_](male|female)\b", re.I)
+AGE_TAGS = {"baby": "Baby", "puppy": "Baby", "kitten": "Baby", "young": "Young", "adult": "Adult", "senior": "Senior"}
+
+
 def parse_site(site, items, area):
     """Turn one shelter's posts into the same records RescueGroups produces."""
     distance = None
@@ -303,13 +309,15 @@ def parse_site(site, items, area):
             continue
         title = (item.get("title") or {}).get("rendered") or "Unnamed"
         is_baby = bool(classes & set(site.get("baby_classes", [])))
+        tagged_age = next((m.group(1) for c in classes for m in [CLASS_AGE.search(c)] if m), "")
+        tagged_sex = next((m.group(1) for c in classes for m in [CLASS_SEX.search(c)] if m), "")
         animals.append({
             "id": f"{site['id']}-{item['id']}",
             "name": html.unescape(title).strip(),
             "species": species,
             "breed": "",
-            "age": "Baby" if is_baby else "",
-            "sex": "",
+            "age": "Baby" if is_baby else AGE_TAGS.get(tagged_age.lower(), ""),
+            "sex": tagged_sex.capitalize(),
             "size": "",
             "photo": photo_of(item),
             "url": item.get("link") or "",
@@ -323,6 +331,9 @@ def parse_site(site, items, area):
                 "url": site["feed"].split("/wp-json/")[0],
                 "lat": site.get("lat"),
                 "lon": site.get("lon"),
+                "region": site.get("region", ""),
+                "metro": site.get("metro", ""),
+                "subarea": site.get("subarea", ""),
             },
         })
     return animals

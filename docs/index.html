@@ -72,7 +72,7 @@
            overflow: hidden; display: grid; place-items: center; color: #fff; }
   .slide .blur { position: absolute; inset: -30px; background-size: cover; background-position: center;
                  filter: blur(20px) brightness(.55); transform: translateZ(0); }
-  .slide .pic { position: relative; max-width: 100%; max-height: 100%; width: 100%; height: 100%; object-fit: contain; }
+  .slide .pic { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
   .slide .nopic { position: relative; width: 40%; opacity: .5; }
   .slide .shade { position: absolute; inset: auto 0 0 0; height: 45%;
                   background: linear-gradient(transparent, rgba(0,0,0,.75)); pointer-events: none; }
@@ -206,7 +206,7 @@
     <select id="age" aria-label="Age"></select>
     <select id="sex" aria-label="Sex"></select>
     <select id="size" aria-label="Size"></select>
-    <select id="sort" aria-label="Sort"><option value="">Newest</option><option value="near">Closest to me</option></select>
+    <select id="sort" aria-label="Sort"><option value="">Newest</option><option value="near">Closest to me</option><option value="old">Oldest first</option><option value="young">Youngest first</option></select>
   </div>
 </nav>
 
@@ -269,17 +269,49 @@ function writeHash() {
 }
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const valOf = (a, k) => k === "org" ? a.org.name : a[k];
+// Age in months; when a shelter gives only the age group, the middle of that group.
+const ageOf = a => a.age_months ?? { Baby: 6, Young: 24, Adult: 66, Senior: 120 }[a.age];
+// Shelters are grouped region > area > subarea; the shelter menu can pick any level.
+const PLACES = ["region", "metro", "subarea"];
+const orgMatch = (a, v) => { const i = v.indexOf(":"), lvl = v.slice(0, i);
+  return PLACES.includes(lvl) ? a.org[lvl] === v.slice(i + 1) : a.org.name === v; };
 const kindOf = a => a.age === "Baby" ? (a.species === "Dog" ? "Puppy" : "Kitten") : a.species;
 
 function matches(a) {
   const q = state.q.trim().toLowerCase();
   return (!state.species || a.species === state.species) &&
-    FILTERS.every(k => !state[k] || valOf(a, k) === state[k]) &&
+    FILTERS.every(k => !state[k] || (k === "org" ? orgMatch(a, state[k]) : valOf(a, k) === state[k])) &&
     (!q || (a.name + " " + a.breed).toLowerCase().includes(q));
 }
 
+function buildOrgs() {
+  const pad = n => "\u00a0\u00a0\u00a0".repeat(n), opts = [new Option("All of California", "")], tree = {};
+  for (const a of data.animals) {
+    const o = a.org, r = o.region || "Other", ar = o.metro || "", sub = o.subarea || "";
+    ((((tree[r] ||= {})[ar] ||= {})[sub] ||= new Set())).add(o.name);
+  }
+  const values = [""];
+  const add = (label, value, depth) => { opts.push(new Option(pad(depth) + label, value)); values.push(value); };
+  for (const r of ["Northern California", "Central Valley", "Southern California", ...Object.keys(tree)].filter((x, i, l) => l.indexOf(x) === i)) {
+    if (!tree[r]) { const o = new Option(`${r} (coming soon)`, ""); o.disabled = true; opts.push(o); continue; }
+    add(r, `region:${r}`, 0);
+    for (const ar of Object.keys(tree[r]).sort()) {
+      if (ar) add(ar, `metro:${ar}`, 1);
+      for (const sub of Object.keys(tree[r][ar]).sort()) {
+        const d = ar ? 2 : 1;
+        if (sub) add(sub, `subarea:${sub}`, d);
+        for (const name of [...tree[r][ar][sub]].sort()) add(name, name, d + (sub ? 1 : 0));
+      }
+    }
+  }
+  if (!values.includes(state.org)) state.org = "";
+  $("org").replaceChildren(...opts);
+  $("org").value = state.org;
+}
+
 function buildSelects() {
-  for (const k of FILTERS) {
+  buildOrgs();
+  for (const k of FILTERS.filter(k => k !== "org")) {
     const values = [...new Set(data.animals.map(a => valOf(a, k)).filter(Boolean))];
     const order = k === "age" ? AGE_ORDER : k === "size" ? SIZE_ORDER : null;
     values.sort((x, y) => order ? order.indexOf(x) - order.indexOf(y) : x.localeCompare(y));
@@ -297,6 +329,9 @@ function render() {
   const list = data.animals.filter(matches)
     .sort((a, b) => b.first_seen.localeCompare(a.first_seen) || a.name.localeCompare(b.name));
   if (state.sort === "near") list.sort((a, b) => (milesTo(a) ?? 1e9) - (milesTo(b) ?? 1e9));
+  // Pets with no age at all go last either way.
+  if (state.sort === "old") list.sort((a, b) => (ageOf(b) ?? -1) - (ageOf(a) ?? -1));
+  if (state.sort === "young") list.sort((a, b) => (ageOf(a) ?? 1e9) - (ageOf(b) ?? 1e9));
   $("sort").value = state.sort;
   const filtered = Object.entries(state).some(([k, v]) => !["area", "sort", "fav", "view"].includes(k) && v);
   $("count").textContent = `${list.length.toLocaleString()} ${list.length === 1 ? "pet" : "pets"}`;
