@@ -7,12 +7,12 @@
   "lat": 37.7726,
   "lon": -122.4099
  },
- "updated": "2026-11-03",
- "generated_at": "2026-11-03T23:28:07+00:00",
+ "updated": "2026-11-04",
+ "generated_at": "2026-11-04T14:14:43+00:00",
  "source": "shelter websites",
  "summary": {
-  "new_today": 17,
-  "left_since_last_run": 6,
+  "new_today": 0,
+  "left_since_last_run": 1,
   "first_run": false
  },
  "animals": [
@@ -46,7 +46,7 @@
    "age_text": "8 weeks",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-495194",
@@ -76,7 +76,7 @@
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496456",
@@ -108,7 +108,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496560",
@@ -140,7 +140,7 @@
    "age_text": "2 years",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496396",
@@ -172,7 +172,7 @@
    "age_text": "3 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496394",
@@ -204,7 +204,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496454",
@@ -236,7 +236,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496448",
@@ -268,7 +268,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496442",
@@ -300,7 +300,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496440",
@@ -332,7 +332,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496438",
@@ -364,7 +364,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496436",
@@ -396,7 +396,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496392",
@@ -428,7 +428,7 @@
    "age_text": "2 months",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-495661",
@@ -460,7 +460,7 @@
    "age_text": "3 years",
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-496429",
@@ -490,7 +490,7 @@
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "berkeley-humane-83688",
@@ -520,7 +520,7 @@
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "hssv-495417",
@@ -550,7 +550,7 @@
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-03",
-   "new": true
+   "new": false
   },
   {
    "id": "pets-in-need-11328",
@@ -808,7 +808,7 @@
    "age": "Baby",
    "sex": "Male",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1656382536.jpg?fit=1024%2C1365&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/709281718.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/491780/pugsley",
    "distance": 36.5,
    "org": {
@@ -824,7 +824,7 @@
     "metro": "Bay Area",
     "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1010853986.jpg?fit=1024%2C1365&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/709281718.jpg?fit=1024%2C1365&ssl=1",
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-11-01",
@@ -902,7 +902,7 @@
    "age": "Baby",
    "sex": "Male",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/346367725.jpg?fit=1024%2C925&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/559142649.jpg?fit=1024%2C925&ssl=1",
    "url": "https://www.hssv.org/animals/491716/cobweb",
    "distance": 36.5,
    "org": {
@@ -918,7 +918,7 @@
     "metro": "Bay Area",
     "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/222943344.jpg?fit=1024%2C925&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/644101864.jpg?fit=1024%2C925&ssl=1",
    "photo_checked": 3,
    "age_months": 2.3,
    "age_text": "2 months",
@@ -1314,7 +1314,7 @@
    "age": "Baby",
    "sex": "Female",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1351111556.jpg?fit=1024%2C1330&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/328496190.jpg?fit=1024%2C1330&ssl=1",
    "url": "https://www.hssv.org/animals/491272/flannel",
    "distance": 36.5,
    "org": {
@@ -1330,7 +1330,7 @@
     "metro": "Bay Area",
     "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1351111556.jpg?fit=1024%2C1330&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1315980465.jpg?fit=1024%2C1330&ssl=1",
    "photo_checked": 3,
    "age_months": 1.8,
    "age_text": "8 weeks",
@@ -1470,7 +1470,7 @@
    "age": "Baby",
    "sex": "Male",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1417500794.jpg?fit=1024%2C1269&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1196296983.jpg?fit=1024%2C1365&ssl=1",
    "url": "https://www.hssv.org/animals/490800/murmur",
    "distance": 36.5,
    "org": {
@@ -1486,7 +1486,7 @@
     "metro": "Bay Area",
     "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/993012149.jpg?fit=1024%2C1269&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1417500794.jpg?fit=1024%2C1269&ssl=1",
    "photo_checked": 3,
    "facts_checked": 2,
    "first_seen": "2026-10-30",
@@ -1928,7 +1928,7 @@
    "age": "Baby",
    "sex": "Female",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1509922433.jpg?fit=1024%2C1602&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1278636052.jpg?fit=1024%2C1602&ssl=1",
    "url": "https://www.hssv.org/animals/488714/story",
    "distance": 36.5,
    "org": {
@@ -1944,7 +1944,7 @@
     "metro": "Bay Area",
     "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/1686958249.jpg?fit=1024%2C1602&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/1509922433.jpg?fit=1024%2C1602&ssl=1",
    "photo_checked": 3,
    "age_months": 2.1,
    "age_text": "2 months",
@@ -1960,7 +1960,7 @@
    "age": "Baby",
    "sex": "Female",
    "size": "",
-   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/549932073.jpg?fit=1024%2C1065&ssl=1",
+   "photo": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/292415800.jpg?fit=1024%2C1065&ssl=1",
    "url": "https://www.hssv.org/animals/488707/stacia",
    "distance": 36.5,
    "org": {
@@ -1976,7 +1976,7 @@
     "metro": "Bay Area",
     "subarea": "South Bay"
    },
-   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/10/811021795.jpg?fit=1024%2C1065&ssl=1",
+   "photo_source": "https://i0.wp.com/www.hssv.org/wp-content/uploads/2026/11/549932073.jpg?fit=1024%2C1065&ssl=1",
    "photo_checked": 3,
    "age_months": 2.1,
    "age_text": "2 months",
@@ -3293,38 +3293,6 @@
    "new": false
   },
   {
-   "id": "pets-in-need-8676",
-   "name": "Princess Crumb",
-   "species": "Cat",
-   "breed": "",
-   "age": "Baby",
-   "sex": "Female",
-   "size": "",
-   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_9196-scaled.jpeg",
-   "url": "https://www.petsinneed.org/pet/princess-crumb/",
-   "distance": 29.4,
-   "org": {
-    "id": "pets-in-need",
-    "name": "Pets In Need",
-    "type": "Shelter",
-    "city": "Palo Alto",
-    "state": "CA",
-    "url": "https://www.petsinneed.org",
-    "lat": 37.424,
-    "lon": -122.101,
-    "region": "Northern California",
-    "metro": "Bay Area",
-    "subarea": "Peninsula"
-   },
-   "photo_source": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_9196-scaled.jpeg",
-   "photo_checked": 3,
-   "age_months": 4.0,
-   "age_text": "4 months",
-   "facts_checked": 2,
-   "first_seen": "2026-10-20",
-   "new": false
-  },
-  {
    "id": "hssv-480645",
    "name": "Phil",
    "species": "Dog",
@@ -4038,6 +4006,16 @@
   }
  ],
  "recently_left": [
+  {
+   "name": "Princess Crumb",
+   "species": "Cat",
+   "breed": "",
+   "photo": "https://www.petsinneed.org/wp-content/uploads/2026/09/IMG_9196-scaled.jpeg",
+   "url": "https://www.petsinneed.org/pet/princess-crumb/",
+   "org": "Pets In Need",
+   "id": "pets-in-need-8676",
+   "left_on": "2026-11-04"
+  },
   {
    "name": "August",
    "species": "Cat",
