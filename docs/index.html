@@ -139,7 +139,9 @@
   .count button, .empty button { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; }
   .grid { display: grid; gap: 22px 16px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
   .card { position: relative; min-width: 0; }
-  .card > a { color: inherit; text-decoration: none; display: block; }
+  .card > a { color: inherit; text-decoration: none; display: block; touch-action: manipulation; }
+  .photo .burst { inset: 0; margin: auto; width: 45%; height: 45%; z-index: 2; }
+  .photo .burst svg { width: 100%; height: 100%; }
   .heart { position: absolute; top: 8px; right: 8px; width: 36px; height: 36px; border: 0; border-radius: 50%;
            background: rgba(255,255,255,.92); color: var(--tan); cursor: pointer; display: grid; place-items: center;
            box-shadow: 0 1px 4px rgba(0,0,0,.15); }
@@ -429,6 +431,30 @@ $("feed").addEventListener("pointerup", e => {
   const b = document.createElement("div");
   b.className = "burst"; b.innerHTML = HEART;
   slide.append(b); setTimeout(() => b.remove(), 800);
+});
+
+// Grid and list: double-click (or double-tap) a pet to save it. A single click still
+// opens the shelter's page, after a short wait to see whether a second click follows.
+let cardTap = null;
+document.addEventListener("click", e => {
+  const link = e.target.closest(".card > a");
+  if (!link || e.detail === 0 || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+  e.preventDefault();
+  const id = link.parentElement.querySelector(".heart").dataset.id;
+  if (cardTap && cardTap.link === link) {
+    clearTimeout(cardTap.timer); cardTap = null;
+    if (!favs[id]) toggleFav(id);
+    const heart = [...document.querySelectorAll(".card .heart")].find(h => h.dataset.id === id && h.offsetParent);
+    const photo = heart && heart.closest(".card").querySelector(".photo");
+    if (photo) { const b = document.createElement("div"); b.className = "burst"; b.innerHTML = HEART; photo.append(b); setTimeout(() => b.remove(), 800); }
+    return;
+  }
+  if (cardTap) clearTimeout(cardTap.timer);
+  cardTap = { link, timer: setTimeout(() => {
+    cardTap = null;
+    const w = window.open(link.href, "_blank");
+    if (w) w.opener = null; else location.href = link.href;
+  }, 300) };
 });
 
 async function sharePet(id) {
