@@ -1,11 +1,11 @@
 {
  "site_title": "Fetch Feed",
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "areas": [
   {
    "id": "bay-area",
    "name": "San Francisco Bay Area",
-   "count": 137
+   "count": 133
   }
  ]
 }
